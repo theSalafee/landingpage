@@ -8,4 +8,8 @@ body {
 
 .jumbotron {
   background-image: url("/assets/assets-headerImg.png");
-  height: 500px; }
+  height: 500px;
+  color: white; }
+  .jumbotron .h1 {
+    font-size: 3.5rem;
+    font-weight: 1900; }
