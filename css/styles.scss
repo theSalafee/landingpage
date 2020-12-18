@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$playfairDisplay: 'Playfair Display', serif;
+$montserra: 'Montserrat', sans-serif;
 $primary-color: #294243;
 $pale-color: #EFF1F2;
 $secondary-color: #86BFCA;
+
+body {
+    font-family: $montserra;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding-left: 40px;
+}

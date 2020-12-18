@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+
     <title>Capitol Hill</title>
 </head>
+
 <body>
-<h1>Hello World!</h1>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-sm-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LLC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CORPORATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NONPROFIT</a>
+                    </li>
+                    <i class="fa fa-search" style="padding: 12px 0 0 15px; color: darkgreen" aria-hidden="true"></i>
+                </ul>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h3>Capitol Hill</h3>
+            </div>
+            <div class="col-sm-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GET STARTED</a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div> -->
+        </nav>
+
+        <!--jumbotron-->
+        <div class="p-5 text-center bg-light">
+            <h1 class="mb-3">Business Information Guide</h1>
+            <h4 class="mb-3">How to start your business in Washington, D.C</h4>
+            <a class="btn btn-primary" href="" role="button">Learn more</a>
+            <a class="btn btn-primary" href="" role="button">Get started</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12">Row One</div>
+        </div>
+    </div>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
