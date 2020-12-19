@@ -1,27 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 
-$playfairDisplay: 'Playfair Display', serif;
-$montserra: 'Montserrat', sans-serif;
+$playfairDisplay: "Playfair Display", serif;
+$montserra: "Montserrat", sans-serif;
 $primary-color: #294243;
-$pale-color: #EFF1F2;
-$secondary-color: #86BFCA;
+$pale-color: #eff1f2;
+$secondary-color: #86bfca;
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+}
 
 body {
     font-family: $montserra;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     padding-left: 40px;
 }
 
-.jumbotron{
-    background-image: url('/assets/assets-headerImg.png');
-    height: 500px;
-    color: white;
+// Jumbotron
+.jumbotron {
+    background: url("/assets/assets-headerImg.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    padding: 10% 0 12% 0;
+    border-radius: 0;
 
-    .h1{
-        font-size: 3.5rem;
-        font-weight:900;
+    .h1 {
+        font-size: 3.5vw;
+        color: whitesmoke;
+    }
+
+    .tagLine {
+        color: whitesmoke;
+        font-size: 1.5vw;
+        font-family: $playfairDisplay;
+    }
+
+    .rowOneLeft {
+        font-size: 50px;
+        font-family: $playfairDisplay;
+    }
+
+    .learnMoreBtn {
+        opacity: 0.6;
+        border-radius: 0px;
+        font-weight: bolder;
+        background-color: rgba(255, 255, 255, 0.308);
+        color: white;
+    }
+
+    .getStartedBtn {
+        border: 0;
+        border-radius: 0px;
+        font-weight: bolder;
+        color: white;
+        background-color: #86bfca;
+    }
+}
+
+// row one
+.rowOne {
+    padding-top: 75px;
+    .rowOneLeft {
+        font-size: 70px;
+        font-family: $playfairDisplay;
+        padding-right: 10px;
     }
 }
