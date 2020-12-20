@@ -129,13 +129,13 @@
         <div class="col-12 text-center">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-secondary active rowThreeRadioBtns font-weight-bold">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> LLC FORMATION
+                    <input class="llcBtn" type="radio" name="options" id="option1" autocomplete="off" checked> LLC FORMATION
                 </label>
                 <label class="btn btn-secondary rowThreeRadioBtns font-weight-bold">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> CORPORATION FORMATION
+                    <input class="corpBtn" type="radio" name="options" id="option2" autocomplete="off"> CORPORATION FORMATION
                 </label>
                 <label class="btn btn-secondary rowThreeRadioBtns font-weight-bold">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> NONPROFIT FORMATION
+                    <input class="nonprofitBtn" type="radio" name="options" id="option3" autocomplete="off"> NONPROFIT FORMATION
                 </label>
             </div>
         </div>
@@ -144,10 +144,17 @@
     <!-----------------------------------row four--------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowFour mt-1">
+    <div class="row rowFour llcFormationTab mt-1">
         <div class="col-6">
-            <h3 class="font-weight-bold">LLC INFORMATION</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc. Leo in vitae turpis mas sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Leo in vitae turpis mas sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt.
+            <h3 class="font-weight-bold">LLC FORMATION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc. Leo in vitae turpis
+                mas
+                sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum posuere urna nec
+                tincidunt.
+                Leo in vitae turpis mas sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum
+                posuere urna nec tincidunt.
             </p><br>
             <h6 class="font-weight-bold">LLC Formation for only $200 + State Fees</h6><br>
             <div class="btn btn-secondary llcInfoBtn">GET STARTED</div>
@@ -161,7 +168,54 @@
                 <li>Lorem ipsum dolor sit amet.</li>
             </ul>
         </div>
-
+    </div>
+    <!--Corportation Formation Tab-->
+    <div class="row rowFour corpFormationTab mt-1 hidden">
+        <div class="col-6">
+            <h3 class="font-weight-bold">CORPORATION FORMATION</h3>
+            <p>Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Suspendisse sed nisi lacus sed viverra. Volutpat est velit egestas dui id ornare arcu. Interdum velit laoreet id donec ultrices tincidunt arcu non. Viverra accumsan in nisl nisi scelerisque eu. Neque convallis a cras semper auctor neque vitae. Iaculis eu non diam phasellus vestibulum lorem sed risus. Tincidunt eget nullam non nisi est. Sit amet justo donec enim diam. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Sem viverra aliquet eget sit amet. Id consectetur purus ut faucibus. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. Tincidunt lobortis feugiat vivamus at augue eget arcu. Tempus quam pellentesque nec nam aliquam. Ipsum a arcu cursus vitae congue mauris. Suspendisse ultrices gravida dictum fusce ut placerat orci.
+            </p><br>
+            <h6 class="font-weight-bold">Corporation Formation for only $300 + State Fees</h6><br>
+            <div class="btn btn-secondary llcInfoBtn">GET STARTED</div>
+        </div>
+        <div class="col-6 rowFourList mt-4">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+    </div>
+    <!--nonprofit section-->
+        <div class="row rowFour nonprofitFormationTab mt-1">
+        <div class="col-6">
+            <h3 class="font-weight-bold">NONPROFIT FORMATION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc. Leo in vitae turpis
+                mas
+                sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum posuere urna nec
+                tincidunt.
+                Leo in vitae turpis mas sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum
+                posuere urna nec tincidunt.
+            </p><br>
+            <h6 class="font-weight-bold">Nonprofit Formation for only $600 + State Fees</h6><br>
+            <div class="btn btn-secondary llcInfoBtn">GET STARTED</div>
+        </div>
+        <div class="col-6 rowFourList mt-4">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
     </div>
 
     <!-----------------------------------row five--------------------------------->
@@ -175,6 +229,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

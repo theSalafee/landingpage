@@ -74,11 +74,15 @@ body {
   .rowThree .rowThreeRadioBtns:hover {
     background-color: #86bfca;
     color: whitesmoke; }
-  .rowThree .btn-secondary:not(:disabled):not(.disabled).active, .rowThree .btn-secondary:not(:disabled):not(.disabled):active, .rowThree .show > .btn-secondary.dropdown-toggle {
+  .rowThree .btn-secondary:not(:disabled):not(.disabled).active,
+  .rowThree .btn-secondary:not(:disabled):not(.disabled):active,
+  .rowThree .show > .btn-secondary.dropdown-toggle {
     background-color: #86bfca; }
 
 .rowFour {
   margin: 0 0 20% 20%; }
+  .rowFour .corporationFormationTab {
+    display: none; }
   .rowFour .llcInfoBtn {
     background-color: #86bfca;
     border-radius: 0;

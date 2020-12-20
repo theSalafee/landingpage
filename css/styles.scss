@@ -118,22 +118,27 @@ body {
         color: whitesmoke;
     }
 
-    .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    .btn-secondary:not(:disabled):not(.disabled).active,
+    .btn-secondary:not(:disabled):not(.disabled):active,
+    .show > .btn-secondary.dropdown-toggle {
         background-color: $secondary-color;
     }
 }
 
 .rowFour {
     margin: 0 0 20% 20%;
+    .corporationFormationTab{
+        display: none;
+    }
 
-    .llcInfoBtn{
+    .llcInfoBtn {
         background-color: $secondary-color;
         border-radius: 0;
         border: 0;
     }
 
-    .rowFourList{
-        li{
+    .rowFourList {
+        li {
             padding: 0 0 25px 0;
         }
     }
