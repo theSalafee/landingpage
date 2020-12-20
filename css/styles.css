@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
-.container, .container-lg, .container-md, .container-sm, .container-xl {
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
   max-width: 1200px; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  line-height: 2; }
 
 .navbar-light .navbar-nav .nav-link {
   padding-left: 40px; }
@@ -42,8 +47,41 @@ body {
     background-color: #86bfca; }
 
 .rowOne {
-  padding-top: 75px; }
+  margin: 8% 8% 10% 0; }
   .rowOne .rowOneLeft {
     font-size: 70px;
     font-family: "Playfair Display", serif;
-    padding-right: 10px; }
+    text-align: right; }
+
+.rowTwo .rowTwoHeader {
+  letter-spacing: 7px; }
+
+.rowTwo .rowTwoOffer {
+  font-family: "Playfair Display", serif;
+  font-size: 20px; }
+
+.rowThree {
+  margin: 20px 0px 60px 0; }
+  .rowThree .rowThreeRadioBtns {
+    border-radius: 0;
+    border: 0;
+    padding: 20px 50px 20px 50px;
+    background-color: #eff1f2;
+    color: #a3a3a3;
+    font-size: 20%;
+    letter-spacing: 3px;
+    margin-right: 2px; }
+  .rowThree .rowThreeRadioBtns:hover {
+    background-color: #86bfca;
+    color: whitesmoke; }
+  .rowThree .btn-secondary:not(:disabled):not(.disabled).active, .rowThree .btn-secondary:not(:disabled):not(.disabled):active, .rowThree .show > .btn-secondary.dropdown-toggle {
+    background-color: #86bfca; }
+
+.rowFour {
+  margin: 0 0 20% 20%; }
+  .rowFour .llcInfoBtn {
+    background-color: #86bfca;
+    border-radius: 0;
+    border: 0; }
+  .rowFour .rowFourList li {
+    padding: 0 0 25px 0; }

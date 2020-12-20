@@ -9,13 +9,17 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
-
-.container, .container-lg, .container-md, .container-sm, .container-xl {
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
     max-width: 1200px;
 }
 
 body {
     font-family: $montserra;
+    line-height: 2;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -67,10 +71,70 @@ body {
 
 // row one
 .rowOne {
-    padding-top: 75px;
+    margin: 8% 8% 10% 0;
+
     .rowOneLeft {
         font-size: 70px;
         font-family: $playfairDisplay;
-        padding-right: 10px;
+        text-align: right;
+    }
+
+    // padding-top: 75px;
+    // .rowOneLeft {
+    //     font-size: 70px;
+    //     font-family: $playfairDisplay;
+    //     padding-right: 10px;
+    // }
+}
+
+// row two
+.rowTwo {
+    .rowTwoHeader {
+        letter-spacing: 7px;
+    }
+
+    .rowTwoOffer {
+        font-family: $playfairDisplay;
+        font-size: 20px;
+    }
+}
+
+.rowThree {
+    margin: 20px 0px 60px 0;
+
+    .rowThreeRadioBtns {
+        border-radius: 0;
+        border: 0;
+        padding: 20px 50px 20px 50px;
+        background-color: #eff1f2;
+        color: rgb(163, 163, 163);
+        font-size: 20%;
+        letter-spacing: 3px;
+        margin-right: 2px;
+    }
+
+    .rowThreeRadioBtns:hover {
+        background-color: $secondary-color;
+        color: whitesmoke;
+    }
+
+    .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+        background-color: $secondary-color;
+    }
+}
+
+.rowFour {
+    margin: 0 0 20% 20%;
+
+    .llcInfoBtn{
+        background-color: $secondary-color;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .rowFourList{
+        li{
+            padding: 0 0 25px 0;
+        }
     }
 }
