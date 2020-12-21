@@ -104,6 +104,44 @@ body {
   .rowFive .howToText {
     font-family: "Playfair Display", serif; }
 
+.rowSix {
+  background-color: #294243;
+  color: whitesmoke;
+  height: 700px; }
+  .rowSix .card {
+    background-color: #3f6061;
+    border-radius: 0;
+    border: 1px 1px 1px white;
+    color: whitesmoke;
+    margin-bottom: 10px; }
+  .rowSix .card-header {
+    background-color: #3f6061;
+    border: 1px white solid;
+    border-radius: 0;
+    border-bottom: 0;
+    color: whitesmoke; }
+  .rowSix .card-header .btn-link:after {
+    content: '+';
+    margin-left: 750px;
+    font-size: 250%; }
+  .rowSix .card-body {
+    background-color: #3f6061;
+    border: 1px white solid;
+    border-top: 0;
+    font-size: 12px; }
+  .rowSix .btn {
+    color: whitesmoke; }
+  .rowSix #accordion ul li:first-child div {
+    display: block;
+    border-top: 3px solid #FFCDCD;
+    border-radius: 0; }
+
+.rowSeven {
+  background-color: lightcoral;
+  height: 300px; }
+  .rowSeven .placeholder {
+    height: 300px; }
+
 .rowEight {
   background-color: #294243;
   color: whitesmoke;

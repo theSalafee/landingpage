@@ -168,6 +168,63 @@ body {
     }
 }
 
+.rowSix{
+    background-color: $primary-color;
+    color: whitesmoke;
+    height: 700px;
+
+    .card {
+        background-color:#3f6061;
+        border-radius: 0;
+        border: 1px 1px 1px white;
+        color: whitesmoke;
+        margin-bottom: 10px;
+    }
+
+    .card-header {
+        background-color:#3f6061;
+        border: 1px white solid;
+        border-radius: 0;
+        border-bottom: 0;
+        color: whitesmoke;
+    }
+
+    .card-header .btn-link:after{
+        content: '+';
+        margin-left: 750px;
+        font-size: 250%;
+    }
+
+    .card-body{
+        background-color:#3f6061;
+        border: 1px white solid;
+        border-top: 0;
+       
+        font-size: 12px;
+    }
+
+    .btn{
+        color: whitesmoke;
+    }
+
+    #accordion ul li:first-child div { 
+    display:block;
+    border-top:3px solid #FFCDCD;
+    border-radius: 0;
+
+} 
+
+}
+
+.rowSeven{
+    background-color: lightcoral;
+    height: 300px;
+    .placeholder{
+        height: 300px;
+
+    }
+}
+
 .rowEight{
     background-color: $primary-color;
     color: whitesmoke;
