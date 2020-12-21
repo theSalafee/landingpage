@@ -6,12 +6,10 @@ $(function () {
 
         if ($(this).attr("class") == "llcBtn") {
             $(".llcFormationTab").show();
-        } else if (($(this).attr("class") == "corpBtn")) {
+        } else if ($(this).attr("class") == "corpBtn") {
             $(".corpFormationTab").show();
-        } else if (($(this).attr("class") == "nonprofitBtn")) {
+        } else if ($(this).attr("class") == "nonprofitBtn") {
             $(".nonprofitFormationTab").show();
         }
-
     });
 });
-;
