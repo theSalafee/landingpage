@@ -107,7 +107,16 @@ body {
 .rowSix {
   background-color: #294243;
   color: whitesmoke;
-  height: 700px; }
+  height: 700px;
+  /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+  /* Horizontal line */
+  /* Vertical line */ }
   .rowSix .card {
     background-color: #3f6061;
     border-radius: 0;
@@ -117,13 +126,10 @@ body {
   .rowSix .card-header {
     background-color: #3f6061;
     border: 1px white solid;
+    border-top: 1px white solid;
     border-radius: 0;
     border-bottom: 0;
     color: whitesmoke; }
-  .rowSix .card-header .btn-link:after {
-    content: '+';
-    margin-left: 750px;
-    font-size: 250%; }
   .rowSix .card-body {
     background-color: #3f6061;
     border: 1px white solid;
@@ -135,6 +141,33 @@ body {
     display: block;
     border-top: 3px solid #FFCDCD;
     border-radius: 0; }
+  .rowSix .collapsible-link::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+    background-color: white; }
+  .rowSix .collapsible-link::after {
+    content: "";
+    width: 2px;
+    height: 14px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s; }
+  .rowSix .collapsible-link[aria-expanded="true"]::after {
+    transform: rotate(90deg) translateX(-1px); }
+  .rowSix .collapsible-link[aria-expanded="true"]::before {
+    transform: rotate(180deg); }
+  .rowSix a:hover {
+    text-decoration: none; }
 
 .rowSeven {
   background-color: lightcoral;

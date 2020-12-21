@@ -14,13 +14,13 @@ $(function () {
     });
 });
 
-$("#accordion ul li").each(function () {
-  var trigger = $(this).find("a");
-  var siblings = $(this).siblings();
-  var acc_text = $(this).find(".accordion");
-  $(trigger).click(function () {
-    var visible_text = siblings.find(".accordion").filter(":visible");
-    $(acc_text).slideToggle();
-    $(visible_text).slideUp();
-  });
-});
+// $("#accordion ul li").each(function () {
+//   var trigger = $(this).find("a");
+//   var siblings = $(this).siblings();
+//   var acc_text = $(this).find(".accordion");
+//   $(trigger).click(function () {
+//     var visible_text = siblings.find(".accordion").filter(":visible");
+//     $(acc_text).slideToggle();
+//     $(visible_text).slideUp();
+//   });
+// });
