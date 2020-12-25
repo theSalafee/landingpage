@@ -24,9 +24,17 @@ body {
     margin: auto;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    padding-left: 40px;
-}
+// .navbar-light .navbar-nav .nav-link {
+//     padding-left: 40px;
+// }
+
+// header{
+//     .navL{
+//         width: 60%;
+//         margin: 0 auto;
+//         display: block;
+//     }
+// }
 
 // Jumbotron
 .jumbotron {
@@ -172,46 +180,45 @@ body {
     color: whitesmoke;
     height: 700px;
 
-        .card {
-            background-color:#3f6061;
-            border-radius: 0;
-            border: 1px 1px 1px white;
-            color: whitesmoke;
-            margin-bottom: 10px;
-        }
-
-        .card-header {
-            background-color:#3f6061;
-            border: 1px white solid;
-            border-top: 1px white solid;
-            border-radius: 0;
-            border-bottom: 0;
-            color: whitesmoke;
-        }
-
-        // .card-header .btn-link:after{
-        //     content: '+';
-        //     margin-left: 750px;
-        //     font-size: 250%;
-        // }
-
-        .card-body{
-            background-color:#3f6061;
-            border: 1px white solid;
-            border-top: 0;
-
-            font-size: 12px;
-        }
-
-        .btn{
-            color: whitesmoke;
-        }
-
-        #accordion ul li:first-child div {
-        display:block;
-        border-top:3px solid #FFCDCD;
+    .card {
+        background-color: #3f6061;
         border-radius: 0;
+        border: 1px 1px 1px white;
+        color: whitesmoke;
+        margin-bottom: 10px;
+    }
 
+    .card-header {
+        background-color: #3f6061;
+        border: 1px white solid;
+        border-top: 1px white solid;
+        border-radius: 0;
+        border-bottom: 0;
+        color: whitesmoke;
+    }
+
+    // .card-header .btn-link:after{
+    //     content: '+';
+    //     margin-left: 750px;
+    //     font-size: 250%;
+    // }
+
+    .card-body {
+        background-color: #3f6061;
+        border: 1px white solid;
+        border-top: 0;
+
+        font-size: 12px;
+    }
+
+    .btn {
+        color: whitesmoke;
+    }
+
+    #accordion ul li:first-child div {
+        display: block;
+        border-top: 3px solid #ffcdcd;
+        border-radius: 0;
     }
 
     // test
@@ -257,16 +264,78 @@ body {
         transform: rotate(180deg);
     }
 
-    a:hover{
+    a:hover {
         text-decoration: none;
     }
 }
 
 .rowSeven {
-    background-color: lightcoral;
-    height: 300px;
+    background-color: $pale-color;
+    height: 1200px;
+    padding-top: 75px;
+
     .placeholder {
         height: 300px;
+    }
+
+    .mostPopularCard {
+        height: 700px;
+    }
+
+    .card {
+        border-radius: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        width: 500px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            letter-spacing: 2px;
+        }
+
+        li {
+            display: list-item; /* This has to be "list-item"                                               */
+            list-style-type: disc; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+            list-style-position: inside;
+        }
+
+        .card-header {
+            background-color: $secondary-color;
+            border: 0;
+            border-radius: 0;
+            // height: 10px;
+            padding: 2px 10px 2px 10px;
+            font-family: $montserra;
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: white;
+        }
+
+        .card-title {
+            color: $secondary-color;
+            padding-top: 30px;
+            margin-bottom: -20px;
+        }
+
+        .card-text {
+            font-family: $playfairDisplay;
+            font-size: 80px;
+            border-bottom: 1px solid rgb(223, 215, 215);
+        }
+
+        .cardLineItems {
+            padding-bottom: 25px;
+        }
+
+        .getStartedBtn {
+            border: 0;
+            border-radius: 0px;
+            font-weight: bolder;
+            color: white;
+            background-color: #86bfca;
+        }
     }
 }
 

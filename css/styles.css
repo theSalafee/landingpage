@@ -13,9 +13,6 @@ body {
   line-height: 2;
   margin: auto; }
 
-.navbar-light .navbar-nav .nav-link {
-  padding-left: 40px; }
-
 .jumbotron {
   background: url("/assets/assets-headerImg.png") no-repeat;
   background-size: cover;
@@ -139,7 +136,7 @@ body {
     color: whitesmoke; }
   .rowSix #accordion ul li:first-child div {
     display: block;
-    border-top: 3px solid #FFCDCD;
+    border-top: 3px solid #ffcdcd;
     border-radius: 0; }
   .rowSix .collapsible-link::before {
     content: "";
@@ -170,10 +167,54 @@ body {
     text-decoration: none; }
 
 .rowSeven {
-  background-color: lightcoral;
-  height: 300px; }
+  background-color: #eff1f2;
+  height: 1200px;
+  padding-top: 75px; }
   .rowSeven .placeholder {
     height: 300px; }
+  .rowSeven .mostPopularCard {
+    height: 700px; }
+  .rowSeven .card {
+    border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 500px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+    .rowSeven .card ul {
+      list-style-type: none;
+      padding: 0;
+      letter-spacing: 2px; }
+    .rowSeven .card li {
+      display: list-item;
+      /* This has to be "list-item"                                               */
+      list-style-type: disc;
+      /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+      list-style-position: inside; }
+    .rowSeven .card .card-header {
+      background-color: #86bfca;
+      border: 0;
+      border-radius: 0;
+      padding: 2px 10px 2px 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: white; }
+    .rowSeven .card .card-title {
+      color: #86bfca;
+      padding-top: 30px;
+      margin-bottom: -20px; }
+    .rowSeven .card .card-text {
+      font-family: "Playfair Display", serif;
+      font-size: 80px;
+      border-bottom: 1px solid #dfd7d7; }
+    .rowSeven .card .cardLineItems {
+      padding-bottom: 25px; }
+    .rowSeven .card .getStartedBtn {
+      border: 0;
+      border-radius: 0px;
+      font-weight: bolder;
+      color: white;
+      background-color: #86bfca; }
 
 .rowEight {
   background-color: #294243;
