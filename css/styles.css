@@ -31,6 +31,10 @@ body {
   .jumbotron .rowOneLeft {
     font-size: 50px;
     font-family: "Playfair Display", serif; }
+  .jumbotron .btn {
+    width: 250px;
+    height: 50px;
+    padding: 12px; }
   .jumbotron .learnMoreBtn {
     opacity: 0.6;
     border-radius: 0px;
@@ -84,7 +88,10 @@ body {
   .rowFour .llcInfoBtn {
     background-color: #86bfca;
     border-radius: 0;
-    border: 0; }
+    border: 0;
+    width: 250px;
+    height: 50px;
+    padding: 12px; }
   .rowFour .rowFourList li {
     padding: 0 0 25px 0; }
 
@@ -169,28 +176,29 @@ body {
 .rowSeven {
   background-color: #eff1f2;
   height: 1200px;
-  padding-top: 75px; }
-  .rowSeven .placeholder {
-    height: 300px; }
-  .rowSeven .mostPopularCard {
-    height: 700px; }
-  .rowSeven .card {
-    border-radius: 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    width: 500px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px; }
-    .rowSeven .card ul {
-      list-style-type: none;
-      padding: 0;
-      letter-spacing: 2px; }
-    .rowSeven .card li {
-      display: list-item;
-      /* This has to be "list-item"                                               */
-      list-style-type: disc;
-      /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
-      list-style-position: inside; }
-    .rowSeven .card .card-header {
+  padding-top: 50px; }
+  .rowSeven .rowSevenTagLine {
+    height: 0px;
+    margin-top: 50px;
+    letter-spacing: 3px; }
+    .rowSeven .rowSevenTagLine .rowSevengenText {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 1px; }
+  .rowSeven .card-group {
+    height: 700px;
+    width: 1300px;
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 10px;
+    /* Added */ }
+    .rowSeven .card-group .cardOne, .rowSeven .card-group .cardThree {
+      height: 675px;
+      margin-top: 40px; }
+    .rowSeven .card-group .mostPopularCard {
+      height: 750px; }
+    .rowSeven .card-group .card-header {
       background-color: #86bfca;
       border: 0;
       border-radius: 0;
@@ -199,22 +207,35 @@ body {
       font-size: 14px;
       letter-spacing: 3px;
       color: white; }
-    .rowSeven .card .card-title {
+    .rowSeven .card-group .card-title {
       color: #86bfca;
       padding-top: 30px;
       margin-bottom: -20px; }
-    .rowSeven .card .card-text {
+    .rowSeven .card-group .card-text {
       font-family: "Playfair Display", serif;
-      font-size: 80px;
-      border-bottom: 1px solid #dfd7d7; }
-    .rowSeven .card .cardLineItems {
+      font-size: 80px; }
+    .rowSeven .card-group hr {
+      margin: 50px 0px 50px 0px; }
+    .rowSeven .card-group ul {
+      list-style-type: none;
+      padding: 0; }
+    .rowSeven .card-group li {
+      display: list-item;
+      /* This has to be "list-item"                                               */
+      list-style-type: disc;
+      /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+      list-style-position: inside; }
+    .rowSeven .card-group .cardLineItems {
       padding-bottom: 25px; }
-    .rowSeven .card .getStartedBtn {
+    .rowSeven .card-group .getStartedBtn {
       border: 0;
       border-radius: 0px;
       font-weight: bolder;
       color: white;
-      background-color: #86bfca; }
+      background-color: #86bfca;
+      width: 250px;
+      height: 50px;
+      padding: 12px; }
 
 .rowEight {
   background-color: #294243;
