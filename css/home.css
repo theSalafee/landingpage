@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 .container-fluid {
-  max-width: 1200px; }
+  max-width: 1200px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  padding: 0 0 0 0; }
 
 .jumbotron {
   background: url("/assets/assets-headerImg.png") no-repeat;
@@ -12,9 +15,11 @@
   width: 100%;
   color: white; }
   .jumbotron .display-4 {
-    font-size: 3.0rem;
+    font-size: 2.6rem;
     font-weight: 300;
     line-height: 1.2; }
+  .jumbotron .lead {
+    font-family: "Playfair Display", serif; }
   .jumbotron .btn-group-wrap {
     text-align: center; }
   .jumbotron div.btn-group {
@@ -39,3 +44,16 @@
     font-weight: bolder;
     color: white;
     background-color: #86bfca; }
+
+.rowOne {
+  font-size: 4vw;
+  margin: 100px 0 100px 0; }
+  .rowOne .rowOneLeft {
+    font-family: "Playfair Display", serif;
+    font-size: 15vw;
+    color: #294243; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowOne .rowOneLeft {
+      font-size: 5vw; }
+    .rowOne .rowOneParagraph {
+      font-size: 1.5vw; } }
