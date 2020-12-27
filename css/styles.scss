@@ -17,13 +17,14 @@ $secondary-color: #86bfca;
     max-width: 1200px;
 }
 
-body {
+
+    body {
     font-family: $montserra;
     line-height: 2;
-    //max-width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
-
+@media(min-width: 768px){
 // .navbar-light .navbar-nav .nav-link {
 //     padding-left: 40px;
 // }
@@ -70,9 +71,11 @@ body {
     .learnMoreBtn {
         opacity: 0.6;
         border-radius: 0px;
+        border-color: white;
         font-weight: bolder;
         background-color: rgba(255, 255, 255, 0.308);
         color: white;
+        
     }
 
     .getStartedBtn {
@@ -94,12 +97,6 @@ body {
         text-align: right;
     }
 
-    // padding-top: 75px;
-    // .rowOneLeft {
-    //     font-size: 70px;
-    //     font-family: $playfairDisplay;
-    //     padding-right: 10px;
-    // }
 }
 
 // row two
@@ -204,12 +201,6 @@ body {
         border-bottom: 0;
         color: whitesmoke;
     }
-
-    // .card-header .btn-link:after{
-    //     content: '+';
-    //     margin-left: 750px;
-    //     font-size: 250%;
-    // }
 
     .card-body {
         background-color: #3f6061;
@@ -365,60 +356,6 @@ letter-spacing: 3px;
         }
     }
 
-    // .placeholder {
-    //     height: 300px;
-    // }
-
-    // .mostPopularCard {
-    //     height: 700px;
-    // }
-
-    // .cardOne {
-    //     margin-left: 160px;
-    // }
-
-    // .card {
-    //     border-radius: 0;
-    //     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    //     width: 450px;
-    //     //margin: 0px 0px 0px 0px;
-    //     // padding: 0px 50px 0px 50px;
-
-    //     hr {
-    //         margin: 50px 0px 50px 0px;
-    //     }
-
-    //     ul {
-    //         list-style-type: none;
-    //         padding: 0;
-    //     }
-
-    //     li {
-    //         display: list-item; /* This has to be "list-item"                                               */
-    //         list-style-type: disc; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
-    //         list-style-position: inside;
-    //     }
-
-    //     .card-header {
-    //         background-color: $secondary-color;
-    //         border: 0;
-    //         border-radius: 0;
-    //         // height: 10px;
-    //         padding: 2px 10px 2px 10px;
-    //         font-family: $montserra;
-    //         font-size: 14px;
-    //         letter-spacing: 3px;
-    //         color: white;
-    //     }
-
-    // }
-    //             .cardOne {
-    //     margin-left: 160px;
-    // }
-
-    // .cardthree{
-    //     margin-right: 160px;
-    // }
 }
 
 .rowEight {
@@ -441,4 +378,58 @@ letter-spacing: 3px;
         color: white;
         background-color: #86bfca;
     }
+}
+
+
+}
+
+@media(max-width: 767px){
+    // Jumbotron
+.jumbotron {
+    background: url("/assets/assets-headerImg.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    padding: 10% 0 12% 0;
+    border-radius: 0;
+
+    .h1 {
+        // font-size: 3.5vw;
+        color: whitesmoke;
+    }
+
+    .tagLine {
+        color: whitesmoke;
+        font-size: 1.5vw;
+        font-family: $playfairDisplay;
+    }
+
+    .rowOneLeft {
+        font-size: 50px;
+        font-family: $playfairDisplay;
+    }
+
+    .btn {
+        width: 250px;
+        height: 50px;
+        padding: 12px;
+    }
+    .learnMoreBtn {
+        opacity: 0.6;
+        border-radius: 0px;
+        font-weight: bolder;
+        background-color: rgba(255, 255, 255, 0.308);
+        color: white;
+    }
+
+    .getStartedBtn {
+        border: 0;
+        border-radius: 0px;
+        font-weight: bolder;
+        color: white;
+        background-color: #86bfca;
+    }
+}
+
 }

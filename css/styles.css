@@ -11,245 +11,274 @@
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 2;
+  max-width: 1200px;
   margin: auto; }
 
-.jumbotron {
-  background: url("/assets/assets-headerImg.png") no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: auto;
-  width: 100%;
-  padding: 10% 0 12% 0;
-  border-radius: 0; }
-  .jumbotron .h1 {
-    font-size: 3.5vw;
-    color: whitesmoke; }
-  .jumbotron .tagLine {
-    color: whitesmoke;
-    font-size: 1.5vw;
-    font-family: "Playfair Display", serif; }
-  .jumbotron .rowOneLeft {
-    font-size: 50px;
-    font-family: "Playfair Display", serif; }
-  .jumbotron .btn {
-    width: 250px;
-    height: 50px;
-    padding: 12px; }
-  .jumbotron .learnMoreBtn {
-    opacity: 0.6;
-    border-radius: 0px;
-    font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.308);
-    color: white; }
-  .jumbotron .getStartedBtn {
-    border: 0;
-    border-radius: 0px;
-    font-weight: bolder;
-    color: white;
-    background-color: #86bfca; }
-
-.rowOne {
-  margin: 8% 8% 10% 0; }
-  .rowOne .rowOneLeft {
-    font-size: 70px;
+@media (min-width: 768px) {
+  .jumbotron {
+    background: url("/assets/assets-headerImg.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    padding: 10% 0 12% 0;
+    border-radius: 0; }
+    .jumbotron .h1 {
+      font-size: 3.5vw;
+      color: whitesmoke; }
+    .jumbotron .tagLine {
+      color: whitesmoke;
+      font-size: 1.5vw;
+      font-family: "Playfair Display", serif; }
+    .jumbotron .rowOneLeft {
+      font-size: 50px;
+      font-family: "Playfair Display", serif; }
+    .jumbotron .btn {
+      width: 250px;
+      height: 50px;
+      padding: 12px; }
+    .jumbotron .learnMoreBtn {
+      opacity: 0.6;
+      border-radius: 0px;
+      border-color: white;
+      font-weight: bolder;
+      background-color: rgba(255, 255, 255, 0.308);
+      color: white; }
+    .jumbotron .getStartedBtn {
+      border: 0;
+      border-radius: 0px;
+      font-weight: bolder;
+      color: white;
+      background-color: #86bfca; }
+  .rowOne {
+    margin: 8% 8% 10% 0; }
+    .rowOne .rowOneLeft {
+      font-size: 70px;
+      font-family: "Playfair Display", serif;
+      text-align: right; }
+  .rowTwo .rowTwoHeader {
+    letter-spacing: 7px; }
+  .rowTwo .rowTwoOffer {
     font-family: "Playfair Display", serif;
-    text-align: right; }
-
-.rowTwo .rowTwoHeader {
-  letter-spacing: 7px; }
-
-.rowTwo .rowTwoOffer {
-  font-family: "Playfair Display", serif;
-  font-size: 20px; }
-
-.rowThree {
-  margin: 20px 0px 60px 0; }
-  .rowThree .rowThreeRadioBtns {
-    border-radius: 0;
-    border: 0;
-    padding: 20px 50px 20px 50px;
+    font-size: 20px; }
+  .rowThree {
+    margin: 20px 0px 60px 0; }
+    .rowThree .rowThreeRadioBtns {
+      border-radius: 0;
+      border: 0;
+      padding: 20px 50px 20px 50px;
+      background-color: #eff1f2;
+      color: #a3a3a3;
+      font-size: 20%;
+      letter-spacing: 3px;
+      margin-right: 2px; }
+    .rowThree .rowThreeRadioBtns:hover {
+      background-color: #86bfca;
+      color: whitesmoke; }
+    .rowThree .btn-secondary:not(:disabled):not(.disabled).active,
+    .rowThree .btn-secondary:not(:disabled):not(.disabled):active,
+    .rowThree .show > .btn-secondary.dropdown-toggle {
+      background-color: #86bfca; }
+  .rowFour {
+    margin: 0 0 10% 20%; }
+    .rowFour .corporationFormationTab {
+      display: none; }
+    .rowFour .llcInfoBtn {
+      background-color: #86bfca;
+      border-radius: 0;
+      border: 0;
+      width: 250px;
+      height: 50px;
+      padding: 12px; }
+    .rowFour .rowFourList li {
+      padding: 0 0 25px 0; }
+  .rowFive {
     background-color: #eff1f2;
-    color: #a3a3a3;
-    font-size: 20%;
-    letter-spacing: 3px;
-    margin-right: 2px; }
-  .rowThree .rowThreeRadioBtns:hover {
-    background-color: #86bfca;
-    color: whitesmoke; }
-  .rowThree .btn-secondary:not(:disabled):not(.disabled).active,
-  .rowThree .btn-secondary:not(:disabled):not(.disabled):active,
-  .rowThree .show > .btn-secondary.dropdown-toggle {
-    background-color: #86bfca; }
-
-.rowFour {
-  margin: 0 0 10% 20%; }
-  .rowFour .corporationFormationTab {
-    display: none; }
-  .rowFour .llcInfoBtn {
-    background-color: #86bfca;
-    border-radius: 0;
-    border: 0;
-    width: 250px;
-    height: 50px;
-    padding: 12px; }
-  .rowFour .rowFourList li {
-    padding: 0 0 25px 0; }
-
-.rowFive {
-  background-color: #eff1f2;
-  padding: 5% 5% 5% 15%; }
-  .rowFive .capitolBldImage {
-    object-fit: cover;
-    border-radius: 50%;
-    height: 400px;
-    width: auto; }
-  .rowFive .rowFiveheaderRight {
-    letter-spacing: 5px; }
-  .rowFive .howToText {
-    font-family: "Playfair Display", serif; }
-
-.rowSix {
-  background-color: #294243;
-  color: whitesmoke;
-  height: 700px;
-  /*
+    padding: 5% 5% 5% 15%; }
+    .rowFive .capitolBldImage {
+      object-fit: cover;
+      border-radius: 50%;
+      height: 400px;
+      width: auto; }
+    .rowFive .rowFiveheaderRight {
+      letter-spacing: 5px; }
+    .rowFive .howToText {
+      font-family: "Playfair Display", serif; }
+  .rowSix {
+    background-color: #294243;
+    color: whitesmoke;
+    height: 700px;
+    /*
 *
 * ==========================================
 * CUSTOM UTIL CLASSES
 * ==========================================
 *
 */
-  /* Horizontal line */
-  /* Vertical line */ }
-  .rowSix .card {
-    background-color: #3f6061;
-    border-radius: 0;
-    border: 1px 1px 1px white;
-    color: whitesmoke;
-    margin-bottom: 10px; }
-  .rowSix .card-header {
-    background-color: #3f6061;
-    border: 1px white solid;
-    border-top: 1px white solid;
-    border-radius: 0;
-    border-bottom: 0;
-    color: whitesmoke; }
-  .rowSix .card-body {
-    background-color: #3f6061;
-    border: 1px white solid;
-    border-top: 0;
-    font-size: 12px; }
-  .rowSix .btn {
-    color: whitesmoke; }
-  .rowSix #accordion ul li:first-child div {
-    display: block;
-    border-top: 3px solid #ffcdcd;
-    border-radius: 0; }
-  .rowSix .collapsible-link::before {
-    content: "";
-    width: 14px;
-    height: 2px;
-    background: white;
-    position: absolute;
-    top: calc(50% - 1px);
-    right: 1rem;
-    display: block;
-    transition: all 0.3s;
-    background-color: white; }
-  .rowSix .collapsible-link::after {
-    content: "";
-    width: 2px;
-    height: 14px;
-    background: white;
-    position: absolute;
-    top: calc(50% - 7px);
-    right: calc(1rem + 6px);
-    display: block;
-    transition: all 0.3s; }
-  .rowSix .collapsible-link[aria-expanded="true"]::after {
-    transform: rotate(90deg) translateX(-1px); }
-  .rowSix .collapsible-link[aria-expanded="true"]::before {
-    transform: rotate(180deg); }
-  .rowSix a:hover {
-    text-decoration: none; }
-
-.rowSeven {
-  background-color: #eff1f2;
-  height: 1200px;
-  padding-top: 50px; }
-  .rowSeven .rowSevenTagLine {
-    height: 0px;
-    margin-top: 50px;
-    letter-spacing: 3px; }
-    .rowSeven .rowSevenTagLine .rowSevengenText {
-      font-family: "Playfair Display", serif;
-      letter-spacing: 1px; }
-  .rowSeven .card-group {
-    height: 700px;
-    width: 1300px;
-    margin: 0 auto;
-    /* Added */
-    float: none;
-    /* Added */
-    margin-bottom: 10px;
-    /* Added */ }
-    .rowSeven .card-group .cardOne, .rowSeven .card-group .cardThree {
-      height: 675px;
-      margin-top: 40px; }
-    .rowSeven .card-group .mostPopularCard {
-      height: 750px; }
-    .rowSeven .card-group .card-header {
-      background-color: #86bfca;
-      border: 0;
+    /* Horizontal line */
+    /* Vertical line */ }
+    .rowSix .card {
+      background-color: #3f6061;
       border-radius: 0;
-      padding: 2px 10px 2px 10px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 14px;
-      letter-spacing: 3px;
+      border: 1px 1px 1px white;
+      color: whitesmoke;
+      margin-bottom: 10px; }
+    .rowSix .card-header {
+      background-color: #3f6061;
+      border: 1px white solid;
+      border-top: 1px white solid;
+      border-radius: 0;
+      border-bottom: 0;
+      color: whitesmoke; }
+    .rowSix .card-body {
+      background-color: #3f6061;
+      border: 1px white solid;
+      border-top: 0;
+      font-size: 12px; }
+    .rowSix .btn {
+      color: whitesmoke; }
+    .rowSix #accordion ul li:first-child div {
+      display: block;
+      border-top: 3px solid #ffcdcd;
+      border-radius: 0; }
+    .rowSix .collapsible-link::before {
+      content: "";
+      width: 14px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 1rem;
+      display: block;
+      transition: all 0.3s;
+      background-color: white; }
+    .rowSix .collapsible-link::after {
+      content: "";
+      width: 2px;
+      height: 14px;
+      background: white;
+      position: absolute;
+      top: calc(50% - 7px);
+      right: calc(1rem + 6px);
+      display: block;
+      transition: all 0.3s; }
+    .rowSix .collapsible-link[aria-expanded="true"]::after {
+      transform: rotate(90deg) translateX(-1px); }
+    .rowSix .collapsible-link[aria-expanded="true"]::before {
+      transform: rotate(180deg); }
+    .rowSix a:hover {
+      text-decoration: none; }
+  .rowSeven {
+    background-color: #eff1f2;
+    height: 1200px;
+    padding-top: 50px; }
+    .rowSeven .rowSevenTagLine {
+      height: 0px;
+      margin-top: 50px;
+      letter-spacing: 3px; }
+      .rowSeven .rowSevenTagLine .rowSevengenText {
+        font-family: "Playfair Display", serif;
+        letter-spacing: 1px; }
+    .rowSeven .card-group {
+      height: 700px;
+      width: 1300px;
+      margin: 0 auto;
+      /* Added */
+      float: none;
+      /* Added */
+      margin-bottom: 10px;
+      /* Added */ }
+      .rowSeven .card-group .cardOne, .rowSeven .card-group .cardThree {
+        height: 675px;
+        margin-top: 40px; }
+      .rowSeven .card-group .mostPopularCard {
+        height: 750px; }
+      .rowSeven .card-group .card-header {
+        background-color: #86bfca;
+        border: 0;
+        border-radius: 0;
+        padding: 2px 10px 2px 10px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: white; }
+      .rowSeven .card-group .card-title {
+        color: #86bfca;
+        padding-top: 30px;
+        margin-bottom: -20px; }
+      .rowSeven .card-group .card-text {
+        font-family: "Playfair Display", serif;
+        font-size: 80px; }
+      .rowSeven .card-group hr {
+        margin: 50px 0px 50px 0px; }
+      .rowSeven .card-group ul {
+        list-style-type: none;
+        padding: 0; }
+      .rowSeven .card-group li {
+        display: list-item;
+        /* This has to be "list-item"                                               */
+        list-style-type: disc;
+        /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+        list-style-position: inside; }
+      .rowSeven .card-group .cardLineItems {
+        padding-bottom: 25px; }
+      .rowSeven .card-group .getStartedBtn {
+        border: 0;
+        border-radius: 0px;
+        font-weight: bolder;
+        color: white;
+        background-color: #86bfca;
+        width: 250px;
+        height: 50px;
+        padding: 12px; }
+  .rowEight {
+    background-color: #294243;
+    color: whitesmoke;
+    padding: 5% 0% 5% 0; }
+    .rowEight .learnMoreBtn {
+      opacity: 0.6;
+      border-radius: 0px;
+      font-weight: bolder;
+      background-color: rgba(255, 255, 255, 0.308);
       color: white; }
-    .rowSeven .card-group .card-title {
-      color: #86bfca;
-      padding-top: 30px;
-      margin-bottom: -20px; }
-    .rowSeven .card-group .card-text {
-      font-family: "Playfair Display", serif;
-      font-size: 80px; }
-    .rowSeven .card-group hr {
-      margin: 50px 0px 50px 0px; }
-    .rowSeven .card-group ul {
-      list-style-type: none;
-      padding: 0; }
-    .rowSeven .card-group li {
-      display: list-item;
-      /* This has to be "list-item"                                               */
-      list-style-type: disc;
-      /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
-      list-style-position: inside; }
-    .rowSeven .card-group .cardLineItems {
-      padding-bottom: 25px; }
-    .rowSeven .card-group .getStartedBtn {
+    .rowEight .getStartedBtn {
       border: 0;
       border-radius: 0px;
       font-weight: bolder;
       color: white;
-      background-color: #86bfca;
+      background-color: #86bfca; } }
+
+@media (max-width: 767px) {
+  .jumbotron {
+    background: url("/assets/assets-headerImg.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+    padding: 10% 0 12% 0;
+    border-radius: 0; }
+    .jumbotron .h1 {
+      color: whitesmoke; }
+    .jumbotron .tagLine {
+      color: whitesmoke;
+      font-size: 1.5vw;
+      font-family: "Playfair Display", serif; }
+    .jumbotron .rowOneLeft {
+      font-size: 50px;
+      font-family: "Playfair Display", serif; }
+    .jumbotron .btn {
       width: 250px;
       height: 50px;
       padding: 12px; }
-
-.rowEight {
-  background-color: #294243;
-  color: whitesmoke;
-  padding: 5% 0% 5% 0; }
-  .rowEight .learnMoreBtn {
-    opacity: 0.6;
-    border-radius: 0px;
-    font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.308);
-    color: white; }
-  .rowEight .getStartedBtn {
-    border: 0;
-    border-radius: 0px;
-    font-weight: bolder;
-    color: white;
-    background-color: #86bfca; }
+    .jumbotron .learnMoreBtn {
+      opacity: 0.6;
+      border-radius: 0px;
+      font-weight: bolder;
+      background-color: rgba(255, 255, 255, 0.308);
+      color: white; }
+    .jumbotron .getStartedBtn {
+      border: 0;
+      border-radius: 0px;
+      font-weight: bolder;
+      color: white;
+      background-color: #86bfca; } }
