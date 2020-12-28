@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@media (max-width: 1200px) {
+  body {
+    max-width: 1200px; } }
+
 .container-fluid {
   max-width: 1200px;
   font-family: "Montserrat", sans-serif;
   line-height: 2;
-  padding: 0 0 0 0; }
+  padding: 0 0 0 0;
+  line-height: 2.5; }
 
 .jumbotron {
   background: url("/assets/assets-headerImg.png") no-repeat;
@@ -47,13 +52,65 @@
 
 .rowOne {
   font-size: 4vw;
-  margin: 100px 0 100px 0; }
+  margin: 100px 0 75px 0; }
   .rowOne .rowOneLeft {
     font-family: "Playfair Display", serif;
     font-size: 15vw;
     color: #294243; }
   @media (min-width: 576px) and (max-width: 1200px) {
     .rowOne .rowOneLeft {
-      font-size: 5vw; }
+      font-size: 5vw;
+      text-align: right; }
     .rowOne .rowOneParagraph {
       font-size: 1.5vw; } }
+
+.rowTwo {
+  font-size: 4vw; }
+  .rowTwo .rowTwoHeader {
+    letter-spacing: 5px;
+    font-size: 125%;
+    color: #294243;
+    line-height: 1.5;
+    padding-left: 15px; }
+  .rowTwo .rowTwoOffer {
+    font-family: "Playfair Display", serif;
+    font-size: 20px; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowTwo {
+      font-size: 100%;
+      text-align: center; }
+      .rowTwo .rowTwoOffer {
+        font-family: "Playfair Display", serif;
+        font-size: 15px; } }
+
+.rowThree .btn-group-wrap {
+  text-align: center; }
+
+.rowThree div.btn-group {
+  margin: 0 auto;
+  text-align: center;
+  width: inherit;
+  display: inline-block; }
+
+.rowThree .rowThreeBtns {
+  border-radius: 0;
+  border: 0;
+  padding: 20px 50px 20px 50px;
+  background-color: #eff1f2;
+  color: #a3a3a3;
+  font-size: 20%;
+  letter-spacing: 3px;
+  margin-right: 2px; }
+
+.rowThree .rowThreeBtns:hover {
+  background-color: #86bfca;
+  color: whitesmoke; }
+
+.rowThree button.btn.btn-secondary.rowThreeBtns {
+  width: 350px;
+  margin: 0 0 25px 0; }
+
+.rowThree .btn-secondary:not(:disabled):not(.disabled).active,
+.rowThree .btn-secondary:not(:disabled):not(.disabled):active,
+.rowThree .show > .btn-secondary.dropdown-toggle {
+  background-color: #86bfca; }

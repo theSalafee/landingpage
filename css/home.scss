@@ -9,11 +9,18 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
+@media (max-width: 1200px) {
+    body {
+        max-width: 1200px;
+    }
+}
+
 .container-fluid {
     max-width: 1200px;
     font-family: $montserra;
     line-height: 2;
     padding: 0 0 0 0;
+    line-height: 2.5;
 }
 
 .jumbotron {
@@ -71,9 +78,9 @@ $secondary-color: #86bfca;
 
 // Row One
 .rowOne {
-    font-size:4vw;
+    font-size: 4vw;
     // padding: 2% 4% 2% 4%;
-    margin: 100px 0 100px 0;
+    margin: 100px 0 75px 0;
 
     .rowOneLeft {
         font-family: $playfairDisplay;
@@ -83,13 +90,81 @@ $secondary-color: #86bfca;
     }
 
     @media (min-width: 576px) and (max-width: 1200px) {
-           .rowOneLeft {
+        .rowOneLeft {
             font-size: 5vw;
+            text-align: right;
         }
         .rowOneParagraph {
             font-size: 1.5vw;
         }
     }
+}
 
+.rowTwo {
+    font-size: 4vw;
+
+    .rowTwoHeader {
+        letter-spacing: 5px;
+        font-size: 125%;
+        color: $primary-color;
+        line-height: 1.5;
+        padding-left: 15px;
+    }
+
+    .rowTwoOffer {
+        font-family: $playfairDisplay;
+        font-size: 20px;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        font-size: 100%;
+        text-align: center;
+
+        .rowTwoOffer {
+            font-family: $playfairDisplay;
+            font-size: 15px;
+        }
+    }
+}
+
+.rowThree{
+
+        .btn-group-wrap {
+        text-align: center;
+    }
+
+    div.btn-group {
+        margin: 0 auto;
+        text-align: center;
+        width: inherit;
+        display: inline-block;
+    }
+
+    .rowThreeBtns {
+        border-radius: 0;
+        border: 0;
+        padding: 20px 50px 20px 50px;
+        background-color: #eff1f2;
+        color: rgb(163, 163, 163);
+        font-size: 20%;
+        letter-spacing: 3px;
+        margin-right: 2px;
+    }
+
+    .rowThreeBtns:hover {
+        background-color: $secondary-color;
+        color: whitesmoke;
+    }
+
+    button.btn.btn-secondary.rowThreeBtns {
+    width: 350px;
+    margin: 0 0 25px 0;
+}
+
+    .btn-secondary:not(:disabled):not(.disabled).active,
+    .btn-secondary:not(:disabled):not(.disabled):active,
+    .show > .btn-secondary.dropdown-toggle {
+        background-color: $secondary-color;
+    }
 
 }

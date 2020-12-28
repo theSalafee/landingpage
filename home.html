@@ -27,7 +27,6 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
@@ -68,13 +67,15 @@
             </div>
         </div>
     </header>
+    <!--Row One-->
     <div class="container">
         <div class="row rowOne">
             <div class="col-12 col-sm-4 col-md-4">
                 <h2 class="rowOneLeft">Business<br>Formation<br><span class="font-weight-bolder">101</span></h2>
             </div>
             <div class="col-12 col-sm-8 col-md-8">
-                <p class="rowOneParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p class="rowOneParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
                     incididunt ut labore et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero
                     nunc.
                     Leo in vitae turpis massa sed elementum tempus egestas sed. Tristique risus nec feugiat in fermentum
@@ -90,6 +91,53 @@
 
         </div>
     </div>
+    <!--Row Two-->
+    <div class="container">
+        <div class="row rowTwo">
+            <div class="col-12">
+                <h2 class="font-weight-bold rowTwoHeader">WHAT'S INCLUDED IN YOUR FORMATION</h2>
+                <p class="col-12 rowTwoOffer">Learn about the tools and knowledge we offer.</p>
+            </div>
+        </div>
+    </div>
+    <!--Row Three-->
+    <div class="container">
+        <div class="row rowThree">
+            <!--
+            <div class="btn-group btn-group-wrap" data-toggle="buttons">
+                <label class="btn btn-secondary active rowThreeRadioBtns font-weight-bold">
+                    <input class="llcBtn" type="radio" name="options" id="option1" autocomplete="off" checked> LLC
+                    FORMATION
+                </label>
+                <label class="btn btn-secondary rowThreeRadioBtns font-weight-bold">
+                    <input class="corpBtn" type="radio" name="options" id="option2" autocomplete="off"> CORPORATION
+                    FORMATION
+                </label>
+                <label class="btn btn-secondary rowThreeRadioBtns font-weight-bold">
+                    <input class="nonprofitBtn" type="radio" name="options" id="option3" autocomplete="off"> NONPROFIT
+                    FORMATION
+                </label>
+            </div>
+            -->
+
+            <div class="btn-group" data-toggle="buttons" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary rowThreeBtns active font-weight-bold llcBtn">LLC FORMATION</button>
+                <button type="button" class="btn btn-secondary rowThreeBtns font-weight-bold corpBtn">CORPORATION FORMATION</button>
+                <button type="button" class="btn btn-secondary rowThreeBtns font-weight-bold nonprofitBtn">NONPROFIT FORMATION</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
