@@ -15,6 +15,10 @@ $secondary-color: #86bfca;
     }
 }
 
+.container {
+    max-width: 1200px;
+}
+
 .container-fluid {
     max-width: 1200px;
     font-family: $montserra;
@@ -127,17 +131,35 @@ $secondary-color: #86bfca;
     }
 }
 
-.rowThree{
-    
-        .btn-group-wrap {
-        text-align: center;
-    }
+.rowThree {
+    // padding: 0% 5% 0 5%;
 
+    //     .btn-group-wrap {
+    //     text-align: center;
+    // }
+
+    #show_corpFormationTab {
+        padding-left: 0;
+        padding-right: 0;
+    }
     div.btn-group {
         margin: 0 auto;
         text-align: center;
         width: inherit;
         display: inline-block;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        .rowThree div.btn-group {
+            margin: 0 auto;
+            text-align: center;
+            width: inherit;
+            /* display: inline-block; */
+        }
+        secondary.rowThreeBtns {
+            width: 250px;
+            margin: 0 0 25px 0;
+        }
     }
 
     .rowThreeBtns {
@@ -157,19 +179,34 @@ $secondary-color: #86bfca;
     }
 
     button.btn.btn-secondary.rowThreeBtns {
-    width: 350px;
-    margin: 0 0 25px 0;
-}
+        width: 350px;
+        margin: 0 0 25px 0;
+    }
+    @media (min-width: 576px) and (max-width: 1200px) {
+        div.btn-group {
+            margin: 0 auto;
+            text-align: center;
+            width: inherit;
+            display: inline-block;
+        }
+        button.btn.btn-secondary.rowThreeBtns {
+            width: 300px;
+            margin: 0 0 25px 0;
+        }
+    }
 
     .btn-secondary:not(:disabled):not(.disabled).active,
     .btn-secondary:not(:disabled):not(.disabled):active,
     .show > .btn-secondary.dropdown-toggle {
         background-color: $secondary-color;
     }
-
 }
 
 .rowFour {
+    margin-bottom:200px;
+    .tabHeader {
+        color: $primary-color;
+    }
     .llcInfoBtn {
         background-color: $secondary-color;
         border-radius: 0;
@@ -184,5 +221,49 @@ $secondary-color: #86bfca;
             padding: 0 0 25px 0;
         }
     }
+}
 
+.rowFive {
+    background-color: $pale-color;
+    // padding: 5% 5% 5% 15%;
+
+    .capitolBldImage {
+        object-fit: cover;
+        border-radius: 50%;
+        height: 415px;
+        width: auto;
+        margin-top: -175px;
+        margin-left: -15px;
+        //   margin: 10% 10% 0 30%;
+    }
+
+    .rowFiveheaderRight {
+        letter-spacing: 5px;
+    }
+
+    .howToText {
+        font-family: $playfairDisplay;
+    }
+}
+
+.rowEight {
+    background-color: $primary-color;
+    color: whitesmoke;
+    padding: 5% 0% 5% 0;
+
+    .learnMoreBtn {
+        opacity: 0.6;
+        border-radius: 0px;
+        font-weight: bolder;
+        background-color: rgba(255, 255, 255, 0.308);
+        color: white;
+    }
+
+    .getStartedBtn {
+        border: 0;
+        border-radius: 0px;
+        font-weight: bolder;
+        color: white;
+        background-color: #86bfca;
+    }
 }

@@ -5,6 +5,9 @@
   body {
     max-width: 1200px; } }
 
+.container {
+  max-width: 1200px; }
+
 .container-fluid {
   max-width: 1200px;
   font-family: "Montserrat", sans-serif;
@@ -83,14 +86,25 @@
         font-family: "Playfair Display", serif;
         font-size: 15px; } }
 
-.rowThree .btn-group-wrap {
-  text-align: center; }
+.rowThree #show_corpFormationTab {
+  padding-left: 0;
+  padding-right: 0; }
 
 .rowThree div.btn-group {
   margin: 0 auto;
   text-align: center;
   width: inherit;
   display: inline-block; }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .rowThree .rowThree div.btn-group {
+    margin: 0 auto;
+    text-align: center;
+    width: inherit;
+    /* display: inline-block; */ }
+  .rowThree secondary.rowThreeBtns {
+    width: 250px;
+    margin: 0 0 25px 0; } }
 
 .rowThree .rowThreeBtns {
   border-radius: 0;
@@ -110,18 +124,62 @@
   width: 350px;
   margin: 0 0 25px 0; }
 
+@media (min-width: 576px) and (max-width: 1200px) {
+  .rowThree div.btn-group {
+    margin: 0 auto;
+    text-align: center;
+    width: inherit;
+    display: inline-block; }
+  .rowThree button.btn.btn-secondary.rowThreeBtns {
+    width: 300px;
+    margin: 0 0 25px 0; } }
+
 .rowThree .btn-secondary:not(:disabled):not(.disabled).active,
 .rowThree .btn-secondary:not(:disabled):not(.disabled):active,
 .rowThree .show > .btn-secondary.dropdown-toggle {
   background-color: #86bfca; }
 
-.rowFour .llcInfoBtn {
-  background-color: #86bfca;
-  border-radius: 0;
-  border: 0;
-  width: 250px;
-  height: 50px;
-  padding: 12px; }
+.rowFour {
+  margin-bottom: 200px; }
+  .rowFour .tabHeader {
+    color: #294243; }
+  .rowFour .llcInfoBtn {
+    background-color: #86bfca;
+    border-radius: 0;
+    border: 0;
+    width: 250px;
+    height: 50px;
+    padding: 12px; }
+  .rowFour .rowFourList li {
+    padding: 0 0 25px 0; }
 
-.rowFour .rowFourList li {
-  padding: 0 0 25px 0; }
+.rowFive {
+  background-color: #eff1f2; }
+  .rowFive .capitolBldImage {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 415px;
+    width: auto;
+    margin-top: -175px;
+    margin-left: -15px; }
+  .rowFive .rowFiveheaderRight {
+    letter-spacing: 5px; }
+  .rowFive .howToText {
+    font-family: "Playfair Display", serif; }
+
+.rowEight {
+  background-color: #294243;
+  color: whitesmoke;
+  padding: 5% 0% 5% 0; }
+  .rowEight .learnMoreBtn {
+    opacity: 0.6;
+    border-radius: 0px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.308);
+    color: white; }
+  .rowEight .getStartedBtn {
+    border: 0;
+    border-radius: 0px;
+    font-weight: bolder;
+    color: white;
+    background-color: #86bfca; }
