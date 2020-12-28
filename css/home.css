@@ -114,3 +114,14 @@
 .rowThree .btn-secondary:not(:disabled):not(.disabled):active,
 .rowThree .show > .btn-secondary.dropdown-toggle {
   background-color: #86bfca; }
+
+.rowFour .llcInfoBtn {
+  background-color: #86bfca;
+  border-radius: 0;
+  border: 0;
+  width: 250px;
+  height: 50px;
+  padding: 12px; }
+
+.rowFour .rowFourList li {
+  padding: 0 0 25px 0; }
