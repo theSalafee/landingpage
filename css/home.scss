@@ -12,6 +12,8 @@ $secondary-color: #86bfca;
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
+        font-size: 1rem;
+        color: $primary-color;
     }
 }
 
@@ -82,13 +84,13 @@ $secondary-color: #86bfca;
 
 // Row One
 .rowOne {
-    font-size: 4vw;
+    font-size: 1rem;
     // padding: 2% 4% 2% 4%;
     margin: 100px 0 75px 0;
 
     .rowOneLeft {
         font-family: $playfairDisplay;
-        font-size: 15vw;
+        font-size: 4rem;
         color: $primary-color;
         // margin: 0 0 10% 0;
     }
@@ -109,7 +111,7 @@ $secondary-color: #86bfca;
 
     .rowTwoHeader {
         letter-spacing: 5px;
-        font-size: 125%;
+        font-size: 2rem;
         color: $primary-color;
         line-height: 1.5;
         padding-left: 15px;
@@ -203,7 +205,7 @@ $secondary-color: #86bfca;
 }
 
 .rowFour {
-    margin-bottom:200px;
+    margin-bottom: 200px;
     .tabHeader {
         color: $primary-color;
     }
@@ -218,31 +220,150 @@ $secondary-color: #86bfca;
 
     .rowFourList {
         li {
-            padding: 0 0 25px 0;
+            padding: 0 0 20px 10px;
+            list-style-position: inside;
         }
     }
 }
 
 .rowFive {
     background-color: $pale-color;
-    // padding: 5% 5% 5% 15%;
+    padding: 5% 5% 5% 5%;
 
     .capitolBldImage {
         object-fit: cover;
         border-radius: 50%;
-        height: 415px;
-        width: auto;
+        height: auto;
+        width: 110%;
         margin-top: -175px;
         margin-left: -15px;
-        //   margin: 10% 10% 0 30%;
+        margin-bottom: 75px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .capitolBldImage {
+            object-fit: cover;
+            border-radius: 50%;
+            height: auto;
+            width: 80%;
+            margin-top: 30px;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
     }
 
     .rowFiveheaderRight {
         letter-spacing: 5px;
+        color: $primary-color;
+        font-size: 1.2rem;
     }
 
     .howToText {
         font-family: $playfairDisplay;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    ul {
+  list-style: none;
+}
+
+ul li:before {
+    content: '✓';
+    background-color: #86bfca;
+    border-radius: 50%;
+    padding: 4px 6px 4px 6px;
+    font-size: 10px;
+  
+}
+}
+
+.rowSix {
+    background-color: $primary-color;
+    color: whitesmoke;
+    height: 700px;
+    margin-bottom: 300px;
+
+    .card {
+        background-color: #3f6061;
+        border-radius: 0;
+        border: 1px 1px 1px white;
+        color: whitesmoke;
+        margin-bottom: 10px;
+    }
+
+    .card-header {
+        background-color: #3f6061;
+        border: 1px white solid;
+        border-top: 1px white solid;
+        border-radius: 0;
+        border-bottom: 0;
+        color: whitesmoke;
+    }
+
+    .card-body {
+        background-color: #3f6061;
+        border: 1px white solid;
+        border-top: 0;
+
+        font-size: 12px;
+    }
+
+    .btn {
+        color: whitesmoke;
+    }
+
+    #accordion ul li:first-child div {
+        display: block;
+        border-top: 3px solid #ffcdcd;
+        border-radius: 0;
+    }
+
+    // test
+    /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+    /* Horizontal line */
+    .collapsible-link::before {
+        content: "";
+        width: 14px;
+        height: 2px;
+        background: white;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 1rem;
+        display: block;
+        transition: all 0.3s;
+        background-color: white;
+    }
+
+    /* Vertical line */
+    .collapsible-link::after {
+        content: "";
+        width: 2px;
+        height: 14px;
+        background: white;
+        position: absolute;
+        top: calc(50% - 7px);
+        right: calc(1rem + 6px);
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .collapsible-link[aria-expanded="true"]::after {
+        transform: rotate(90deg) translateX(-1px);
+    }
+
+    .collapsible-link[aria-expanded="true"]::before {
+        transform: rotate(180deg);
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 }
 
