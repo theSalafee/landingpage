@@ -483,44 +483,66 @@
                 </p>
             </div>
 
-            <div>
-                <a href="">LLC </a>|
-                <a href="">Corporation </a> |
-                <a href="">Nonprofit </a> |
+            <div class="container text-center cardLinks">
+                <!-- <a href="#" class="cardLinks" id="llcLink">LLC </a>|
+                <a href="#" class="cardLinks" id="corpLink">Corporation </a> |
+                <a href="#" class="cardLinks" id="nonprofitLink">Nonprofit </a> | -->
+                <div class="btn-group btn-group-toggle col-12" data-toggle="buttons" role="group"
+                    aria-label="Basic example">
+                    <button type="button" id="llcLink" class="btn btn-secondary llcCardLink">LLC</button>
+                    <button type="button" id="corpLink" class="btn btn-secondary corpCardLink">Corporation</button>
+                    <button type="button" id="nonprofitLink" class="btn btn-secondary nonprofitCardLink">Nonprofit</button>
+                </div>
+
             </div>
             <div class="card-group col-12">
-                <div class="card d-none">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card mostPopularCard shadow-sm">
-                    <p class="card-header text-center">Most Popular</p>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">LLC</h5>
+                <div class="card mostPopularCard shadow-sm" id="corpCard">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">CORPORATION</h5>
                         <p class="cardPrice text-center"><span style="font-size: 40px;">$</span>400</p>
                         <hr>
-                        <ul class="card-text">
+                        <ul class="card-text text-left">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Sapien et ligula ullam</li>
                             <li>Leo in vitae turpis</li>
                             <li>Sapien et ligula ullam</li>
                             <li>Leo in vitae turpis</li>
                         </ul>
-                        <a href="" class="btn btn-primary getStartedBtn mr-4 mr-sm-4">GET STARTED</a>
+                        <a href="" class="btn btn-primary getStartedBtn ">GET STARTED</a>
+
                     </div>
                 </div>
-                <div class="card d-none">
+                <div class="card mostPopularCard shadow-sm" id="llcCard">
+                    <p class="card-header text-center">Most Popular</p>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">LLC</h5>
+                        <p class="cardPrice text-center"><span style="font-size: 40px;">$</span>400</p>
+                        <hr>
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn ">GET STARTED</a>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card mostPopularCard shadow-sm" id="nonprofitCard">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">NONPROFIT</h5>
+                        <p class="cardPrice text-center"><span style="font-size: 40px;">$</span>400</p>
+                        <hr>
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn ">GET STARTED</a>
+
                     </div>
                 </div>
             </div>

@@ -15,25 +15,30 @@ $(document).ready(
                 $(".nonprofitFormationTab").show();
             }
         });
-    });
+    },
 
 
+);
 
+ 
+        $("#nonprofitCard, #corpCard").hide();
 
+        $(".llcCardLink, .corpCardLink, .nonprofitCardLink").bind(
+          "click",
+          function () {
+            $("#nonprofitCard, #corpCard, #llcCard").hide();
+            $(".llcCardLink, .corpCardLink, .nonprofitCardLink").removeClass(
+              "active"
+            );
+            $(this).addClass("active");
 
-
-
-
-
-
-
-// $("#accordion ul li").each(function () {
-//   var trigger = $(this).find("a");
-//   var siblings = $(this).siblings();
-//   var acc_text = $(this).find(".accordion");
-//   $(trigger).click(function () {
-//     var visible_text = siblings.find(".accordion").filter(":visible");
-//     $(acc_text).slideToggle();
-//     $(visible_text).slideUp();
-//   });
-// });
+            if ($(this).attr("id") == "llcLink") {
+              $("#llcCard").show();
+            } else if ($(this).attr("id") == "corpLink") {
+              $("#corpCard").show();
+            } else if ($(this).attr("id") == "nonprofitLink") {
+              $("#nonprofitCard").show();
+            }
+          }
+        );
+    

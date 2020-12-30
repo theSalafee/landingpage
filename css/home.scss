@@ -427,8 +427,14 @@ $secondary-color: #86bfca;
             letter-spacing: 1px;
         }
     }
+    .cardLinks{
+color: $secondary-color;
+    }
 
     .card-group {
+        .card{
+            max-width: 400px;
+        }
         .getStartedBtn {
             border: 0;
             border-radius: 0px;
