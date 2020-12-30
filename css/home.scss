@@ -9,6 +9,9 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
+
+
+
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
@@ -28,6 +31,15 @@ $secondary-color: #86bfca;
     padding: 0 0 0 0;
     line-height: 2.5;
 }
+
+.navbar{
+.navbar-toggler{
+    border: none;
+    border-radius: 0;
+    background-color: $secondary-color;
+}
+}
+
 
 .jumbotron {
     background: url("/assets/assets-headerImg.png") no-repeat;

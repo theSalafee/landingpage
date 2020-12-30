@@ -18,6 +18,11 @@
   padding: 0 0 0 0;
   line-height: 2.5; }
 
+.navbar .navbar-toggler {
+  border: none;
+  border-radius: 0;
+  background-color: #86bfca; }
+
 .jumbotron {
   background: url("/assets/assets-headerImg.png") no-repeat;
   background-size: cover;
