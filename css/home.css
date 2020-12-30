@@ -215,7 +215,6 @@
   background-color: #294243;
   color: whitesmoke;
   height: 1100px;
-  margin-bottom: 300px;
   /* Vertical line */ }
   .rowSix .rowSixHeader {
     font-size: 1.2rem;
@@ -284,6 +283,47 @@
         margin-top: 10%; }
       .rowSix .findAnswersText {
         margin-bottom: 5%; } }
+
+.rowSeven {
+  background-color: #eff1f2;
+  height: 1200px;
+  padding-top: 50px; }
+  .rowSeven .rowSevenTagLine {
+    height: 0px;
+    margin-top: 50px;
+    letter-spacing: 3px; }
+    .rowSeven .rowSevenTagLine .rowSevengenText {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 1px; }
+  .rowSeven .card-group .getStartedBtn {
+    border: 0;
+    border-radius: 0px;
+    font-weight: bolder;
+    color: white;
+    background-color: #86bfca;
+    width: 250px;
+    height: 50px;
+    padding: 12px; }
+  .rowSeven .card-group .card-title {
+    color: #86bfca;
+    padding-top: 30px;
+    margin-bottom: -20px; }
+  .rowSeven .card-group .card-title {
+    color: #86bfca;
+    padding-top: 30px;
+    margin-bottom: -20px; }
+  .rowSeven .card-group .cardPrice {
+    font-family: "Playfair Display", serif;
+    font-size: 80px; }
+  .rowSeven .card-group .mostPopularCard .card-header {
+    background-color: #86bfca;
+    border: 0;
+    border-radius: 0;
+    padding: 2px 10px 2px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: white; }
 
 .rowEight {
   background-color: #294243;
