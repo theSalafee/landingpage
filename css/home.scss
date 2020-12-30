@@ -9,9 +9,6 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
-
-
-
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
@@ -27,19 +24,23 @@ $secondary-color: #86bfca;
 .container-fluid {
     max-width: 1200px;
     font-family: $montserra;
-    line-height: 2;
+    line-height: 1;
     padding: 0 0 0 0;
     line-height: 2.5;
 }
 
-.navbar{
-.navbar-toggler{
-    border: none;
-    border-radius: 0;
-    background-color: $secondary-color;
-}
-}
+.navbar {
+    .navbar-toggler {
+        border: none;
+        border-radius: 0;
+        background-color: $secondary-color;
+    }
 
+    .fa-search{
+        margin-top: 16px;
+        margin-left: 10px;
+    }
+}
 
 .jumbotron {
     background: url("/assets/assets-headerImg.png") no-repeat;
@@ -146,12 +147,6 @@ $secondary-color: #86bfca;
 }
 
 .rowThree {
-    // padding: 0% 5% 0 5%;
-
-    //     .btn-group-wrap {
-    //     text-align: center;
-    // }
-
     #show_corpFormationTab {
         padding-left: 0;
         padding-right: 0;
@@ -240,7 +235,8 @@ $secondary-color: #86bfca;
 
 .rowFive {
     background-color: $pale-color;
-    padding: 5% 5% 5% 5%;
+
+    // padding: 5% 5% 5% 5%;
 
     .capitolBldImage {
         object-fit: cover;
@@ -253,14 +249,26 @@ $secondary-color: #86bfca;
     }
 
     @media (min-width: 768px) and (max-width: 1200px) {
+        font-size: 0.8rem;
         .capitolBldImage {
             object-fit: cover;
             border-radius: 50%;
             height: auto;
-            width: 80%;
-            margin-top: 30px;
-            margin-left: 0;
-            margin-bottom: 0;
+            width: 65%;
+            margin-top: 20%;
+            margin-left: 10%;
+            margin-bottom: 20%;
+        }
+
+        .rowFiveheaderRight {
+            margin-top: 20%;
+            //letter-spacing: 5px;
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
+
+        .content {
+            margin-bottom: 5%;
         }
     }
 
@@ -272,7 +280,7 @@ $secondary-color: #86bfca;
 
     .howToText {
         font-family: $playfairDisplay;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin: 0;
     }
 
@@ -293,8 +301,19 @@ $secondary-color: #86bfca;
 .rowSix {
     background-color: $primary-color;
     color: whitesmoke;
-    height: 700px;
+    height: 1100px;
     margin-bottom: 300px;
+
+    .rowSixHeader {
+        font-size: 1.2rem;
+        margin-top: 20%;
+    }
+
+    .findAnswersText {
+        font-family: $playfairDisplay;
+        font-size: 0.9rem;
+        margin-bottom: 10%;
+    }
 
     .card {
         background-color: #3f6061;
@@ -304,19 +323,24 @@ $secondary-color: #86bfca;
         margin-bottom: 10px;
     }
 
+    .accordion > .card > .card-header {
+        border-radius: 0;
+        margin-bottom: 0px;
+    }
+
     .card-header {
         background-color: #3f6061;
         border: 1px white solid;
-        border-top: 1px white solid;
+        // border-top: 1px white solid;
         border-radius: 0;
-        border-bottom: 0;
+        // border-bottom: 0;
         color: whitesmoke;
     }
 
     .card-body {
         background-color: #3f6061;
-        border: 1px white solid;
-        border-top: 0;
+        // border: 1px white solid;
+        // border-top: 0;
 
         font-size: 12px;
     }
@@ -327,19 +351,10 @@ $secondary-color: #86bfca;
 
     #accordion ul li:first-child div {
         display: block;
-        border-top: 3px solid #ffcdcd;
+        // border-top: 3px solid #ffcdcd;
         border-radius: 0;
     }
 
-    // test
-    /*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
-    /* Horizontal line */
     .collapsible-link::before {
         content: "";
         width: 14px;
@@ -376,6 +391,26 @@ $secondary-color: #86bfca;
 
     a:hover {
         text-decoration: none;
+    }
+
+    .addBorder {
+        border: 1px solid white;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+
+        height: 900px;
+        .accordionText {
+            font-size: 0.8rem;
+        }
+
+        .rowSixHeader {
+            margin-top: 10%;
+        }
+
+        .findAnswersText {
+            margin-bottom: 5%;
+        }
     }
 }
 

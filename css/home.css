@@ -14,7 +14,7 @@
 .container-fluid {
   max-width: 1200px;
   font-family: "Montserrat", sans-serif;
-  line-height: 2;
+  line-height: 1;
   padding: 0 0 0 0;
   line-height: 2.5; }
 
@@ -22,6 +22,10 @@
   border: none;
   border-radius: 0;
   background-color: #86bfca; }
+
+.navbar .fa-search {
+  margin-top: 16px;
+  margin-left: 10px; }
 
 .jumbotron {
   background: url("/assets/assets-headerImg.png") no-repeat;
@@ -163,8 +167,7 @@
     list-style-position: inside; }
 
 .rowFive {
-  background-color: #eff1f2;
-  padding: 5% 5% 5% 5%; }
+  background-color: #eff1f2; }
   .rowFive .capitolBldImage {
     object-fit: cover;
     border-radius: 50%;
@@ -174,21 +177,29 @@
     margin-left: -15px;
     margin-bottom: 75px; }
   @media (min-width: 768px) and (max-width: 1200px) {
-    .rowFive .capitolBldImage {
-      object-fit: cover;
-      border-radius: 50%;
-      height: auto;
-      width: 80%;
-      margin-top: 30px;
-      margin-left: 0;
-      margin-bottom: 0; } }
+    .rowFive {
+      font-size: 0.8rem; }
+      .rowFive .capitolBldImage {
+        object-fit: cover;
+        border-radius: 50%;
+        height: auto;
+        width: 65%;
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-bottom: 20%; }
+      .rowFive .rowFiveheaderRight {
+        margin-top: 20%;
+        color: #294243;
+        font-size: 1.5rem; }
+      .rowFive .content {
+        margin-bottom: 5%; } }
   .rowFive .rowFiveheaderRight {
     letter-spacing: 5px;
     color: #294243;
     font-size: 1.2rem; }
   .rowFive .howToText {
     font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0; }
   .rowFive ul {
     list-style: none; }
@@ -203,40 +214,37 @@
 .rowSix {
   background-color: #294243;
   color: whitesmoke;
-  height: 700px;
+  height: 1100px;
   margin-bottom: 300px;
-  /*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
-  /* Horizontal line */
   /* Vertical line */ }
+  .rowSix .rowSixHeader {
+    font-size: 1.2rem;
+    margin-top: 20%; }
+  .rowSix .findAnswersText {
+    font-family: "Playfair Display", serif;
+    font-size: 0.9rem;
+    margin-bottom: 10%; }
   .rowSix .card {
     background-color: #3f6061;
     border-radius: 0;
     border: 1px 1px 1px white;
     color: whitesmoke;
     margin-bottom: 10px; }
+  .rowSix .accordion > .card > .card-header {
+    border-radius: 0;
+    margin-bottom: 0px; }
   .rowSix .card-header {
     background-color: #3f6061;
     border: 1px white solid;
-    border-top: 1px white solid;
     border-radius: 0;
-    border-bottom: 0;
     color: whitesmoke; }
   .rowSix .card-body {
     background-color: #3f6061;
-    border: 1px white solid;
-    border-top: 0;
     font-size: 12px; }
   .rowSix .btn {
     color: whitesmoke; }
   .rowSix #accordion ul li:first-child div {
     display: block;
-    border-top: 3px solid #ffcdcd;
     border-radius: 0; }
   .rowSix .collapsible-link::before {
     content: "";
@@ -265,6 +273,17 @@
     transform: rotate(180deg); }
   .rowSix a:hover {
     text-decoration: none; }
+  .rowSix .addBorder {
+    border: 1px solid white; }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .rowSix {
+      height: 900px; }
+      .rowSix .accordionText {
+        font-size: 0.8rem; }
+      .rowSix .rowSixHeader {
+        margin-top: 10%; }
+      .rowSix .findAnswersText {
+        margin-bottom: 5%; } }
 
 .rowEight {
   background-color: #294243;
