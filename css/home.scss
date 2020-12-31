@@ -12,13 +12,14 @@ $secondary-color: #86bfca;
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
-        font-size: 1rem;
+        font-size: 0.6rem;
         color: $primary-color;
     }
 }
 
 .container {
     max-width: 1200px;
+    height: auto;
 }
 
 .container-fluid {
@@ -433,6 +434,11 @@ $secondary-color: #86bfca;
         color: $secondary-color;
         border: none;
     }
+
+    .btn:focus {
+        border: none;
+        box-shadow: none;
+    }
     .cardLinks {
         color: $secondary-color;
     }
@@ -563,6 +569,10 @@ $secondary-color: #86bfca;
     color: whitesmoke;
     padding: 5% 0% 5% 0;
 
+    .rowEightHeader{
+font-size: 1.5rem;
+    }
+
     .learnMoreBtn {
         opacity: 0.6;
         border-radius: 0px;
@@ -577,5 +587,40 @@ $secondary-color: #86bfca;
         font-weight: bolder;
         color: white;
         background-color: #86bfca;
+    }
+}
+
+.footer {
+    padding: 10% 5% 5% 5%;
+    height: 200px;
+
+    img {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+    .btn-social-icon {
+        background-color: $secondary-color;
+        border: none;
+    }
+
+    .copyrightText {
+        font-size: 1px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fa,
+    .fas {
+        font-weight: 500;
     }
 }

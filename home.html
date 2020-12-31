@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/home.css" />
     <title>Document</title>
 </head>
@@ -453,61 +454,6 @@
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
     <div class="container">
-        <!-- <div class="row rowSeven">
-            <div class="col-sm-12 text-center rowSevenTagLine">
-                <h2 class="font-weight-bold">OUR BUSINESS FORMATION OPTIONS</h2>
-                <p class="font-weight-bold rowSevengenText">Choose from one of the options below & form your business
-                    today!</p>
-            </div>
-            <div class="card-group">
-                <div class="card cardOne">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-center font-weight-bold">CORPORATION</h5>
-                        <p class="card-text text-center">$400</p>
-                        <hr>
-                        <ul>
-                            <li class="cardLineItems"><span></span>Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary getStartedBtn text-center">GET STARTED</a>
-                    </div>
-                </div>
-                <div class="card cardTwo mostPopularCard shadow-sm">
-                    <div class="card-header text-center font-weight-bold">
-                        MOST POPULAR
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-center font-weight-bold">LLC</h5>
-                        <p class="card-text text-center">$400</p>
-                        <hr>
-                        <ul>
-                            <li class="cardLineItems"><span></span>Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary getStartedBtn text-center">GET STARTED</a>
-                    </div>
-                </div>
-                <div class="card cardThree">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-center font-weight-bold">NONPROFIT</h5>
-                        <p class="card-text text-center">$400</p>
-                        <hr>
-                        <ul>
-                            <li class="cardLineItems"><span></span>Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                            <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary getStartedBtn text-center">GET STARTED</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="row rowSeven">
             <div class="col-sm-12 text-center rowSevenTagLine" style="margin-bottom: 300px">
                 <h2 class="font-weight-bold">OUR BUSINESS FORMATION OPTIONS</h2>
@@ -515,11 +461,7 @@
                     Choose from one of the options below & form your business today!
                 </p>
             </div>
-
-            <div class="container text-center cardLinks">
-                <!-- <a href="#" class="cardLinks" id="llcLink">LLC </a>|
-                <a href="#" class="cardLinks" id="corpLink">Corporation </a> |
-                <a href="#" class="cardLinks" id="nonprofitLink">Nonprofit </a> | -->
+            <div class="container text-center cardLinks d-block d-md-none">
                 <div class="btn-group btn-group-toggle col-12" data-toggle="buttons" role="group"
                     aria-label="Basic example">
                     <button type="button" id="llcLink" class="btn btn-secondary llcCardLink">
@@ -596,7 +538,7 @@
     <div class="container">
         <div class="row rowEight">
             <div class="col-12 text-center">
-                <h1 class="font-weight-bold">
+                <h1 class="font-weight-bold rowEightHeader">
                     THERES NEVER BEEN A BETTER<br />
                     TIME TO YOUR BUSINESS
                 </h1>
@@ -609,15 +551,25 @@
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
     <div class="container">
-        <footer>
-            <div class="row" style="padding: 2% 5% 2% 5%">
-                <div class="col-sm-2">
+        <footer class="footer">
+            <div class="row">
+                <div class="col-12 col-sm-2">
                     <img src="/assets/assets-logo.svg" alt="assets-log" />
                 </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <a class="btn btn-social-icon btn-vimeo" href="http://twitter.com/">
+                        <i class="fab fa-wordpress"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-vimeo" href="http://youtube.com/">
+                        <i class="fab fa-js-square"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-vimeo" href="http://twitter.com/">
+                        <i class="fab fa-drupal"></i>
+                    </a>
+                </div>
                 <div class="col-sm-4"></div>
-                <div class="col-sm-4"></div>
-                <div class="col-sm-2">
-                    <p style="font-size: 10px">
+                <div class="col-sm-2 copyright">
+                    <p class="copyrightText">
                         2019 <i class="fas fa-copyright" aria-hidden="true"></i> Copyright
                         Capitol Hill Business Formation
                     </p>
