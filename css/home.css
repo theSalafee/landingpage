@@ -304,7 +304,8 @@
     border: none;
     box-shadow: none; }
   .rowSeven .cardLinks {
-    color: #86bfca; }
+    color: #86bfca;
+    margin-top: 20%; }
   .rowSeven .card-group .card {
     max-width: 400px; }
   .rowSeven .card-group .getStartedBtn {
@@ -348,13 +349,15 @@
     border-radius: 0px;
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.308);
-    color: white; }
+    color: white;
+    width: 250px; }
   .rowEight .getStartedBtn {
     border: 0;
     border-radius: 0px;
     font-weight: bolder;
     color: white;
-    background-color: #86bfca; }
+    background-color: #86bfca;
+    width: 250px; }
 
 .footer {
   padding: 10% 5% 5% 5%;
