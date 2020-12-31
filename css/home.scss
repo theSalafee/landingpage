@@ -427,12 +427,18 @@ $secondary-color: #86bfca;
             letter-spacing: 1px;
         }
     }
-    .cardLinks{
-color: $secondary-color;
+
+    .btn {
+        background: none;
+        color: $secondary-color;
+        border: none;
+    }
+    .cardLinks {
+        color: $secondary-color;
     }
 
     .card-group {
-        .card{
+        .card {
             max-width: 400px;
         }
         .getStartedBtn {

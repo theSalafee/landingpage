@@ -295,6 +295,10 @@
     .rowSeven .rowSevenTagLine .rowSevengenText {
       font-family: "Playfair Display", serif;
       letter-spacing: 1px; }
+  .rowSeven .btn {
+    background: none;
+    color: #86bfca;
+    border: none; }
   .rowSeven .cardLinks {
     color: #86bfca; }
   .rowSeven .card-group .card {
