@@ -9,6 +9,7 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
+
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
@@ -108,6 +109,10 @@ $secondary-color: #86bfca;
         color: $primary-color;
         // margin: 0 0 10% 0;
     }
+
+      .rowOneParagraph {
+            font-size: 3.5vw;
+        }
 
     @media (min-width: 576px) and (max-width: 1200px) {
         .rowOneLeft {
@@ -217,6 +222,12 @@ $secondary-color: #86bfca;
     .tabHeader {
         color: $primary-color;
     }
+
+
+    .mainContent{
+        font-size: 3.5vw;
+    }
+
     .llcInfoBtn {
         background-color: $secondary-color;
         border-radius: 0;
@@ -230,14 +241,14 @@ $secondary-color: #86bfca;
         li {
             padding: 0 0 20px 10px;
             list-style-position: inside;
+                    font-size: 3.5vw;
+
         }
     }
 }
 
 .rowFive {
     background-color: $pale-color;
-
-    // padding: 5% 5% 5% 5%;
 
     .capitolBldImage {
         object-fit: cover;
@@ -266,6 +277,10 @@ $secondary-color: #86bfca;
             //letter-spacing: 5px;
             color: $primary-color;
             font-size: 1.5rem;
+        }
+        .mainContent{
+        font-size: 3.5vw;
+
         }
 
         .content {
@@ -297,6 +312,11 @@ $secondary-color: #86bfca;
         font-size: 10px;
         margin-left: -40px;
     }
+
+            .mainContent{
+        font-size: 3.5vw;
+
+        }
 }
 
 .rowSix {

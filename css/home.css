@@ -73,6 +73,8 @@
     font-family: "Playfair Display", serif;
     font-size: 4rem;
     color: #294243; }
+  .rowOne .rowOneParagraph {
+    font-size: 3.5vw; }
   @media (min-width: 576px) and (max-width: 1200px) {
     .rowOne .rowOneLeft {
       font-size: 5vw;
@@ -156,6 +158,8 @@
   margin-bottom: 200px; }
   .rowFour .tabHeader {
     color: #294243; }
+  .rowFour .mainContent {
+    font-size: 3.5vw; }
   .rowFour .llcInfoBtn {
     background-color: #86bfca;
     border-radius: 0;
@@ -165,7 +169,8 @@
     padding: 12px; }
   .rowFour .rowFourList li {
     padding: 0 0 20px 10px;
-    list-style-position: inside; }
+    list-style-position: inside;
+    font-size: 3.5vw; }
 
 .rowFive {
   background-color: #eff1f2; }
@@ -192,6 +197,8 @@
         margin-top: 20%;
         color: #294243;
         font-size: 1.5rem; }
+      .rowFive .mainContent {
+        font-size: 3.5vw; }
       .rowFive .content {
         margin-bottom: 5%; } }
   .rowFive .rowFiveheaderRight {
@@ -211,6 +218,8 @@
     padding: 4px 6px 4px 6px;
     font-size: 10px;
     margin-left: -40px; }
+  .rowFive .mainContent {
+    font-size: 3.5vw; }
 
 .rowSix {
   background-color: #294243;

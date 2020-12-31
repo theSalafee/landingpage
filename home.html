@@ -162,7 +162,7 @@
         <div class="row rowFour llcFormationTab">
             <div class="col-12 col-sm-7 col-md-7">
                 <h3 class="font-weight-bold tabHeader">LLC FORMATION</h3>
-                <p>
+                <p class="mainContent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
                     et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
@@ -197,7 +197,7 @@
         <div class="row rowFour corpFormationTab">
             <div class="col-12 col-sm-7 col-md-7">
                 <h3 class="font-weight-bold tabHeader">CORPORATION FORMATION</h3>
-                <p>
+                <p class="mainContent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
                     et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
@@ -232,7 +232,7 @@
         <div class="row rowFour nonprofitFormationTab">
             <div class="col-12 col-sm-7 col-md-7">
                 <h3 class="font-weight-bold tabHeader">NONPROFIT FORMATION</h3>
-                <p>
+                <p class="mainContent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
                     et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
@@ -282,12 +282,12 @@
                     How to start your own business in Washington D.C
                 </p>
                 <br />
-                <p>
+                <p class="mainContent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
                     et ligula ullamcorper malesuada proin libero nunc.
                 </p>
-                <ul>
+                <ul class="mainContent">
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>consectetur adipiscing elit</li>
                     <li>Lorem ipsum dolor sit amet</li>
@@ -453,7 +453,8 @@
     <!-----------------------------------row seven-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="container">
+    <!--Visible on mobile only-->
+    <div class="container d-block d-sm-none">
         <div class="row rowSeven">
             <div class="col-sm-12 text-center rowSevenTagLine">
                 <h2 class="font-weight-bold">OUR BUSINESS FORMATION OPTIONS</h2>
@@ -512,6 +513,86 @@
                     </div>
                 </div>
                 <div class="card mostPopularCard shadow-sm" id="nonprofitCard">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">NONPROFIT</h5>
+                        <p class="cardPrice text-center">
+                            <span style="font-size: 40px">$</span>400
+                        </p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Visible on desktop only-->
+        <div class="container d-none d-sm-block">
+        <div class="row rowSeven">
+            <div class="col-sm-12 text-center rowSevenTagLine">
+                <h2 class="font-weight-bold">OUR BUSINESS FORMATION OPTIONS</h2>
+                <p class="font-weight-bold rowSevengenText">
+                    Choose from one of the options below & form your business today!
+                </p>
+            </div>
+            <!-- <div class="container text-center cardLinks d-block d-md-none">
+                <div class="btn-group btn-group-toggle col-12" data-toggle="buttons" role="group"
+                    aria-label="Basic example">
+                    <button type="button" id="llcLink" class="btn btn-secondary llcCardLink">
+                        LLC
+                    </button>
+                    |<button type="button" id="corpLink" class="btn btn-secondary corpCardLink">
+                        Corporation
+                    </button>
+                    |<button type="button" id="nonprofitLink" class="btn btn-secondary nonprofitCardLink">
+                        Nonprofit
+                    </button>
+                </div>
+            </div> -->
+            <div class="card-group col-12">
+                <div class="card mostPopularCard shadow-sm" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">CORPORATION</h5>
+                        <p class="cardPrice text-center">
+                            <span>$</span>400
+                        </p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
+                </div>
+                <div class="card mostPopularCard shadow-sm" id="llcCard">
+                    <p class="card-header text-center">Most Popular</p>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">LLC</h5>
+                        <p class="cardPrice text-center">
+                            <span>$</span>400
+                        </p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
+                </div>
+                <div class="card mostPopularCard shadow-sm">
                     <div class="card-body text-center">
                         <h5 class="card-title text-center">NONPROFIT</h5>
                         <p class="cardPrice text-center">
