@@ -6,7 +6,8 @@
   body {
     max-width: 1200px;
     font-size: 0.6rem;
-    color: #294243; } }
+    color: #294243;
+    font-size: clamp(18px, 2vw); } }
 
 .container {
   max-width: 1200px;
@@ -55,6 +56,9 @@
     width: 250px;
     height: 50px;
     padding: 12px; }
+  @media (min-width: 1px) and (max-width: 647px) {
+    .jumbotron .learnMoreBtn {
+      margin-bottom: 5%; } }
   .jumbotron .learnMoreBtn {
     opacity: 0.6;
     border-radius: 0px;
@@ -70,15 +74,20 @@
     background-color: #86bfca; }
 
 .rowOne {
-  font-size: 1rem;
   margin: 100px 0 75px 0; }
   .rowOne .rowOneLeft {
     font-family: "Playfair Display", serif;
-    font-size: 4rem;
+    font-size: 10vw;
     color: #294243; }
   .rowOne .rowOneParagraph {
-    font-size: 3.5vw; }
-  @media (min-width: 576px) and (max-width: 1200px) {
+    font-size: 2.5vw; }
+  @media (min-width: 576px) and (max-width: 767) {
+    .rowOne .rowOneLeft {
+      font-size: 5vw;
+      text-align: left; }
+    .rowOne .rowOneParagraph {
+      font-size: 1.5vw; } }
+  @media (min-width: 768px) and (max-width: 1200px) {
     .rowOne .rowOneLeft {
       font-size: 5vw;
       text-align: right; }
@@ -96,6 +105,9 @@
   .rowTwo .rowTwoOffer {
     font-family: "Playfair Display", serif;
     font-size: 4vw; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowTwo .rowTwoHeader {
+      font-size: 1.25rem; } }
   @media (min-width: 576px) and (max-width: 1200px) {
     .rowTwo {
       font-size: 100%;
@@ -121,13 +133,15 @@
     width: inherit;
     /* display: inline-block; */ }
   .rowThree secondary.rowThreeBtns {
-    width: 250px;
+    width: 28%;
+    height: 28%;
     margin: 0 0 25px 0; } }
 
 .rowThree .rowThreeBtns {
   border-radius: 0;
   border: 0;
-  padding: 20px 50px 20px 50px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   background-color: #eff1f2;
   color: #a3a3a3;
   font-size: 20%;
@@ -163,6 +177,21 @@
     color: #294243; }
   .rowFour .mainContent {
     font-size: 3.5vw; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowFour {
+      margin-bottom: 10%; }
+      .rowFour .rowFour {
+        padding: 0 0 0 12%; }
+      .rowFour .mainContent {
+        padding: 0 4% 0 12%;
+        font-size: 1.5vw; }
+      .rowFour .tabHeader {
+        font-size: 1.5vw;
+        padding: 0 5% 0 12%; }
+      .rowFour .llcInfoBtn {
+        margin: 0 5% 0 12%; }
+      .rowFour .rowFourBtnLabel {
+        padding: 0 5% 0 12%; } }
   .rowFour .llcInfoBtn {
     background-color: #86bfca;
     border-radius: 0;
@@ -174,6 +203,9 @@
     padding: 0 0 20px 10px;
     list-style-position: inside;
     font-size: 3.5vw; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowFour .rowFourList li {
+      font-size: 1.5vw; } }
 
 .rowFive {
   background-color: #eff1f2; }
@@ -185,33 +217,34 @@
     margin-top: -175px;
     margin-left: -15px;
     margin-bottom: 75px; }
-  @media (min-width: 768px) and (max-width: 1200px) {
+  .rowFive .howToText {
+    font-family: "Playfair Display", serif;
+    font-size: 4vw;
+    margin: 0; }
+  .rowFive .mainContent {
+    font-size: 3.5vw; }
+  @media (min-width: 576px) and (max-width: 1200px) {
     .rowFive {
       font-size: 0.8rem; }
       .rowFive .capitolBldImage {
         object-fit: cover;
         border-radius: 50%;
         height: auto;
-        width: 65%;
+        width: 85%;
         margin-top: 20%;
         margin-left: 10%;
         margin-bottom: 20%; }
       .rowFive .rowFiveheaderRight {
         margin-top: 20%;
+        letter-spacing: 5px;
         color: #294243;
-        font-size: 1.5rem; }
+        font-size: 1.25rem; }
       .rowFive .mainContent {
-        font-size: 3.5vw; }
+        font-size: 1.5vw; }
       .rowFive .content {
-        margin-bottom: 5%; } }
-  .rowFive .rowFiveheaderRight {
-    letter-spacing: 5px;
-    color: #294243;
-    font-size: 1.2rem; }
-  .rowFive .howToText {
-    font-family: "Playfair Display", serif;
-    font-size: 4vw;
-    margin: 0; }
+        margin-bottom: 5%; }
+      .rowFive .howToText {
+        font-size: 1.3vw; } }
   .rowFive ul {
     list-style: none;
     margin-bottom: 50px; }
@@ -223,8 +256,6 @@
     font-size: 10px;
     margin-left: -40px;
     margin-right: 10px; }
-  .rowFive .mainContent {
-    font-size: 3.5vw; }
 
 .rowSix {
   background-color: #294243;
@@ -238,6 +269,12 @@
     font-family: "Playfair Display", serif;
     font-size: 4vw;
     margin-bottom: 10%; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowSix .findAnswersText {
+      font-size: 1.3vw; }
+    .rowSix .rowSixHeader {
+      font-size: 1.25rem;
+      margin-top: 20%; } }
   .rowSix .card {
     background-color: #3f6061;
     border-radius: 0;
@@ -254,6 +291,9 @@
     color: whitesmoke; }
   .rowSix .card-header > h6 {
     font-size: 3.5vw; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowSix .card-header > h6 {
+      font-size: 1vw; } }
   .rowSix .card-body {
     background-color: #3f6061;
     font-size: 12px; }
@@ -291,15 +331,16 @@
     text-decoration: none; }
   .rowSix .addBorder {
     border: 1px solid white; }
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .rowSix {
-      height: 900px; }
-      .rowSix .accordionText {
-        font-size: 0.8rem; }
-      .rowSix .rowSixHeader {
-        margin-top: 10%; }
-      .rowSix .findAnswersText {
-        margin-bottom: 5%; } }
+  .rowSix .accordionText {
+    font-size: 0.6rem; }
+  .rowSix .rowSixHeader {
+    margin-top: 10%; }
+  .rowSix .findAnswersText {
+    margin-bottom: 5%; }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .row.rowSix {
+    height: 800px; } }
 
 .rowSeven {
   background-color: #eff1f2;
@@ -323,6 +364,17 @@
   .rowSeven .cardLinks {
     color: #86bfca;
     margin-top: 20%; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowSeven .cardLinks {
+      color: #86bfca;
+      margin-top: 20%;
+      margin-bottom: 10%; }
+    .rowSeven .card-group .card {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .rowSeven .card-group .mostPopularCard {
+      margin-bottom: 10%; } }
   .rowSeven .card-group .card {
     max-width: 400px;
     margin-top: -30%; }
@@ -355,6 +407,10 @@
     font-size: 14px;
     letter-spacing: 3px;
     color: white; }
+  .rowSeven .card-group .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 .rowEight {
   background-color: #294243;

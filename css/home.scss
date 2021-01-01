@@ -14,6 +14,7 @@ $secondary-color: #86bfca;
         max-width: 1200px;
         font-size: 0.6rem;
         color: $primary-color;
+        font-size: clamp(18px, 2vw);
     }
 }
 
@@ -34,9 +35,9 @@ $secondary-color: #86bfca;
     padding: 0 5% 0 5%;
 }
 
-    // <!-----------------------------------Header-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------Header-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 
 .navbar {
     .navbar-toggler {
@@ -51,9 +52,9 @@ $secondary-color: #86bfca;
     }
 }
 
-        // <!-----------------------------------Jumbotron-------------------------------->
-        // <!---------------------------------------------------------------------------->
-        // <!---------------------------------------------------------------------------->
+// <!-----------------------------------Jumbotron-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 
 .jumbotron {
     background: url("/assets/assets-headerImg.png") no-repeat;
@@ -90,6 +91,12 @@ $secondary-color: #86bfca;
         padding: 12px;
     }
 
+    @media (min-width: 1px) and (max-width: 647px) {
+        .learnMoreBtn {
+            margin-bottom: 5%;
+        }
+    }
+
     .learnMoreBtn {
         opacity: 0.6;
         border-radius: 0px;
@@ -108,26 +115,36 @@ $secondary-color: #86bfca;
     }
 }
 
-    // <!-----------------------------------row one-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row one-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowOne {
-    font-size: 1rem;
+    // font-size: 1rem;
     // padding: 2% 4% 2% 4%;
     margin: 100px 0 75px 0;
 
     .rowOneLeft {
         font-family: $playfairDisplay;
-        font-size: 4rem;
+        font-size: 10vw;
         color: $primary-color;
         // margin: 0 0 10% 0;
     }
 
     .rowOneParagraph {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 
-    @media (min-width: 576px) and (max-width: 1200px) {
+    @media (min-width: 576px) and (max-width: 767) {
+        .rowOneLeft {
+            font-size: 5vw;
+            text-align: left;
+        }
+        .rowOneParagraph {
+            font-size: 1.5vw;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
         .rowOneLeft {
             font-size: 5vw;
             text-align: right;
@@ -138,9 +155,9 @@ $secondary-color: #86bfca;
     }
 }
 
-    // <!-----------------------------------row two-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row two-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowTwo {
     font-size: 4vw;
 
@@ -158,6 +175,12 @@ $secondary-color: #86bfca;
     }
 
     @media (min-width: 576px) and (max-width: 1200px) {
+        .rowTwoHeader {
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
         font-size: 100%;
         text-align: center;
 
@@ -168,9 +191,9 @@ $secondary-color: #86bfca;
     }
 }
 
-    // <!-----------------------------------row three-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row three-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowThree {
     #show_corpFormationTab {
         padding-left: 0;
@@ -191,7 +214,9 @@ $secondary-color: #86bfca;
             /* display: inline-block; */
         }
         secondary.rowThreeBtns {
-            width: 250px;
+            // width: 250px;
+            width: 28%;
+            height: 28%;
             margin: 0 0 25px 0;
         }
     }
@@ -199,7 +224,9 @@ $secondary-color: #86bfca;
     .rowThreeBtns {
         border-radius: 0;
         border: 0;
-        padding: 20px 50px 20px 50px;
+        // padding: 20px 50px 20px 50px;
+        padding-bottom: 12px;
+        padding-top: 12px;
         background-color: #eff1f2;
         color: rgb(163, 163, 163);
         font-size: 20%;
@@ -236,17 +263,44 @@ $secondary-color: #86bfca;
     }
 }
 
-    // <!-----------------------------------row four-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row four-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowFour {
     margin-bottom: 200px;
+
     .tabHeader {
         color: $primary-color;
     }
 
     .mainContent {
         font-size: 3.5vw;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        margin-bottom: 10%;
+
+        .rowFour {
+            padding: 0 0 0 12%;
+        }
+        .mainContent {
+            padding: 0 4% 0 12%;
+
+            font-size: 1.5vw;
+        }
+
+        .tabHeader {
+            font-size: 1.5vw;
+            padding: 0 5% 0 12%;
+        }
+
+        .llcInfoBtn {
+            margin: 0 5% 0 12%;
+        }
+
+        .rowFourBtnLabel {
+            padding: 0 5% 0 12%;
+        }
     }
 
     .llcInfoBtn {
@@ -265,11 +319,21 @@ $secondary-color: #86bfca;
             font-size: 3.5vw;
         }
     }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        .rowFourList {
+            li {
+                // padding: 0 0 20px 10px;
+                // list-style-position: inside;
+                font-size: 1.5vw;
+            }
+        }
+    }
 }
 
-    // <!-----------------------------------row five-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row five-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowFive {
     background-color: $pale-color;
 
@@ -283,13 +347,23 @@ $secondary-color: #86bfca;
         margin-bottom: 75px;
     }
 
-    @media (min-width: 768px) and (max-width: 1200px) {
+    .howToText {
+        font-family: $playfairDisplay;
+        font-size: 4vw;
+        margin: 0;
+    }
+
+    .mainContent {
+        font-size: 3.5vw;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
         font-size: 0.8rem;
         .capitolBldImage {
             object-fit: cover;
             border-radius: 50%;
             height: auto;
-            width: 65%;
+            width: 85%;
             margin-top: 20%;
             margin-left: 10%;
             margin-bottom: 20%;
@@ -297,30 +371,28 @@ $secondary-color: #86bfca;
 
         .rowFiveheaderRight {
             margin-top: 20%;
-            //letter-spacing: 5px;
+            letter-spacing: 5px;
             color: $primary-color;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
         .mainContent {
-            font-size: 3.5vw;
+            font-size: 1.5vw;
         }
 
         .content {
             margin-bottom: 5%;
         }
+
+        .howToText {
+            font-size: 1.3vw;
+        }
     }
 
-    .rowFiveheaderRight {
-        letter-spacing: 5px;
-        color: $primary-color;
-        font-size: 1.2rem;
-    }
-
-    .howToText {
-        font-family: $playfairDisplay;
-        font-size: 4vw;
-        margin: 0;
-    }
+    // .rowFiveheaderRight {
+    //     letter-spacing: 5px;
+    //     color: $primary-color;
+    //     font-size: 1.2rem;
+    // }
 
     ul {
         list-style: none;
@@ -336,15 +408,11 @@ $secondary-color: #86bfca;
         margin-left: -40px;
         margin-right: 10px;
     }
-
-    .mainContent {
-        font-size: 3.5vw;
-    }
 }
 
-    // <!-----------------------------------row six---------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row six---------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowSix {
     background-color: $primary-color;
     color: whitesmoke;
@@ -359,6 +427,17 @@ $secondary-color: #86bfca;
         font-family: $playfairDisplay;
         font-size: 4vw;
         margin-bottom: 10%;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        .findAnswersText {
+            font-size: 1.3vw;
+        }
+
+        .rowSixHeader {
+            font-size: 1.25rem;
+            margin-top: 20%;
+        }
     }
 
     .card {
@@ -385,6 +464,12 @@ $secondary-color: #86bfca;
 
     .card-header > h6 {
         font-size: 3.5vw;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        .card-header > h6 {
+            font-size: 1vw;
+        }
     }
 
     .card-body {
@@ -447,25 +532,28 @@ $secondary-color: #86bfca;
         border: 1px solid white;
     }
 
-    @media (min-width: 768px) and (max-width: 1200px) {
-        height: 900px;
-        .accordionText {
-            font-size: 0.8rem;
-        }
+    .accordionText {
+        font-size: 0.6rem;
+    }
 
-        .rowSixHeader {
-            margin-top: 10%;
-        }
+    .rowSixHeader {
+        margin-top: 10%;
+    }
 
-        .findAnswersText {
-            margin-bottom: 5%;
-        }
+    .findAnswersText {
+        margin-bottom: 5%;
     }
 }
 
-    // <!-----------------------------------row seven-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+@media (min-width: 576px) and (max-width: 1200px) {
+    .row.rowSix {
+        height: 800px;
+    }
+}
+
+// <!-----------------------------------row seven-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowSeven {
     background-color: $pale-color;
     height: 1200px;
@@ -496,6 +584,25 @@ $secondary-color: #86bfca;
     .cardLinks {
         color: $secondary-color;
         margin-top: 20%;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        .cardLinks {
+            color: $secondary-color;
+            margin-top: 20%;
+            margin-bottom: 10%;
+        }
+        .card-group {
+            .card {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .mostPopularCard {
+                margin-bottom: 10%;
+            }
+        }
     }
 
     .card-group {
@@ -544,14 +651,18 @@ $secondary-color: #86bfca;
                 color: white;
             }
         }
+
+        .card {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
-//https://codepen.io/Corsurath/pen/abbxNpj
-
-    // <!-----------------------------------row eight-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------row eight-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .rowEight {
     background-color: $primary-color;
     color: whitesmoke;
@@ -580,9 +691,9 @@ $secondary-color: #86bfca;
     }
 }
 
-    // <!-----------------------------------footer-------------------------------->
-    // <!---------------------------------------------------------------------------->
-    // <!---------------------------------------------------------------------------->
+// <!-----------------------------------footer-------------------------------->
+// <!---------------------------------------------------------------------------->
+// <!---------------------------------------------------------------------------->
 .footer {
     padding: 10% 5% 5% 5%;
     height: 200px;
