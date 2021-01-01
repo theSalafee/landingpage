@@ -622,15 +622,20 @@ $secondary-color: #86bfca;
             }
 
             .card.mostPopularCard.shadow-sm.cardOne {
-                margin-right: -15px;
+                margin-right: -19px;
             }
 
-             .card.mostPopularCard.shadow-sm.cardTwo {
+            .card.mostPopularCard.shadow-sm.cardTwo {
                 z-index: 1;
+                transition: all 0.8s ease-in-out;
             }
 
-             .card.mostPopularCard.shadow-sm.cardThree {
-                margin-left: -15px;
+            .card.mostPopularCard.shadow-sm.cardTwo:hover {
+                transform: scale(1.1);
+            }
+
+            .card.mostPopularCard.shadow-sm.cardThree {
+                margin-left: -19px;
             }
         }
     }
@@ -651,19 +656,18 @@ $secondary-color: #86bfca;
             padding: 12px;
         }
 
-         @media (min-width: 576px) and (max-width: 1200px) {
-            .cardOne, .cardThree{
-                transform: scale(0.9)
+        @media (min-width: 576px) and (max-width: 1200px) {
+            .cardOne,
+            .cardThree {
+                transform: scale(0.9);
             }
 
-             .getStartedBtn {
-                 width: 65%;
-                 height: 50%;
-                 font-size: 1vw;
-             }
-         }
-
-         
+            .getStartedBtn {
+                width: 65%;
+                height: 50%;
+                font-size: 1vw;
+            }
+        }
 
         .card-title {
             color: $secondary-color;
@@ -702,17 +706,13 @@ $secondary-color: #86bfca;
             margin-right: auto;
         }
     }
-
 }
 
 @media (min-width: 576px) and (max-width: 1200px) {
     .rowSeven {
         height: 900px;
     }
-
-    
 }
-
 
 // <!-----------------------------------row eight-------------------------------->
 // <!---------------------------------------------------------------------------->

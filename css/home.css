@@ -386,11 +386,14 @@
       .rowSeven .card-group .mostPopularCard {
         margin-bottom: 10%; }
       .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardOne {
-        margin-right: -15px; }
+        margin-right: -19px; }
       .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardTwo {
-        z-index: 1; }
+        z-index: 1;
+        transition: all 0.8s ease-in-out; }
+      .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardTwo:hover {
+        transform: scale(1.1); }
       .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardThree {
-        margin-left: -15px; } }
+        margin-left: -19px; } }
   .rowSeven .card-group .card {
     max-width: 400px; }
   .rowSeven .card-group .getStartedBtn {
@@ -403,7 +406,8 @@
     height: 50px;
     padding: 12px; }
   @media (min-width: 576px) and (max-width: 1200px) {
-    .rowSeven .card-group .cardOne, .rowSeven .card-group .cardThree {
+    .rowSeven .card-group .cardOne,
+    .rowSeven .card-group .cardThree {
       transform: scale(0.9); }
     .rowSeven .card-group .getStartedBtn {
       width: 65%;
