@@ -130,8 +130,7 @@
   .rowThree .rowThree div.btn-group {
     margin: 0 auto;
     text-align: center;
-    width: inherit;
-    /* display: inline-block; */ }
+    width: inherit; }
   .rowThree secondary.rowThreeBtns {
     width: 28%;
     height: 28%;
@@ -375,8 +374,8 @@
   @media (min-width: 576px) and (max-width: 1200px) {
     .rowSeven .cardLinks {
       color: #86bfca;
-      margin-top: 20%;
-      margin-bottom: 10%; }
+      margin-top: 15%;
+      margin-bottom: -5%; }
     .rowSeven .card-group {
       height: 60%; }
       .rowSeven .card-group .card {
@@ -472,19 +471,30 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%; }
+  .footer .socialMediaLinks {
+    text-align: center; }
   .footer .btn-social-icon {
     background-color: #86bfca;
     border: none; }
   .footer .copyrightText {
     font-size: 1px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); }
+    text-align: center; }
   .footer .fa,
   .footer .fas {
     font-weight: 500; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .footer img {
+      width: 100%;
+      display: block;
+      margin-left: 0;
+      margin-right: 0; }
+    .footer .socialMediaLinks {
+      text-align: right; }
+    .footer .copyrightText {
+      font-size: 1px;
+      text-align: right; } }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .footer {
+    padding: 5% 5% 5% 5%;
+    height: 150px; } }

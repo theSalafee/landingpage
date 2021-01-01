@@ -38,7 +38,6 @@ $secondary-color: #86bfca;
 // <!-----------------------------------Header-------------------------------->
 // <!---------------------------------------------------------------------------->
 // <!---------------------------------------------------------------------------->
-
 .navbar {
     .navbar-toggler {
         border: none;
@@ -119,15 +118,12 @@ $secondary-color: #86bfca;
 // <!---------------------------------------------------------------------------->
 // <!---------------------------------------------------------------------------->
 .rowOne {
-    // font-size: 1rem;
-    // padding: 2% 4% 2% 4%;
     margin: 100px 0 75px 0;
 
     .rowOneLeft {
         font-family: $playfairDisplay;
         font-size: 10vw;
         color: $primary-color;
-        // margin: 0 0 10% 0;
     }
 
     .rowOneParagraph {
@@ -211,10 +207,8 @@ $secondary-color: #86bfca;
             margin: 0 auto;
             text-align: center;
             width: inherit;
-            /* display: inline-block; */
         }
         secondary.rowThreeBtns {
-            // width: 250px;
             width: 28%;
             height: 28%;
             margin: 0 0 25px 0;
@@ -224,7 +218,6 @@ $secondary-color: #86bfca;
     .rowThreeBtns {
         border-radius: 0;
         border: 0;
-        // padding: 20px 50px 20px 50px;
         padding-bottom: 12px;
         padding-top: 12px;
         background-color: #eff1f2;
@@ -323,8 +316,6 @@ $secondary-color: #86bfca;
     @media (min-width: 576px) and (max-width: 1200px) {
         .rowFourList {
             li {
-                // padding: 0 0 20px 10px;
-                // list-style-position: inside;
                 font-size: 1.5vw;
             }
         }
@@ -388,12 +379,6 @@ $secondary-color: #86bfca;
         }
     }
 
-    // .rowFiveheaderRight {
-    //     letter-spacing: 5px;
-    //     color: $primary-color;
-    //     font-size: 1.2rem;
-    // }
-
     ul {
         list-style: none;
         margin-bottom: 50px;
@@ -456,9 +441,7 @@ $secondary-color: #86bfca;
     .card-header {
         background-color: #3f6061;
         border: 1px white solid;
-        // border-top: 1px white solid;
         border-radius: 0;
-        // border-bottom: 0;
         color: whitesmoke;
     }
 
@@ -474,9 +457,6 @@ $secondary-color: #86bfca;
 
     .card-body {
         background-color: #3f6061;
-        // border: 1px white solid;
-        // border-top: 0;
-
         font-size: 12px;
     }
 
@@ -486,7 +466,6 @@ $secondary-color: #86bfca;
 
     #accordion ul li:first-child div {
         display: block;
-        // border-top: 3px solid #ffcdcd;
         border-radius: 0;
     }
 
@@ -604,13 +583,11 @@ $secondary-color: #86bfca;
     @media (min-width: 576px) and (max-width: 1200px) {
         .cardLinks {
             color: $secondary-color;
-            margin-top: 20%;
-            margin-bottom: 10%;
+            margin-top: 15%;
+            margin-bottom: -5%;
         }
         .card-group {
             height: 60%;
-            // margin-top: -15%;
-            // margin-bottom: -45%;
             .card {
                 display: block;
                 margin-left: auto;
@@ -643,7 +620,6 @@ $secondary-color: #86bfca;
     .card-group {
         .card {
             max-width: 400px;
-            // margin-top: -30%;
         }
         .getStartedBtn {
             border: 0;
@@ -760,6 +736,10 @@ $secondary-color: #86bfca;
         margin-bottom: 5%;
     }
 
+    .socialMediaLinks {
+        text-align: center;
+    }
+
     .btn-social-icon {
         background-color: $secondary-color;
         border: none;
@@ -767,18 +747,38 @@ $secondary-color: #86bfca;
 
     .copyrightText {
         font-size: 1px;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
+        text-align: center;
     }
 
     .fa,
     .fas {
         font-weight: 500;
+    }
+
+    @media (min-width: 576px) and (max-width: 1200px) {
+        img {
+            width: 100%;
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+            // margin-bottom: 5%;
+        }
+
+        .socialMediaLinks {
+            text-align: right;
+        }
+
+            .copyrightText {
+        font-size: 1px;
+        text-align: right;
+    }
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .footer {
+        padding: 5% 5% 5% 5%;
+        height: 150px;
     }
 }
