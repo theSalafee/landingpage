@@ -384,7 +384,13 @@
         margin-left: auto;
         margin-right: auto; }
       .rowSeven .card-group .mostPopularCard {
-        margin-bottom: 10%; } }
+        margin-bottom: 10%; }
+      .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardOne {
+        margin-right: -15px; }
+      .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardTwo {
+        z-index: 1; }
+      .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardThree {
+        margin-left: -15px; } }
   .rowSeven .card-group .card {
     max-width: 400px; }
   .rowSeven .card-group .getStartedBtn {
@@ -396,6 +402,13 @@
     width: 250px;
     height: 50px;
     padding: 12px; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowSeven .card-group .cardOne, .rowSeven .card-group .cardThree {
+      transform: scale(0.9); }
+    .rowSeven .card-group .getStartedBtn {
+      width: 65%;
+      height: 50%;
+      font-size: 1vw; } }
   .rowSeven .card-group .card-title {
     color: #86bfca;
     padding-top: 30px;
