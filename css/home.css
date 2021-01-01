@@ -354,6 +354,14 @@
   .rowSeven .rowSevengenText {
     font-family: "Playfair Display", serif;
     font-size: 3vw; }
+  @media (min-width: 576px) and (max-width: 1200px) {
+    .rowSeven .rowSeven {
+      height: 900px; }
+    .rowSeven .rowSevengenText {
+      font-family: "Playfair Display", serif;
+      font-size: 1vw; }
+    .rowSeven .tagLine {
+      font-size: 1.25vw; } }
   .rowSeven .btn {
     background: none;
     color: #86bfca;
@@ -369,15 +377,16 @@
       color: #86bfca;
       margin-top: 20%;
       margin-bottom: 10%; }
-    .rowSeven .card-group .card {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-    .rowSeven .card-group .mostPopularCard {
-      margin-bottom: 10%; } }
+    .rowSeven .card-group {
+      height: 60%; }
+      .rowSeven .card-group .card {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      .rowSeven .card-group .mostPopularCard {
+        margin-bottom: 10%; } }
   .rowSeven .card-group .card {
-    max-width: 400px;
-    margin-top: -30%; }
+    max-width: 400px; }
   .rowSeven .card-group .getStartedBtn {
     border: 0;
     border-radius: 0px;
@@ -411,6 +420,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto; }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .rowSeven {
+    height: 900px; } }
 
 .rowEight {
   background-color: #294243;

@@ -571,6 +571,22 @@ $secondary-color: #86bfca;
         font-size: 3vw;
     }
 
+    @media (min-width: 576px) and (max-width: 1200px) {
+
+        .rowSeven{
+            height: 900px;
+        }
+
+        .rowSevengenText {
+            font-family: $playfairDisplay;
+            font-size: 1vw;
+        }
+
+        .tagLine{
+            font-size: 1.25vw;
+        }
+    }
+
     .btn {
         background: none;
         color: $secondary-color;
@@ -593,6 +609,9 @@ $secondary-color: #86bfca;
             margin-bottom: 10%;
         }
         .card-group {
+            height: 60%;
+            // margin-top: -15%;
+            // margin-bottom: -45%;
             .card {
                 display: block;
                 margin-left: auto;
@@ -608,7 +627,7 @@ $secondary-color: #86bfca;
     .card-group {
         .card {
             max-width: 400px;
-            margin-top: -30%;
+            // margin-top: -30%;
         }
         .getStartedBtn {
             border: 0;
@@ -659,6 +678,13 @@ $secondary-color: #86bfca;
         }
     }
 }
+
+     @media (min-width: 576px) and (max-width: 1200px) {
+
+        .rowSeven{
+            height: 900px;
+        }
+    }
 
 // <!-----------------------------------row eight-------------------------------->
 // <!---------------------------------------------------------------------------->
