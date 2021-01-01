@@ -19,6 +19,9 @@
   padding: 0 0 0 0;
   line-height: 2.5; }
 
+.row {
+  padding: 0 5% 0 5%; }
+
 .navbar .navbar-toggler {
   border: none;
   border-radius: 0;
@@ -92,7 +95,7 @@
     padding-left: 15px; }
   .rowTwo .rowTwoOffer {
     font-family: "Playfair Display", serif;
-    font-size: 20px; }
+    font-size: 4vw; }
   @media (min-width: 576px) and (max-width: 1200px) {
     .rowTwo {
       font-size: 100%;
@@ -207,17 +210,19 @@
     font-size: 1.2rem; }
   .rowFive .howToText {
     font-family: "Playfair Display", serif;
-    font-size: 0.9rem;
+    font-size: 4vw;
     margin: 0; }
   .rowFive ul {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 50px; }
   .rowFive ul li:before {
     content: "✓";
     background-color: #86bfca;
     border-radius: 50%;
     padding: 4px 6px 4px 6px;
     font-size: 10px;
-    margin-left: -40px; }
+    margin-left: -40px;
+    margin-right: 10px; }
   .rowFive .mainContent {
     font-size: 3.5vw; }
 
@@ -231,7 +236,7 @@
     margin-top: 20%; }
   .rowSix .findAnswersText {
     font-family: "Playfair Display", serif;
-    font-size: 0.9rem;
+    font-size: 4vw;
     margin-bottom: 10%; }
   .rowSix .card {
     background-color: #3f6061;
@@ -247,6 +252,8 @@
     border: 1px white solid;
     border-radius: 0;
     color: whitesmoke; }
+  .rowSix .card-header > h6 {
+    font-size: 3.5vw; }
   .rowSix .card-body {
     background-color: #3f6061;
     font-size: 12px; }
@@ -301,10 +308,11 @@
   .rowSeven .rowSevenTagLine {
     height: 0px;
     margin-top: 50px;
-    letter-spacing: 3px; }
-    .rowSeven .rowSevenTagLine .rowSevengenText {
-      font-family: "Playfair Display", serif;
-      letter-spacing: 1px; }
+    letter-spacing: 3px;
+    text-align: left; }
+  .rowSeven .rowSevengenText {
+    font-family: "Playfair Display", serif;
+    font-size: 3vw; }
   .rowSeven .btn {
     background: none;
     color: #86bfca;

@@ -9,7 +9,6 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
-
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
@@ -29,6 +28,10 @@ $secondary-color: #86bfca;
     line-height: 1;
     padding: 0 0 0 0;
     line-height: 2.5;
+}
+
+.row {
+    padding: 0 5% 0 5%;
 }
 
 .navbar {
@@ -110,9 +113,9 @@ $secondary-color: #86bfca;
         // margin: 0 0 10% 0;
     }
 
-      .rowOneParagraph {
-            font-size: 3.5vw;
-        }
+    .rowOneParagraph {
+        font-size: 3.5vw;
+    }
 
     @media (min-width: 576px) and (max-width: 1200px) {
         .rowOneLeft {
@@ -138,7 +141,7 @@ $secondary-color: #86bfca;
 
     .rowTwoOffer {
         font-family: $playfairDisplay;
-        font-size: 20px;
+        font-size: 4vw;
     }
 
     @media (min-width: 576px) and (max-width: 1200px) {
@@ -223,8 +226,7 @@ $secondary-color: #86bfca;
         color: $primary-color;
     }
 
-
-    .mainContent{
+    .mainContent {
         font-size: 3.5vw;
     }
 
@@ -241,8 +243,7 @@ $secondary-color: #86bfca;
         li {
             padding: 0 0 20px 10px;
             list-style-position: inside;
-                    font-size: 3.5vw;
-
+            font-size: 3.5vw;
         }
     }
 }
@@ -278,9 +279,8 @@ $secondary-color: #86bfca;
             color: $primary-color;
             font-size: 1.5rem;
         }
-        .mainContent{
-        font-size: 3.5vw;
-
+        .mainContent {
+            font-size: 3.5vw;
         }
 
         .content {
@@ -296,12 +296,13 @@ $secondary-color: #86bfca;
 
     .howToText {
         font-family: $playfairDisplay;
-        font-size: 0.9rem;
+        font-size: 4vw;
         margin: 0;
     }
 
     ul {
         list-style: none;
+        margin-bottom: 50px;
     }
 
     ul li:before {
@@ -311,12 +312,12 @@ $secondary-color: #86bfca;
         padding: 4px 6px 4px 6px;
         font-size: 10px;
         margin-left: -40px;
+        margin-right: 10px;
     }
 
-            .mainContent{
+    .mainContent {
         font-size: 3.5vw;
-
-        }
+    }
 }
 
 .rowSix {
@@ -331,7 +332,7 @@ $secondary-color: #86bfca;
 
     .findAnswersText {
         font-family: $playfairDisplay;
-        font-size: 0.9rem;
+        font-size: 4vw;
         margin-bottom: 10%;
     }
 
@@ -355,6 +356,10 @@ $secondary-color: #86bfca;
         border-radius: 0;
         // border-bottom: 0;
         color: whitesmoke;
+    }
+
+    .card-header > h6 {
+        font-size: 3.5vw;
     }
 
     .card-body {
@@ -442,11 +447,12 @@ $secondary-color: #86bfca;
         height: 0px;
         margin-top: 50px;
         letter-spacing: 3px;
+        text-align: left;
+    }
 
-        .rowSevengenText {
-            font-family: $playfairDisplay;
-            letter-spacing: 1px;
-        }
+    .rowSevengenText {
+        font-family: $playfairDisplay;
+        font-size: 3vw;
     }
 
     .btn {
@@ -510,7 +516,6 @@ $secondary-color: #86bfca;
             }
         }
     }
-
 }
 
 //https://codepen.io/Corsurath/pen/abbxNpj
@@ -520,8 +525,8 @@ $secondary-color: #86bfca;
     color: whitesmoke;
     padding: 5% 0% 5% 0;
 
-    .rowEightHeader{
-font-size: 1.5rem;
+    .rowEightHeader {
+        font-size: 1.5rem;
     }
 
     .learnMoreBtn {
@@ -539,8 +544,7 @@ font-size: 1.5rem;
         font-weight: bolder;
         color: white;
         background-color: #86bfca;
-                width: 250px;
-
+        width: 250px;
     }
 }
 
