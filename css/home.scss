@@ -724,6 +724,7 @@ $secondary-color: #86bfca;
 // <!-----------------------------------footer-------------------------------->
 // <!---------------------------------------------------------------------------->
 // <!---------------------------------------------------------------------------->
+
 .footer {
     padding: 10% 5% 5% 5%;
     height: 200px;
@@ -750,6 +751,19 @@ $secondary-color: #86bfca;
         text-align: center;
     }
 
+    @media (min-width: 767px) and (max-width: 1200px) {
+        .socialMediaLinks {
+            text-align: right;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1200px) {
+        .copyrightText {
+            font-size: 1px;
+            text-align: right;
+        }
+    }
+
     .fa,
     .fas {
         font-weight: 500;
@@ -763,16 +777,6 @@ $secondary-color: #86bfca;
             margin-right: 0;
             // margin-bottom: 5%;
         }
-
-        .socialMediaLinks {
-            text-align: right;
-        }
-
-            .copyrightText {
-        font-size: 1px;
-        text-align: right;
-    }
-
     }
 }
 

@@ -479,6 +479,13 @@
   .footer .copyrightText {
     font-size: 1px;
     text-align: center; }
+  @media (min-width: 767px) and (max-width: 1200px) {
+    .footer .socialMediaLinks {
+      text-align: right; } }
+  @media (min-width: 767px) and (max-width: 1200px) {
+    .footer .copyrightText {
+      font-size: 1px;
+      text-align: right; } }
   .footer .fa,
   .footer .fas {
     font-weight: 500; }
@@ -487,12 +494,7 @@
       width: 100%;
       display: block;
       margin-left: 0;
-      margin-right: 0; }
-    .footer .socialMediaLinks {
-      text-align: right; }
-    .footer .copyrightText {
-      font-size: 1px;
-      text-align: right; } }
+      margin-right: 0; } }
 
 @media (min-width: 576px) and (max-width: 1200px) {
   .footer {
