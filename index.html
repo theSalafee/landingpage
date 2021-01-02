@@ -11,21 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
-
     <title>Capitol Hill</title>
 </head>
 
-<body>
-    <!--Header-->
-    <!--<header>
+<body class="container-fluid">
+    <!-----------------------------------Header-------------------------------->
+    <!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
+    <header>
+        <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="col-sm-4" id="navbarTogglerDemo02">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LLC</a>
+            <a class="navbar-brand w-50 d-block d-lg-none" href="">
+                <img src="/assets/assets-logo.svg" alt="assets-logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="font-size: 0.5rem">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">LLC <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CORPORATION</a>
@@ -33,19 +43,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">NONPROFIT</a>
                     </li>
-                    <i class="fa fa-search" style="padding: 12px 0 0 15px; color: darkgreen" aria-hidden="true"></i>
+                    <li class="nav-item">
+                        <form>
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </li>
                 </ul>
-            </div>
-            <div class="col-sm-4 text-center">
-                <h1>Capitol Hill</h1>
-            </div>
-            <div class="col-sm-4" id="navbarTogglerDemo01">
-                <ul class="navbar-nav">
+                <a class="navbar-brand w-25 d-none d-lg-block m-auto" href="">
+                    <img src="/assets/assets-logo.svg" alt="assets-logo.png" />
+                </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="font-size: 0.5rem">
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#">LOCATION</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">LOGIN</a>
@@ -55,296 +67,382 @@
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </nav>
-    </header>-->
-
-    <!--Testing Nav-->
-
-    <!-- <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="/assets/assets-logo.png" alt="assets-log">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">LLC <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Corporation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nonprofit</a>
-                    </li>
-                    <i class="fa fa-search nav-item" aria-hidden="true"></i>
-                    <a class="navLogo navbar-brand" href="#">
-                        <img class="" src="/assets/assets-logo.png" alt="assets-log">
-                    </a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
+        <!-----------------------------------Jumbotron-------------------------------->
+        <!---------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4 text-center">BUSINESS INFORMATION GUIDE</h1>
+                <p class="lead text-center">
+                    How to start your business in Washington, D.C
+                </p>
             </div>
-        </nav>
-    </header> -->
-
-
-    <!-----------------------------------jumbotron-------------------------------->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 btn-group btn-group-wrap">
+                        <a href="" class="btn btn-primary learnMoreBtn mr-4 mr-sm-4 mr-md-4 mr-lg-4">LEARN MORE</a>
+                        <a href="" class="btn btn-primary getStartedBtn mr-4 mr-sm-4">GET STARTED</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-----------------------------------row one-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class=" text-center jumbotron jumbotron-fluid">
-        <div>
-            <h1 class="mb-2 mt-4 h1 font-weight-bolder">BUSINESS INFORMATION GUIDE</h1>
-            <p class="mb-4 tagLine">How to start your business in Washington, D.C</p>
-            <a class="btn btn-primary learnMoreBtn border-white" href="" role="button">LEARN MORE</a>
-            <a class="btn btn-primary getStartedBtn font-weight-bolder" href="" role="button">GET STARTED</a>
+    <div class="container">
+        <div class="row rowOne">
+            <div class="col-12 col-sm-12 col-md-4">
+                <h2 class="rowOneLeft">
+                    Business<br />Formation<br /><span class="font-weight-bolder">101</span>
+                </h2>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8">
+                <p class="rowOneParagraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
+                    et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                    turpis massa sed elementum tempus egestas sed. Tristique risus nec
+                    feugiat in fermentum posuere urna nec tincidunt. Amet nulla facilisi
+                    morbi tempus iaculis urna id. Et malesuada fames ac turpis.
+                    Convallis aenean et tortor at. Sit amet est placerat in egestas erat
+                    imperdiet. Nulla aliquet enim tortor at auctor urna nunc id cursus.
+                    In eu mi bibendum neque egestas congue. Dictum varius duis at
+                    consectetur lorem donec massa sapien. Magnis dis parturient montes
+                    nascetur ridiculus mus mauris vitae. Etiam dignissim diam quis enim
+                    lobortis scelerisque fermentum.
+                </p>
+            </div>
         </div>
     </div>
-
-    <!-----------------------------------row one---------------------------------->
+    <!-----------------------------------row two-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowOne">
-        <div class="col-12 col-sm-5">
-            <h2 class="rowOneLeft ">Business<br>Formation<br><span class="font-weight-bolder">101</span></h2>
-        </div>
-        <div class="col-12 col-sm-7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero
-                nunc.
-                Leo in vitae turpis massa sed elementum tempus egestas sed. Tristique risus nec feugiat in fermentum
-                posuere urna nec tincidunt. Amet nulla facilisi morbi tempus iaculis urna id. Et malesuada fames ac
-                turpis. Convallis aenean et tortor at. Sit amet est placerat in egestas erat imperdiet. Nulla
-                aliquet
-                enim tortor at auctor urna nunc id cursus. In eu mi bibendum neque egestas congue. Dictum varius
-                duis at
-                consectetur lorem donec massa sapien. Magnis dis parturient montes nascetur ridiculus mus mauris
-                vitae.
-                Etiam dignissim diam quis enim lobortis scelerisque fermentum.</p>
+    <div class="container">
+        <div class="row rowTwo">
+            <div class="col-12">
+                <h2 class="font-weight-bold rowTwoHeader">
+                    WHAT'S INCLUDED IN YOUR FORMATION
+                </h2>
+                <p class="col-12 rowTwoOffer">
+                    Learn about the tools and knowledge we offer.
+                </p>
+            </div>
         </div>
     </div>
-
-    <!-----------------------------------row two---------------------------------->
-    <!---------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-    <div class="row rowTwo  mt-5 mb-1">
-        <div class="col-12">
-            <h2 class="font-weight-bold text-center rowTwoHeader">WHAT'S INCLUDED IN YOUR FORMATION</h2>
-            <p class="col-12 text-center rowTwoOffer">Learn about the tools and knowledge we offer.</p>
-        </div>
-    </div>
-
     <!-----------------------------------row three-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowThree">
-        <div class="col-12 text-center">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active rowThreeRadioBtns font-weight-bold">
-                    <input class="llcBtn" type="radio" name="options" id="option1" autocomplete="off" checked> LLC
-                    FORMATION
-                </label>
-                <label class="btn btn-secondary rowThreeRadioBtns font-weight-bold">
-                    <input class="corpBtn" type="radio" name="options" id="option2" autocomplete="off"> CORPORATION
-                    FORMATION
-                </label>
-                <label class="btn btn-secondary rowThreeRadioBtns font-weight-bold">
-                    <input class="nonprofitBtn" type="radio" name="options" id="option3" autocomplete="off"> NONPROFIT
-                    FORMATION
-                </label>
+    <div class="container">
+        <div class="row rowThree">
+            <div class="btn-group btn-group-toggle col-12" data-toggle="buttons" role="group"
+                aria-label="Basic example">
+                <button type="button" id="show_llcFormationTab"
+                    class="btn btn-secondary rowThreeBtns font-weight-bold llcBtn active">
+                    LLC FORMATION
+                </button>
+                <button type="button" id="show_corpFormationTab"
+                    class="btn btn-secondary rowThreeBtns font-weight-bold corpBtn">
+                    CORPORATION FORMATION
+                </button>
+                <button type="button" id="show_nonprofitFormationTab"
+                    class="btn btn-secondary rowThreeBtns font-weight-bold nonprofitBtn">
+                    NONPROFIT FORMATION
+                </button>
             </div>
         </div>
     </div>
-
-    <!-----------------------------------row four--------------------------------->
+    <!-----------------------------------row four-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowFour llcFormationTab mt-1">
-        <div class="col-6">
-            <h3 class="font-weight-bold">LLC FORMATION</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc. Leo in vitae turpis
-                mas
-                sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum posuere urna nec
-                tincidunt.
-                Leo in vitae turpis mas sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum
-                posuere urna nec tincidunt.
-            </p><br>
-            <h6 class="font-weight-bold">LLC Formation for only $200 + State Fees</h6><br>
-            <div class="btn btn-secondary llcInfoBtn">GET STARTED</div>
-        </div>
-        <div class="col-6 rowFourList mt-4">
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-    </div>
-    <!--Corportation Formation Tab-->
-    <div class="row rowFour corpFormationTab mt-1 hidden">
-        <div class="col-6">
-            <h3 class="font-weight-bold">CORPORATION FORMATION</h3>
-            <p>Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Nunc pulvinar sapien et
-                ligula ullamcorper malesuada proin libero. Suspendisse sed nisi lacus sed viverra. Volutpat est velit
-                egestas dui id ornare arcu. Interdum velit laoreet id donec ultrices tincidunt arcu non. Viverra
-                accumsan in nisl nisi scelerisque eu. Neque convallis a cras semper auctor neque vitae. Iaculis eu non
-                diam phasellus vestibulum lorem sed risus. Tincidunt eget nullam non nisi est. Sit amet justo donec enim
-                diam. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Sem viverra aliquet eget sit amet. Id
-                consectetur purus ut faucibus. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. Tincidunt
-                lobortis feugiat vivamus at augue eget arcu. Tempus quam pellentesque nec nam aliquam. Ipsum a arcu
-                cursus vitae congue mauris. Suspendisse ultrices gravida dictum fusce ut placerat orci.
-            </p><br>
-            <h6 class="font-weight-bold">Corporation Formation for only $300 + State Fees</h6><br>
-            <div class="btn btn-secondary llcInfoBtn">GET STARTED</div>
-        </div>
-        <div class="col-6 rowFourList mt-4">
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-    </div>
-    <!--nonprofit section-->
-    <div class="row rowFour nonprofitFormationTab mt-1">
-        <div class="col-6">
-            <h3 class="font-weight-bold">NONPROFIT FORMATION</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc. Leo in vitae turpis
-                mas
-                sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum posuere urna nec
-                tincidunt.
-                Leo in vitae turpis mas sased elementum tempus egestas sed. Tristique risus nec feugiat in fermentum
-                posuere urna nec tincidunt.
-            </p><br>
-            <h6 class="font-weight-bold">Nonprofit Formation for only $600 + State Fees</h6><br>
-            <div class="btn btn-secondary llcInfoBtn">GET STARTED</div>
-        </div>
-        <div class="col-6 rowFourList mt-4">
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-----------------------------------row five--------------------------------->
-    <!---------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-    <div class="row rowFive">
-        <div class="col-sm-6">
-            <div>
-                <img src="/assets/assets-img2.png" alt="Capitol Building" class="capitolBldImage">
+    <div class="container">
+        <div class="row rowFour llcFormationTab">
+            <div class="col-12 col-sm-12 col-md-7">
+                <h3 class="font-weight-bold tabHeader">LLC FORMATION</h3>
+                <p class="mainContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
+                    et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                    turpis mas sased elementum tempus egestas sed. Tristique risus nec
+                    feugiat in fermentum posuere urna nec tincidunt. Leo in vitae turpis
+                    mas sased elementum tempus egestas sed. Tristique risus nec feugiat
+                    in fermentum posuere urna nec tincidunt.
+                </p>
+                <br />
+                <h6 class="font-weight-bold rowFourBtnLabel">
+                    LLC Formation for only $200 + State Fees
+                </h6>
+                <br />
+                <div class="btn btn-secondary llcInfoBtn d-none d-md-block">
+                    GET STARTED
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-5 rowFourList mt-2">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+            <div class="btn btn-secondary llcInfoBtn d-md-none mx-auto" style="margin-bottom: 100px">
+                GET STARTED
             </div>
         </div>
-        <div class="col-sm-6">
-            <h2 class="font-weight-bold rowFiveheaderRight">WE'RE HERE TO HELP</h2>
-            <p class="howToText">How to start your own business in Washington D.C</p><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc.</p>
+        <!--Corportation Formation Tab-->
+        <div class="row rowFour corpFormationTab">
+            <div class="col-12 col-sm-7 col-md-7">
+                <h3 class="font-weight-bold tabHeader">CORPORATION FORMATION</h3>
+                <p class="mainContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
+                    et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                    turpis mas sased elementum tempus egestas sed. Tristique risus nec
+                    feugiat in fermentum posuere urna nec tincidunt. Leo in vitae turpis
+                    mas sased elementum tempus egestas sed. Tristique risus nec feugiat
+                    in fermentum posuere urna nec tincidunt.
+                </p>
+                <br />
+                <h6 class="font-weight-bold rowFourBtnLabel">
+                    Corporation Formation for only $200 + State Fees
+                </h6>
+                <br />
+                <div class="btn btn-secondary llcInfoBtn d-none d-sm-block">
+                    GET STARTED
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 rowFourList mt-2">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+            <div class="btn btn-secondary llcInfoBtn d-sm-none mx-auto" style="margin-bottom: 100px">
+                GET STARTED
+            </div>
+        </div>
+        <!--nonprofit section-->
+        <div class="row rowFour nonprofitFormationTab">
+            <div class="col-12 col-sm-7 col-md-7">
+                <h3 class="font-weight-bold tabHeader">NONPROFIT FORMATION</h3>
+                <p class="mainContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
+                    et ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                    turpis mas sased elementum tempus egestas sed. Tristique risus nec
+                    feugiat in fermentum posuere urna nec tincidunt. Leo in vitae turpis
+                    mas sased elementum tempus egestas sed. Tristique risus nec feugiat
+                    in fermentum posuere urna nec tincidunt.
+                </p>
+                <br />
+                <h6 class="font-weight-bold rowFourBtnLabel">
+                    Nonprofit Formation for only $200 + State Fees
+                </h6>
+                <br />
+                <div class="btn btn-secondary llcInfoBtn d-none d-sm-block">
+                    GET STARTED
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 rowFourList mt-2">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+            <div class="btn btn-secondary llcInfoBtn d-sm-none mx-auto" style="margin-bottom: 100px">
+                GET STARTED
+            </div>
         </div>
     </div>
-
+    <!-----------------------------------row five-------------------------------->
+    <!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
+    <div class="container">
+        <div class="row rowFive">
+            <div class="col-12 col-md-6 capitolImage">
+                <div>
+                    <img src="/assets/assets-img2.png" alt="Capitol Building" class="capitolBldImage" />
+                </div>
+            </div>
+            <div class="col-12 col-md-6 content">
+                <h2 class="font-weight-bold rowFiveheaderRight">
+                    WE'RE HERE TO HELP
+                </h2>
+                <p class="howToText">
+                    How to start your own business in Washington D.C
+                </p>
+                <br />
+                <p class="mainContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien
+                    et ligula ullamcorper malesuada proin libero nunc.
+                </p>
+                <ul class="mainContent">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-----------------------------------row six---------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowSix">
-        <div class="container">
-            <div class="col-sm-12">
-                <h1>BUSINESS INFORMATION FAQ</h1>
-                <p>Find the answers to all your business formation questions.</p>
-
+    <div class="container">
+        <div class="row rowSix">
+            <div class="col-12">
+                <h1 class="rowSixHeader font-weight-bold">
+                    BUSINESS INFORMATION FAQ
+                </h1>
+                <p class="findAnswersText">
+                    Find the answers to all your business formation questions.
+                </p>
                 <!-- Accordion -->
                 <div id="accordionExample" class="accordion shadow">
-
                     <!-- Accordion item 1 -->
                     <div class="card">
-                        <div id="headingOne" class="card-header shadow-sm border-0">
-                            <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                                    class="d-block position-relative text-uppercase text-white collapsible-link py-2">Collapsible
-                                    Group Item #1</a></h6>
+                        <div id="headingOne" class="card-header shadow-sm">
+                            <h6 class="mb-0 font-weight-bold">
+                                <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                    class="d-block position-relative text-uppercase text-white collapsible-link py-2">Lorem
+                                    ipsum dolor sit amet</a>
+                            </h6>
                         </div>
                         <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
                             class="collapse show">
-                            <div class="card-body p-5">
-                                <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim eiusmod high
-                                    life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                    shoreditch et.</p>
+                            <div class="card-body p-2">
+                                <p class="m-0 accordionText">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Sapien et ligula ullamcorper malesuada proin libero
+                                    nunc. Leo in vitae turpis mas sased elementum tempus egestas
+                                    sed. Tristique risus nec feugiat in fermentum posuere urna
+                                    nec tincidunt. Leo in vitae turpis mas sased elementum
+                                    tempus egestas sed. Tristique risus nec feugiat in fermentum
+                                    posuere urna nec tincidunt. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Sapien et
+                                    ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                                    turpis mas sased elementum tempus egestas sed. Tristique
+                                    risus nec feugiat in fermentum posuere urna nec tincidunt.
+                                    Leo in vitae turpis mas sased elementum tempus egestas sed.
+                                    Tristique risus nec feugiat in fermentum posuere urna nec
+                                    tincidunt.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <!-- Accordion item 2 -->
                     <div class="card">
-                        <div id="headingTwo" class="card-header shadow-sm border-0">
-                            <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                                    class="d-block position-relative collapsed text-white text-uppercase collapsible-link py-2">Collapsible
-                                    Group Item #2</a></h6>
+                        <div id="headingTwo" class="card-header shadow-sm">
+                            <h6 class="mb-0 font-weight-bold">
+                                <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                    class="d-block position-relative collapsed text-white text-uppercase collapsible-link py-2">Lorem
+                                    ipsum dolor sit amet</a>
+                            </h6>
                         </div>
                         <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample"
                             class="collapse">
-                            <div class="card-body p-5">
-                                <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim eiusmod high
-                                    life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                    shoreditch et.</p>
+                            <div class="card-body p-2">
+                                <p class="m-0 accordionText">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Sapien et ligula ullamcorper malesuada proin libero
+                                    nunc. Leo in vitae turpis mas sased elementum tempus egestas
+                                    sed. Tristique risus nec feugiat in fermentum posuere urna
+                                    nec tincidunt. Leo in vitae turpis mas sased elementum
+                                    tempus egestas sed. Tristique risus nec feugiat in fermentum
+                                    posuere urna nec tincidunt. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Sapien et
+                                    ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                                    turpis mas sased elementum tempus egestas sed. Tristique
+                                    risus nec feugiat in fermentum posuere urna nec tincidunt.
+                                    Leo in vitae turpis mas sased elementum tempus egestas sed.
+                                    Tristique risus nec feugiat in fermentum posuere urna nec
+                                    tincidunt.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <!-- Accordion item 3 -->
                     <div class="card">
-                        <div id="headingThree" class="card-header shadow-sm border-0">
-                            <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
-                                    class="d-block position-relative collapsed text-white text-uppercase collapsible-link py-2">Collapsible
-                                    Group Item #3</a></h6>
+                        <div id="headingThree" class="card-header shadow-sm">
+                            <h6 class="mb-0 font-weight-bold">
+                                <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                    class="d-block position-relative collapsed text-white text-uppercase collapsible-link py-2">Lorem
+                                    ipsum dolor sit amet</a>
+                            </h6>
                         </div>
                         <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample"
                             class="collapse">
-                            <div class="card-body p-5">
-                                <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim eiusmod high
-                                    life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                    shoreditch et.</p>
+                            <div class="card-body p-2">
+                                <p class="m-0 accordionText">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Sapien et ligula ullamcorper malesuada proin libero
+                                    nunc. Leo in vitae turpis mas sased elementum tempus egestas
+                                    sed. Tristique risus nec feugiat in fermentum posuere urna
+                                    nec tincidunt. Leo in vitae turpis mas sased elementum
+                                    tempus egestas sed. Tristique risus nec feugiat in fermentum
+                                    posuere urna nec tincidunt. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Sapien et
+                                    ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                                    turpis mas sased elementum tempus egestas sed. Tristique
+                                    risus nec feugiat in fermentum posuere urna nec tincidunt.
+                                    Leo in vitae turpis mas sased elementum tempus egestas sed.
+                                    Tristique risus nec feugiat in fermentum posuere urna nec
+                                    tincidunt.
+                                </p>
                             </div>
                         </div>
                     </div>
-
+                    <!-- Accordion item 3 -->
+                    <div class="card">
+                        <div id="headingFour" class="card-header shadow-sm">
+                            <h6 class="mb-0 font-weight-bold">
+                                <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                    class="d-block position-relative collapsed text-white text-uppercase collapsible-link py-2">Lorem
+                                    ipsum dolor sit amet</a>
+                            </h6>
+                        </div>
+                        <div id="collapseFour" aria-labelledby="headingThree" data-parent="#accordionExample"
+                            class="collapse">
+                            <div class="card-body p-2">
+                                <p class="m-0 accordionText">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Sapien et ligula ullamcorper malesuada proin libero
+                                    nunc. Leo in vitae turpis mas sased elementum tempus egestas
+                                    sed. Tristique risus nec feugiat in fermentum posuere urna
+                                    nec tincidunt. Leo in vitae turpis mas sased elementum
+                                    tempus egestas sed. Tristique risus nec feugiat in fermentum
+                                    posuere urna nec tincidunt. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Sapien et
+                                    ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+                                    turpis mas sased elementum tempus egestas sed. Tristique
+                                    risus nec feugiat in fermentum posuere urna nec tincidunt.
+                                    Leo in vitae turpis mas sased elementum tempus egestas sed.
+                                    Tristique risus nec feugiat in fermentum posuere urna nec
+                                    tincidunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -353,89 +451,191 @@
     <!-----------------------------------row seven-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowSeven">
-        <div class="col-sm-12 text-center rowSevenTagLine">
-            <h2 class="font-weight-bold">OUR BUSINESS FORMATION OPTIONS</h2>
-            <p class="font-weight-bold rowSevengenText">Choose from one of the options below & form your business today!</p>
-        </div>
-        <div class="card-group">
-            <div class="card cardOne">
-                <div class="card-body text-center">
-                    <h5 class="card-title text-center font-weight-bold">CORPORATION</h5>
-                    <p class="card-text text-center">$400</p>
-                    <hr>
-                    <ul>
-                        <li class="cardLineItems"><span></span>Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary getStartedBtn text-center">GET STARTED</a>
+    <!--Visible on mobile only-->
+    <div class="container d-block d-md-none">
+        <div class="row rowSeven">
+            <div class="col-sm-12 rowSevenTagLine">
+                <h2 class="font-weight-bold">OUR BUSINESS FORMATION OPTIONS</h2>
+                <p class="font-weight-bold rowSevengenText">
+                    Choose from one of the options below & form your business today!
+                </p>
+            </div>
+            <div class="container text-center cardLinks d-block d-md-none">
+                <div class="btn-group btn-group-toggle col-12" data-toggle="buttons" role="group"
+                    aria-label="Basic example">
+                    <button type="button" id="llcLink" class="btn btn-secondary llcCardLink">
+                        LLC
+                    </button>
+                    |<button type="button" id="corpLink" class="btn btn-secondary corpCardLink">
+                        Corporation
+                    </button>
+                    |<button type="button" id="nonprofitLink" class="btn btn-secondary nonprofitCardLink">
+                        Nonprofit
+                    </button>
                 </div>
             </div>
-            <div class="card cardTwo mostPopularCard shadow-sm">
-                <div class="card-header text-center font-weight-bold">
-                    MOST POPULAR
+            <div class="card-group col-12">
+                <div class="card mostPopularCard shadow-sm" id="corpCard">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">CORPORATION</h5>
+                        <p class="cardPrice text-center"><span>$</span>300</p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
                 </div>
-                <div class="card-body text-center">
-                    <h5 class="card-title text-center font-weight-bold">LLC</h5>
-                    <p class="card-text text-center">$400</p>
-                    <hr>
-                    <ul>
-                        <li class="cardLineItems"><span></span>Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary getStartedBtn text-center">GET STARTED</a>
+                <div class="card mostPopularCard shadow-sm" id="llcCard">
+                    <p class="card-header text-center">Most Popular</p>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">LLC</h5>
+                        <p class="cardPrice text-center"><span>$</span>400</p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card cardThree">
-                <div class="card-body text-center">
-                    <h5 class="card-title text-center font-weight-bold">NONPROFIT</h5>
-                    <p class="card-text text-center">$400</p>
-                    <hr>
-                    <ul>
-                        <li class="cardLineItems"><span></span>Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                        <li class="cardLineItems">Lorem ipsum dolor sit amet.</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary getStartedBtn text-center">GET STARTED</a>
+                <div class="card mostPopularCard shadow-sm" id="nonprofitCard">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">NONPROFIT</h5>
+                        <p class="cardPrice text-center">
+                            <span>$</span>500
+                        </p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--Visible on desktop only-->
+    <div class="container d-none d-md-block">
+        <div class="row rowSeven">
+            <div class="col-sm-12 rowSevenTagLine">
+                <h2 class="font-weight-bold tagLine">
+                    OUR BUSINESS FORMATION OPTIONS
+                </h2>
+                <p class="font-weight-bold rowSevengenText">
+                    Choose from one of the options below & form your business today!
+                </p>
+            </div>
+            <div class="card-group col-12">
+                <div class="card mostPopularCard shadow-sm cardOne">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">CORPORATION</h5>
+                        <p class="cardPrice text-center"><span>$</span>400</p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
+                </div>
+                <div class="card mostPopularCard shadow-sm cardTwo" id="llcCard">
+                    <p class="card-header text-center">Most Popular</p>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">LLC</h5>
+                        <p class="cardPrice text-center"><span>$</span>300</p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
+                </div>
+                <div class="card mostPopularCard shadow-sm cardThree">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">NONPROFIT</h5>
+                        <p class="cardPrice text-center"><span>$</span>500</p>
+                        <hr />
+                        <ul class="card-text text-left">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                            <li>Sapien et ligula ullam</li>
+                            <li>Leo in vitae turpis</li>
+                        </ul>
+                        <a href="" class="btn btn-primary getStartedBtn">GET STARTED</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-----------------------------------row eight-------------------------------->
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="row rowEight">
-        <div class="col-sm-12 text-center">
-            <h1 class="font-weight-bold">THERES NEVER BEEN A BETTER<br> TIME TO YOUR BUSINESS</h1>
-            <a class="btn btn-primary learnMoreBtn border-white" href="" role="button">LEARN MORE</a>
-            <a class="btn btn-primary getStartedBtn font-weight-bolder" href="" role="button">GET STARTED</a>
+    <div class="container">
+        <div class="row rowEight">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-bold rowEightHeader">
+                    THERES NEVER BEEN A BETTER<br />
+                    TIME TO YOUR BUSINESS
+                </h1>
+                <div class="col-9 col-sm-12 btn btn-group-wrap">
+                    <a class="btn btn-primary learnMoreBtn border-white mb-3 mb-sm-0" href="" role="button">LEARN
+                        MORE</a>
+                    <a class="btn btn-primary getStartedBtn font-weight-bolder" href="" role="button">GET STARTED</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <footer>
-        <div class="row" style="padding: 2% 5% 2% 5%">
-            <div class="col-sm-2">
-                <img src="/assets/assets-logo.svg" alt="assets-log">
+    <!-----------------------------------footer-------------------------------->
+    <!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
+    <div class="container">
+        <footer class="footer">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="/assets/assets-logo.svg" alt="assets-log" />
+                </div>
+                <div class="col-12 col-md-8 socialMediaLinks">
+                    <a class="btn btn-social-icon btn-vimeo" href="http://twitter.com/">
+                        <i class="fab fa-wordpress"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-vimeo" href="http://youtube.com/">
+                        <i class="fab fa-js-square"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-vimeo" href="http://twitter.com/">
+                        <i class="fab fa-drupal"></i>
+                    </a>
+                </div>
+                <div class="col-12 col-md-12 copyright">
+                    <p class="copyrightText">
+                        2019 <i class="fas fa-copyright" aria-hidden="true"></i> Copyright
+                        Capitol Hill Business Formation
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-4">
-
-            </div>
-            <div class="col-sm-4">
-
-            </div>
-            <div class="col-sm-2">
-                <p style="font-size: 10px;">2019 <i class="fas fa-copyright" aria-hidden="true"></i> Copyright Capitol
-                    Hill Business Formation</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
