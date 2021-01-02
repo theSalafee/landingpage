@@ -6,8 +6,7 @@
   body {
     max-width: 1200px;
     font-size: 0.6rem;
-    color: #294243;
-    font-size: clamp(18px, 2vw); } }
+    color: #294243; } }
 
 .container {
   max-width: 1200px;
