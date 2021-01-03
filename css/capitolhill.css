@@ -79,3 +79,25 @@ img {
     color: white;
     background-color: #86bfca;
     margin: 0 0 35px 0; }
+
+.rowOne {
+  margin: 50px 0 75px 0; }
+  .rowOne .rowOneLeft {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    color: #294243;
+    margin: 0 0 15px 0; }
+  .rowOne .oneOoneText {
+    font-weight: bolder;
+    color: #294243;
+    -webkit-text-fill-color: #294243;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #294243; }
+  .rowOne .rowOneParagraph {
+    font-size: 12px;
+    color: #869586;
+    line-height: 2; }
