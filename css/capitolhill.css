@@ -98,7 +98,7 @@ img {
     -webkit-text-stroke-color: #294243; }
   .rowOne .rowOneParagraph {
     font-size: 12px;
-    color: #869586;
+    color: #424d42;
     line-height: 2; }
 
 .rowTwo {
@@ -114,7 +114,7 @@ img {
     font-family: "Playfair Display", serif;
     font-size: 13px;
     letter-spacing: 1.3px;
-    color: #869586;
+    color: #424d42;
     font-style: italic; }
 
 .rowThree div.btn-group {
@@ -148,58 +148,93 @@ img {
 .rowThree .show > .btn-secondary.dropdown-toggle {
   background-color: #86bfca; }
 
-.rowFour .tabHeader {
-  color: #294243;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  line-height: 1.5;
-  margin: 20px 0 15px 15px; }
+.rowFour {
+  margin: 0 0 170px 0; }
+  .rowFour .tabHeader {
+    color: #294243;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 20px 0 15px 15px; }
+  .rowFour .mainContent {
+    font-size: 12px;
+    color: #869586;
+    line-height: 2;
+    padding: 0 0 0 15px;
+    margin: 0 0 0 0; }
+  .rowFour .rowFourBtnLabel {
+    color: #294243;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0 0 0 15px;
+    font-weight: bolder;
+    color: #294243;
+    -webkit-text-fill-color: #294243;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #294243; }
+  .rowFour .rowFourList ul {
+    color: #294243;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 0 25px;
+    font-weight: 700; }
+  .rowFour .rowFourList li {
+    color: #4e5a5a;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 25px 0;
+    list-style-position: inside;
+    letter-spacing: 1px;
+    font-size: 13px; }
+  .rowFour .llcInfoBtn {
+    border: 0px;
+    border-radius: 0px;
+    font-weight: bolder;
+    font-size: 11px;
+    color: whitesmoke;
+    background-color: #86bfca;
+    padding: 12px 0 0 0;
+    width: 265px;
+    height: 40px;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px; }
 
-.rowFour .mainContent {
-  font-size: 12px;
-  color: #869586;
-  line-height: 2;
-  padding: 0 0 0 15px;
-  margin: 0 0 0 0; }
-
-.rowFour .rowFourBtnLabel {
-  color: #294243;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  margin: 0 0 0 15px;
-  font-weight: bolder;
-  color: #294243;
-  -webkit-text-fill-color: #294243;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.7px;
-  -webkit-text-stroke-color: #294243; }
-
-.rowFour .rowFourList ul {
-  color: #294243;
-  font-family: "Montserrat", sans-serif;
-  padding: 0 0 0 25px;
-  font-weight: 700; }
-
-.rowFour .rowFourList li {
-  color: #4e5a5a;
-  font-family: "Montserrat", sans-serif;
-  padding: 0 0 25px 0;
-  list-style-position: inside;
-  letter-spacing: 1px;
-  font-size: 13px; }
-
-.rowFour .llcInfoBtn {
-  border: 0px;
-  border-radius: 0px;
-  font-weight: bolder;
-  font-size: 11px;
-  color: whitesmoke;
-  background-color: #86bfca;
-  padding: 12px 0 0 0;
-  width: 265px;
-  height: 40px;
-  margin: 0 0 20px 0;
-  letter-spacing: 1px; }
+.rowFive {
+  background-color: #eff1f2; }
+  .rowFive .capitolBldImage {
+    object-fit: cover;
+    border-radius: 50%;
+    height: auto;
+    width: 110%;
+    margin-top: -175px;
+    margin-left: -15px;
+    margin-bottom: 75px; }
+  .rowFive .rowFiveheaderRight {
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+    color: #294243;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 0 0 15px 15px; }
+  .rowFive .howToText {
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #424d42;
+    font-style: italic; }
+  .rowFive .mainContent {
+    font-size: 12px;
+    color: #424d42;
+    line-height: 2; }
+  .rowFive ul {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; }
+  .rowFive li {
+    margin: 0 0 15px 0; }
+  .rowFive .fa-check-circle:before {
+    color: #86bfca;
+    font-size: 20px;
+    margin: 0 10px 0 0; }

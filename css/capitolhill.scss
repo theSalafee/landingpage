@@ -13,7 +13,7 @@ $montserra: "Montserrat", sans-serif;
 $primary-color: #294243;
 $pale-color: #eff1f2;
 $pale-font-color: rgb(218, 218, 218);
-$green-font-color: rgb(134, 149, 134);
+$green-font-color: rgb(66, 77, 66);
 $secondary-color: #86bfca;
 
 .container-fluid {
@@ -216,6 +216,7 @@ img {
 // Row Four
 
 .rowFour {
+    margin: 0 0 170px 0;
     .tabHeader {
         color: $primary-color;
         font-size: 18px;
@@ -277,4 +278,61 @@ img {
         margin: 0 0 20px 0;
         letter-spacing: 1px;
     }
+}
+
+// Row Five
+
+.rowFive {
+    background-color: $pale-color;
+
+    .capitolBldImage {
+        object-fit: cover;
+        border-radius: 50%;
+        height: auto;
+        width: 110%;
+        margin-top: -175px;
+        margin-left: -15px;
+        margin-bottom: 75px;
+    }
+
+    .rowFiveheaderRight {
+        font-size: 19px;
+        font-family: $montserra;
+        color: $primary-color;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin: 0 0 15px 15px;
+    }
+
+    .howToText {
+        font-family: "Playfair Display", serif;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        color: $green-font-color;
+        font-style: italic;
+    }
+
+    .mainContent{
+            font-size: 12px;
+    color: $green-font-color;
+    line-height: 2;
+
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    li{
+        margin: 0 0 15px 0;
+    }
+
+    .fa-check-circle:before{
+        color: $secondary-color;
+        font-size: 20px;
+        margin: 0 10px 0 0;
+    }
+
 }
