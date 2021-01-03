@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 .container-fluid {
   padding: 0 0 0 0; }
 
@@ -10,5 +11,71 @@
   border-radius: 0;
   height: 50px; }
 
+@media (min-width: 768px) {
+  .navbar-toggler {
+    height: 70px;
+    background-color: #86bfca; } }
+
 .navbar {
-  padding: 0 0 0 15px; }
+  padding: 0 0 0 20px;
+  background-color: white; }
+
+.bg-light {
+  background-color: white !important; }
+
+img {
+  width: 105%; }
+
+.jumbotron {
+  background: url("/assets/assets-headerImg.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+  width: 100%;
+  color: white; }
+  .jumbotron .display-4 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    margin: 20px 0 0 0; }
+  .jumbotron .lead {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 23px;
+    margin: 15px 0 45px 0;
+    padding: 0 5px 0 5px;
+    color: #dadada; }
+  .jumbotron .btn-group-wrap {
+    text-align: center; }
+  .jumbotron div.btn-group {
+    margin: 0 auto;
+    text-align: center;
+    width: inherit;
+    display: inline-block; }
+  .jumbotron .btn {
+    width: 275px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 35px;
+    padding: 8px 0 0 0; }
+  @media (min-width: 1px) and (max-width: 647px) {
+    .jumbotron .learnMoreBtn {
+      margin-bottom: 18px; } }
+  .jumbotron .learnMoreBtn {
+    border-radius: 0px;
+    border-color: white;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.308);
+    margin: 0 0 20px 0; }
+  .jumbotron .getStartedBtn {
+    border: 0px;
+    border-radius: 0px;
+    font-weight: bolder;
+    color: white;
+    background-color: #86bfca;
+    margin: 0 0 35px 0; }

@@ -16,15 +16,6 @@ $secondary-color: #86bfca;
     height: 50px;
 }
 
-@include media-breakpoint-up(md) {
-    .navbar-toggler {
-        border: none;
-        background-color: $secondary-color;
-        border-radius: 0;
-        height: 50px;
-    }
-}
-
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;

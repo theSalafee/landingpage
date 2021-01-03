@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import "/node_modules/bootstrap/scss/functions";
-@import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 $playfairDisplay: "Playfair Display", serif;
 $montserra: "Montserrat", sans-serif;
 $primary-color: #294243;
 $pale-color: #eff1f2;
+$pale-font-color: rgb(218, 218, 218);
 $secondary-color: #86bfca;
 
 .container-fluid {
@@ -20,15 +22,98 @@ $secondary-color: #86bfca;
     background-color: $secondary-color;
     border-radius: 0;
     height: 50px;
-
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
     .navbar-toggler {
-        height: 50px;
+        height: 70px;
+        background-color: $secondary-color;
     }
 }
 
 .navbar {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
+    background-color: white;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+img {
+    width: 105%;
+}
+
+// Jumbotron
+
+.jumbotron {
+    background: url("/assets/assets-headerImg.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    width: 100%;
+    color: white;
+
+    .display-4 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        margin: 20px 0 0 0;
+    }
+
+    .lead {
+        font-family: $playfairDisplay;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        line-height: 23px;
+        margin: 15px 0 45px 0;
+        padding: 0 5px 0 5px;
+        color: $pale-font-color;
+    }
+
+    .btn-group-wrap {
+        text-align: center;
+    }
+
+    div.btn-group {
+        margin: 0 auto;
+        text-align: center;
+        width: inherit;
+        display: inline-block;
+    }
+
+    .btn {
+        width: 275px;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        height: 35px;
+        padding: 8px 0 0 0;
+    }
+
+    @media (min-width: 1px) and (max-width: 647px) {
+        .learnMoreBtn {
+            margin-bottom: 18px;
+        }
+    }
+
+    .learnMoreBtn {
+        border-radius: 0px;
+        border-color: white;
+        font-weight: bolder;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.308);
+        margin: 0 0 20px 0;
+    }
+
+    .getStartedBtn {
+        border: 0px;
+        border-radius: 0px;
+        font-weight: bolder;
+        color: white;
+        background-color: #86bfca;
+        margin: 0 0 35px 0;
+    }
 }
