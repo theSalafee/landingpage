@@ -81,7 +81,7 @@ img {
     margin: 0 0 35px 0; }
 
 .rowOne {
-  margin: 50px 0 75px 0; }
+  margin: 50px 0 30px 0; }
   .rowOne .rowOneLeft {
     font-family: "Playfair Display", serif;
     font-style: italic;
@@ -101,3 +101,19 @@ img {
     font-size: 12px;
     color: #869586;
     line-height: 2; }
+
+.rowTwo {
+  font-family: "Montserrat", sans-serif; }
+  .rowTwo .rowTwoHeader {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #294243;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 0 0 15px 15px; }
+  .rowTwo .rowTwoOffer {
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #869586;
+    font-style: italic; }

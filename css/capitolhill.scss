@@ -11,7 +11,7 @@ $montserra: "Montserrat", sans-serif;
 $primary-color: #294243;
 $pale-color: #eff1f2;
 $pale-font-color: rgb(218, 218, 218);
-$green-font-color:  rgb(134, 149, 134);
+$green-font-color: rgb(134, 149, 134);
 $secondary-color: #86bfca;
 
 .container-fluid {
@@ -122,7 +122,7 @@ img {
 // Row One
 
 .rowOne {
-    margin: 50px 0 75px 0;
+    margin: 50px 0 30px 0;
 
     .rowOneLeft {
         font-family: "Playfair Display", serif;
@@ -142,9 +142,32 @@ img {
         -webkit-text-stroke-color: $primary-color;
     }
 
-    .rowOneParagraph{
+    .rowOneParagraph {
         font-size: 12px;
         color: $green-font-color;
         line-height: 2;
+    }
+}
+
+// Row Two
+
+.rowTwo {
+    font-family: $montserra;
+    .rowTwoHeader {
+        font-size: 18px;
+        font-family: $montserra;
+        color: $primary-color;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin: 0 0 15px 15px;
+    }
+
+    .rowTwoOffer{
+        font-family: $playfairDisplay;
+                font-size: 13px;
+                letter-spacing: 1.3px;
+        color: $green-font-color;
+        font-style: italic;
+
     }
 }
