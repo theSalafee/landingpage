@@ -9,6 +9,22 @@ $primary-color: #294243;
 $pale-color: #eff1f2;
 $secondary-color: #86bfca;
 
+.navbar-toggler {
+    border: none;
+    background-color: $secondary-color;
+    border-radius: 0;
+    height: 50px;
+}
+
+@include media-breakpoint-up(md) {
+    .navbar-toggler {
+        border: none;
+        background-color: $secondary-color;
+        border-radius: 0;
+        height: 50px;
+    }
+}
+
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
@@ -746,7 +762,7 @@ $secondary-color: #86bfca;
     }
 
     .copyrightText {
-        font-size: 1px;
+        font-size: 1px; // fix this 
         text-align: center;
     }
 

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+
+$playfairDisplay: "Playfair Display", serif;
+$montserra: "Montserrat", sans-serif;
+$primary-color: #294243;
+$pale-color: #eff1f2;
+$secondary-color: #86bfca;
+
+.container-fluid {
+    padding: 0 0 0 0;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: $secondary-color;
+    border-radius: 0;
+    height: 50px;
+
+}
+
+@include media-breakpoint-up(sm) {
+    .navbar-toggler {
+        height: 50px;
+    }
+}
+
+.navbar {
+    padding: 0 0 0 15px;
+}
