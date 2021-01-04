@@ -478,8 +478,7 @@ img {
         display: inline-block;
         text-align: center;
         color: $secondary-color;
-                margin: 0 0 50px 0;
-
+        margin: 0 0 50px 0;
     }
 
     .cardLinksText {
@@ -488,54 +487,170 @@ img {
         color: $secondary-color;
         text-decoration: underline;
         font-size: 13px;
-        padding:  0 10px 0 10px;
+        padding: 0 10px 0 10px;
         cursor: pointer;
     }
 
-        .card-group {
+    .card-group {
         .card {
             max-width: 400px;
+            margin-bottom: 70px;
         }
         .getStartedBtn {
-            border: 0;
+            border: 0px;
             border-radius: 0px;
             font-weight: bolder;
-            color: white;
+            font-size: 11px;
+            color: whitesmoke;
             background-color: #86bfca;
-            width: 250px;
-            height: 50px;
-            padding: 12px;
+            padding: 12px 0 0 0;
+            width: 180px;
+            height: 40px;
+            margin: 20px 0 20px 0;
+            letter-spacing: 1px;
         }
     }
 
-      .card-title {
-            color: $secondary-color;
-            padding-top: 30px;
-            margin-bottom: -20px;
-        }
+    .card-title {
+        color: $secondary-color;
+        padding-top: 10px;
+        margin-bottom: -20px;
+        font-size: 18px;
+        font-weight: bolder;
+    }
 
-        .cardPrice {
+    .cardPrice {
+        font-family: $playfairDisplay;
+        font-size: 90px;
+        color: $primary-color;
+    }
+
+    .cardPrice:before {
+        content: "$";
+        font-size: 40px;
+        vertical-align: super;
+        margin-top: 20px;
+    }
+
+    .mostPopularCard {
+        .card-header {
+            background-color: $secondary-color;
+            border: 0;
+            border-radius: 0;
+            padding: 2px 10px 2px 10px;
             font-family: $playfairDisplay;
-            font-size: 80px;
+            font-size: 11px;
+            font-weight: bolder;
+            letter-spacing: 3px;
+            color: white;
         }
+    }
 
-        .mostPopularCard {
-            .card-header {
-                background-color: $secondary-color;
-                border: 0;
-                border-radius: 0;
-                // height: 10px;
-                padding: 2px 10px 2px 10px;
-                font-family: $montserra;
-                font-size: 14px;
-                letter-spacing: 3px;
-                color: white;
-            }
-        }
+    .card {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        .card {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .liText {
+        font-size: 14px;
+        color: #424d42;
+        line-height: 1.5px;
+        margin: 0 0 35px 0;
+        padding: 0 0 0 0;
+    }
+
+    ul.card-text.text-left {
+        padding-left: 15px;
+    }
+
+    ::marker {
+        margin-left: 10px;
+    }
+
+    li span {
+        position: relative;
+        left: 10px;
+    }
+
+    hr {
+        margin: 20px 0 45px 0;
+    }
+}
+
+// Row eight
+
+.rowEight {
+    background-color: $primary-color;
+    color: whitesmoke;
+    padding: 5% 0% 5% 0;
+
+    .rowEightHeader {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.7;
+        letter-spacing: 5px;
+        margin: 30px 0 15px 0;
+    }
+
+    .learnMoreBtn {
+        background-color: rgba(255, 255, 255, 0.308);
+        border: 1px solid white;
+        border-radius: 0px;
+        font-weight: bolder;
+        font-size: 11px;
+        color: whitesmoke;
+        padding: 12px 0 0 0;
+        width: 265px;
+        height: 40px;
+        margin: 0 0 20px 0;
+        letter-spacing: 1px;
+    }
+
+    .getStartedBtn {
+        border: 0px;
+        border-radius: 0px;
+        font-weight: bolder;
+        font-size: 11px;
+        color: whitesmoke;
+        background-color: #86bfca;
+        padding: 12px 0 0 0;
+        width: 265px;
+        height: 40px;
+        margin: 0 0 40px 0;
+        letter-spacing: 1px;
+    }
+}
+
+// footer
+
+.footer {
+    padding: 10% 5% 5% 5%;
+    height: 200px;
+
+    img {
+        height: auto;
+        width: auto;
+        display: block;
+        margin: 20px auto 10px auto;
+    }
+
+    .socialMediaLinks {
+        text-align: center;
+    }
+
+    .btn-social-icon {
+        background-color: $secondary-color;
+        border: none;
+    }
+
+    .copyrightText {
+        font-size: 10px;
+        text-align: center;
+        margin: 25px auto 20px auto;
+    }
+
+    .fa-copyright{
+        margin: 0 0 0 3px;
+    }
 }
