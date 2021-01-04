@@ -223,14 +223,14 @@ img {
         font-family: "Montserrat", sans-serif;
         letter-spacing: 2px;
         line-height: 1.5;
-        margin: 20px 0 15px 15px;
+        margin: 20px 0 15px 0;
     }
 
     .mainContent {
         font-size: 12px;
         color: #869586;
         line-height: 2;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 0;
         margin: 0 0 0 0;
     }
 
@@ -240,7 +240,7 @@ img {
         font-family: "Montserrat", sans-serif;
         letter-spacing: 1px;
         line-height: 1.5;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 0;
         font-weight: bolder;
         color: $primary-color;
         -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
@@ -252,7 +252,7 @@ img {
         ul {
             color: $primary-color;
             font-family: $montserra;
-            padding: 0 0 0 25px;
+            padding: 0 0 0 10px;
             font-weight: 700;
         }
         li {
@@ -292,7 +292,7 @@ img {
         width: 110%;
         margin-top: -175px;
         margin-left: -15px;
-        margin-bottom: 75px;
+        margin-bottom: 55px;
     }
 
     .rowFiveheaderRight {
@@ -310,29 +310,232 @@ img {
         letter-spacing: 1.3px;
         color: $green-font-color;
         font-style: italic;
+        margin: 0 0 -5px 0;
+        padding: 0 0 0 15px;
     }
 
-    .mainContent{
-            font-size: 12px;
-    color: $green-font-color;
-    line-height: 2;
-
+    .mainContent {
+        font-size: 14px;
+        color: $green-font-color;
+        line-height: 2;
+        margin: 0 0 35px 0;
+        padding: 0 0 0 15px;
     }
 
     ul {
         list-style: none;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
     }
 
-    li{
+    ul li {
+        position: relative;
         margin: 0 0 15px 0;
     }
 
-    .fa-check-circle:before{
+    .fa-check-circle:before {
         color: $secondary-color;
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    .liText {
+        padding: 0 0 0 12px;
+    }
+}
+
+// Row Six
+
+.rowSix {
+    background-color: $primary-color;
+    color: whitesmoke;
+    height: 1100px;
+    padding: 0 10px 0 15px;
+
+    .rowSixHeader {
+        font-size: 19px;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin: 70px 0 15px 0;
+    }
+
+    .findAnswersText {
+        font-family: "Playfair Display", serif;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        font-style: italic;
+        margin: 0 0 40px 0;
+    }
+
+    .card {
+        background-color: #3f6061;
+        border-radius: 0;
+        border: 1px 1px 1px white;
+        color: whitesmoke;
+        margin-bottom: 10px;
+    }
+
+    .accordion > .card > .card-header {
+        border-radius: 0;
+        margin-bottom: 0px;
+        padding-right: 0;
+    }
+
+    .card-header {
+        background-color: #3f6061;
+        border: 1px white solid;
+        border-radius: 0;
+        color: whitesmoke;
+        font-size: 11px;
+    }
+
+    .card-header > h6 {
+        font-size: 11px;
         margin: 0 10px 0 0;
     }
 
+    .card-body {
+        background-color: #3f6061;
+        font-size: 12px;
+    }
+
+    .btn {
+        color: whitesmoke;
+    }
+
+    #accordion ul li:first-child div {
+        display: block;
+        border-radius: 0;
+    }
+
+    .collapsible-link::before {
+        content: "";
+        width: 14px;
+        height: 2px;
+        background: white;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 1rem;
+        display: block;
+        transition: all 0.3s;
+        background-color: white;
+    }
+
+    /* Vertical line */
+    .collapsible-link::after {
+        content: "";
+        width: 2px;
+        height: 14px;
+        background: white;
+        position: absolute;
+        top: calc(50% - 7px);
+        right: calc(1rem + 6px);
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .collapsible-link[aria-expanded="true"]::after {
+        transform: rotate(90deg) translateX(-1px);
+    }
+
+    .collapsible-link[aria-expanded="true"]::before {
+        transform: rotate(180deg);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .addBorder {
+        border: 1px solid white;
+    }
+
+    .accordionText {
+        font-size: 12px;
+        color: $pale-font-color;
+        line-height: 2;
+    }
+}
+
+.rowSeven {
+    .rowSevenHeader {
+        font-size: 19px;
+        font-family: "Montserrat", sans-serif;
+        color: #294243;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin: 65px 0 0 15px;
+    }
+
+    .rowSevengenText {
+        font-family: "Playfair Display", serif;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        color: #424d42;
+        font-style: italic;
+        margin: 15px 0 50px 15px;
+    }
+
+    .cardLinks {
+        display: inline-block;
+        text-align: center;
+        color: $secondary-color;
+                margin: 0 0 50px 0;
+
+    }
+
+    .cardLinksText {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        color: $secondary-color;
+        text-decoration: underline;
+        font-size: 13px;
+        padding:  0 10px 0 10px;
+        cursor: pointer;
+    }
+
+        .card-group {
+        .card {
+            max-width: 400px;
+        }
+        .getStartedBtn {
+            border: 0;
+            border-radius: 0px;
+            font-weight: bolder;
+            color: white;
+            background-color: #86bfca;
+            width: 250px;
+            height: 50px;
+            padding: 12px;
+        }
+    }
+
+      .card-title {
+            color: $secondary-color;
+            padding-top: 30px;
+            margin-bottom: -20px;
+        }
+
+        .cardPrice {
+            font-family: $playfairDisplay;
+            font-size: 80px;
+        }
+
+        .mostPopularCard {
+            .card-header {
+                background-color: $secondary-color;
+                border: 0;
+                border-radius: 0;
+                // height: 10px;
+                padding: 2px 10px 2px 10px;
+                font-family: $montserra;
+                font-size: 14px;
+                letter-spacing: 3px;
+                color: white;
+            }
+        }
+
+        .card {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 }
