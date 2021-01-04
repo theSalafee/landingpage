@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 .container-fluid {
-  padding: 0 0 0 0; }
+  padding: 0 0 0 0;
+  max-width: 1440px; }
 
 .navbar-toggler {
   border: none;
@@ -12,7 +12,7 @@
 
 @media (min-width: 768px) {
   .navbar-toggler {
-    height: 70px;
+    height: 75px;
     background-color: #86bfca; } }
 
 .navbar {
@@ -47,6 +47,10 @@ img {
     margin: 15px 0 45px 0;
     padding: 0 5px 0 5px;
     color: #dadada; }
+  @media (min-width: 768px) {
+    .jumbotron .lead {
+      font-size: 15px;
+      margin: 10px 0 25px 0; } }
   .jumbotron .btn-group-wrap {
     text-align: center; }
   .jumbotron div.btn-group {
@@ -61,9 +65,6 @@ img {
     letter-spacing: 1px;
     height: 35px;
     padding: 8px 0 0 0; }
-  @media (min-width: 1px) and (max-width: 647px) {
-    .jumbotron .learnMoreBtn {
-      margin-bottom: 18px; } }
   .jumbotron .learnMoreBtn {
     border-radius: 0px;
     border-color: white;
@@ -78,6 +79,17 @@ img {
     color: white;
     background-color: #86bfca;
     margin: 0 0 35px 0; }
+  @media (min-width: 768px) {
+    .jumbotron .learnMoreBtn {
+      margin: 0;
+      width: 150px; }
+    .jumbotron .getStartedBtn {
+      margin: 0;
+      width: 150px; } }
+
+@media (min-width: 768px) {
+  .jumbotron {
+    background-position: bottom center; } }
 
 .rowOne {
   margin: 50px 0 30px 0; }
@@ -89,6 +101,10 @@ img {
     line-height: 1.2;
     color: #294243;
     margin: 0 0 15px 0; }
+  @media (min-width: 768px) {
+    .rowOne .rowOneLeft {
+      text-align: right;
+      font-size: 35px; } }
   .rowOne .oneOoneText {
     font-weight: bolder;
     color: #294243;
@@ -100,6 +116,13 @@ img {
     font-size: 12px;
     color: #424d42;
     line-height: 2; }
+  @media (min-width: 768px) {
+    .rowOne {
+      padding: 0 15px 0 0; } }
+
+@media (min-width: 768px) {
+  .rowOne {
+    margin: 70px 0 70px 0; } }
 
 .rowTwo {
   font-family: "Montserrat", sans-serif; }
@@ -110,12 +133,24 @@ img {
     letter-spacing: 2px;
     line-height: 1.5;
     margin: 0 0 15px 15px; }
+  @media (min-width: 768px) {
+    .rowTwo .rowTwoHeader {
+      font-size: 20px;
+      text-align: center; }
+    .rowTwo .rowTwoOffer {
+      font-size: 12px;
+      text-align: center; } }
   .rowTwo .rowTwoOffer {
     font-family: "Playfair Display", serif;
     font-size: 13px;
     letter-spacing: 1.3px;
     color: #424d42;
     font-style: italic; }
+  @media (min-width: 768px) {
+    .rowTwo .rowTwoOffer {
+      text-align: center;
+      font-size: 11px;
+      margin: 0 0 30px 0; } }
 
 .rowThree div.btn-group {
   margin: 0 auto;
@@ -143,9 +178,21 @@ img {
   height: 45px;
   margin: 0 0 20px 0; }
 
-.rowThree .btn-secondary:not(:disabled):not(.disabled).active,
-.rowThree .btn-secondary:not(:disabled):not(.disabled):active,
-.rowThree .show > .btn-secondary.dropdown-toggle {
+.rowThree button.btn.btn-secondary.rowThreeBtns {
+  width: 200px;
+  height: 30px;
+  padding: 0 0 0 0;
+  margin: 0 0 20px 0; }
+
+.rowThree .llcBtn,
+.rowThree .corpBtn,
+.rowThree .nonprofitBtn {
+  margin-left: -5px !important;
+  letter-spacing: 0.5px; }
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
   background-color: #86bfca; }
 
 .rowFour {
@@ -157,6 +204,10 @@ img {
     letter-spacing: 2px;
     line-height: 1.5;
     margin: 20px 0 15px 0; }
+  @media (min-width: 768px) {
+    .rowFour .tabHeader {
+      font-size: 14px;
+      font-weight: 200; } }
   .rowFour .mainContent {
     font-size: 12px;
     color: #869586;
@@ -176,6 +227,9 @@ img {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.7px;
     -webkit-text-stroke-color: #294243; }
+  @media (min-width: 768px) {
+    .rowFour .rowFourBtnLabel {
+      font-size: 8px; } }
   .rowFour .rowFourList ul {
     color: #294243;
     font-family: "Montserrat", sans-serif;
@@ -188,6 +242,13 @@ img {
     list-style-position: inside;
     letter-spacing: 1px;
     font-size: 13px; }
+  @media (min-width: 768px) {
+    .rowFour .rowFourList li {
+      padding: 0 0 25px 0;
+      font-size: 12px; } }
+  @media (min-width: 768px) {
+    .rowFour .rowFourList {
+      padding: 50px 0 0 0; } }
   .rowFour .llcInfoBtn {
     border: 0px;
     border-radius: 0px;
@@ -200,6 +261,12 @@ img {
     height: 40px;
     margin: 0 0 20px 0;
     letter-spacing: 1px; }
+  .rowFour .llcInfoBtn {
+    width: 150px; }
+
+@media (min-width: 768px) {
+  .rowFour {
+    margin: 0 20px 170px 30px; } }
 
 .rowFive {
   background-color: #eff1f2; }
@@ -211,6 +278,11 @@ img {
     margin-top: -175px;
     margin-left: -15px;
     margin-bottom: 55px; }
+  @media (min-width: 768px) {
+    .rowFive .capitolBldImage {
+      width: 325px;
+      height: auto;
+      margin: 80px 0 0 30px; } }
   .rowFive .rowFiveheaderRight {
     font-size: 19px;
     font-family: "Montserrat", sans-serif;
@@ -218,6 +290,10 @@ img {
     letter-spacing: 2px;
     line-height: 1.5;
     margin: 0 0 15px 15px; }
+  @media (min-width: 768px) {
+    .rowFive .rowFiveheaderRight {
+      font-size: 20px;
+      margin: 100px 0 0 15px; } }
   .rowFive .howToText {
     font-family: "Playfair Display", serif;
     font-size: 13px;
@@ -226,12 +302,18 @@ img {
     font-style: italic;
     margin: 0 0 -5px 0;
     padding: 0 0 0 15px; }
+  @media (min-width: 768px) {
+    .rowFive .howToText {
+      font-size: 11px; } }
   .rowFive .mainContent {
     font-size: 14px;
     color: #424d42;
     line-height: 2;
     margin: 0 0 35px 0;
     padding: 0 0 0 15px; }
+  @media (min-width: 768px) {
+    .rowFive .mainContent {
+      font-size: 12px; } }
   .rowFive ul {
     list-style: none; }
   .rowFive ul li {
@@ -240,8 +322,24 @@ img {
   .rowFive .fa-check-circle:before {
     color: #86bfca;
     font-size: 22px; }
+  @media (min-width: 768px) {
+    .rowFive .fa-check-circle:before {
+      font-size: 18px; } }
   .rowFive .liText {
     padding: 0 0 0 12px; }
+  @media (min-width: 768px) {
+    .rowFive ul li {
+      margin: 0 0 10px 0; }
+    .rowFive .liText {
+      padding: 0 0 0 10px; } }
+  @media (min-width: 768px) {
+    .rowFive .content {
+      padding: 0 50px 0 10px; } }
+
+@media (min-width: 768px) {
+  .rowFive {
+    margin: 0 0 0 0;
+    height: 475px; } }
 
 .rowSix {
   background-color: #294243;

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -15,6 +15,7 @@ $secondary-color: #86bfca;
 
 .container-fluid {
     padding: 0 0 0 0;
+    max-width: 1440px;
 }
 
 .navbar-toggler {
@@ -26,7 +27,7 @@ $secondary-color: #86bfca;
 
 @include media-breakpoint-up(md) {
     .navbar-toggler {
-        height: 70px;
+        height: 75px;
         background-color: $secondary-color;
     }
 }
@@ -73,6 +74,13 @@ img {
         color: $pale-font-color;
     }
 
+    @include media-breakpoint-up(md) {
+        .lead {
+            font-size: 15px;
+            margin: 10px 0 25px 0;
+        }
+    }
+
     .btn-group-wrap {
         text-align: center;
     }
@@ -93,12 +101,6 @@ img {
         padding: 8px 0 0 0;
     }
 
-    @media (min-width: 1px) and (max-width: 647px) {
-        .learnMoreBtn {
-            margin-bottom: 18px;
-        }
-    }
-
     .learnMoreBtn {
         border-radius: 0px;
         border-color: white;
@@ -115,6 +117,23 @@ img {
         color: white;
         background-color: #86bfca;
         margin: 0 0 35px 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        .learnMoreBtn {
+            margin: 0;
+            width: 150px;
+        }
+
+        .getStartedBtn {
+            margin: 0;
+            width: 150px;
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .jumbotron {
+        background-position: bottom center;
     }
 }
 
@@ -133,6 +152,13 @@ img {
         margin: 0 0 15px 0;
     }
 
+    @include media-breakpoint-up(md) {
+        .rowOneLeft {
+            text-align: right;
+            font-size: 35px;
+        }
+    }
+
     .oneOoneText {
         font-weight: bolder;
         color: $primary-color;
@@ -146,12 +172,23 @@ img {
         color: $green-font-color;
         line-height: 2;
     }
+
+    @include media-breakpoint-up(md) {
+        padding: 0 15px 0 0;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .rowOne {
+        margin: 70px 0 70px 0;
+    }
 }
 
 // Row Two
 
 .rowTwo {
     font-family: $montserra;
+
     .rowTwoHeader {
         font-size: 19px;
         font-family: $montserra;
@@ -161,12 +198,31 @@ img {
         margin: 0 0 15px 15px;
     }
 
+    @include media-breakpoint-up(md) {
+        .rowTwoHeader {
+            font-size: 20px;
+            text-align: center;
+        }
+        .rowTwoOffer {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
     .rowTwoOffer {
         font-family: $playfairDisplay;
         font-size: 13px;
         letter-spacing: 1.3px;
         color: $green-font-color;
         font-style: italic;
+    }
+
+    @include media-breakpoint-up(md) {
+        .rowTwoOffer {
+            text-align: center;
+            font-size: 11px;
+            margin: 0 0 30px 0;
+        }
     }
 }
 
@@ -203,11 +259,31 @@ img {
         margin: 0 0 20px 0;
     }
 
-    .btn-secondary:not(:disabled):not(.disabled).active,
-    .btn-secondary:not(:disabled):not(.disabled):active,
-    .show > .btn-secondary.dropdown-toggle {
-        background-color: $secondary-color;
+    // @include media-breakpoint-up(md) {
+    //     .rowThreeBtns {
+    //         font-size: 10px;
+    //     }
+    // }
+
+    button.btn.btn-secondary.rowThreeBtns {
+        width: 200px;
+        height: 30px;
+        padding: 0 0 0 0;
+        margin: 0 0 20px 0;
     }
+
+    .llcBtn,
+    .corpBtn,
+    .nonprofitBtn {
+        margin-left: -5px !important;
+        letter-spacing: 0.5px;
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+    background-color: $secondary-color;
 }
 
 // Row Four
@@ -221,6 +297,13 @@ img {
         letter-spacing: 2px;
         line-height: 1.5;
         margin: 20px 0 15px 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        .tabHeader {
+            font-size: 14px;
+            font-weight: 200;
+        }
     }
 
     .mainContent {
@@ -245,6 +328,12 @@ img {
         -webkit-text-stroke-color: $primary-color;
     }
 
+    @include media-breakpoint-up(md) {
+        .rowFourBtnLabel {
+            font-size: 8px;
+        }
+    }
+
     .rowFourList {
         ul {
             color: $primary-color;
@@ -260,6 +349,19 @@ img {
             letter-spacing: 1px;
             font-size: 13px;
         }
+
+        @include media-breakpoint-up(md) {
+            li {
+                padding: 0 0 25px 0;
+                font-size: 12px;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .rowFourList {
+            padding: 50px 0 0 0;
+        }
     }
 
     .llcInfoBtn {
@@ -274,6 +376,18 @@ img {
         height: 40px;
         margin: 0 0 20px 0;
         letter-spacing: 1px;
+    }
+
+    @include media-breakpoint-up(up) {
+        .llcInfoBtn {
+            width: 150px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .rowFour {
+        margin: 0 20px 170px 30px;
     }
 }
 
@@ -292,6 +406,15 @@ img {
         margin-bottom: 55px;
     }
 
+    @include media-breakpoint-up(md) {
+        .capitolBldImage {
+            //width: 90%;
+            width: 325px;
+            height: auto;
+            margin: 80px 0 0 30px;
+        }
+    }
+
     .rowFiveheaderRight {
         font-size: 19px;
         font-family: $montserra;
@@ -299,6 +422,13 @@ img {
         letter-spacing: 2px;
         line-height: 1.5;
         margin: 0 0 15px 15px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .rowFiveheaderRight {
+            font-size: 20px;
+            margin: 100px 0 0 15px;
+        }
     }
 
     .howToText {
@@ -311,12 +441,24 @@ img {
         padding: 0 0 0 15px;
     }
 
+    @include media-breakpoint-up(md) {
+        .howToText {
+            font-size: 11px;
+        }
+    }
+
     .mainContent {
         font-size: 14px;
         color: $green-font-color;
         line-height: 2;
         margin: 0 0 35px 0;
         padding: 0 0 0 15px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .mainContent {
+            font-size: 12px;
+        }
     }
 
     ul {
@@ -333,8 +475,37 @@ img {
         font-size: 22px;
     }
 
+    @include media-breakpoint-up(md) {
+        .fa-check-circle:before {
+            font-size: 18px;
+        }
+    }
+
     .liText {
         padding: 0 0 0 12px;
+    }
+
+    @include media-breakpoint-up(md) {
+        ul li {
+            margin: 0 0 10px 0;
+        }
+
+        .liText {
+            padding: 0 0 0 10px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .content {
+            padding: 0 50px 0 10px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .rowFive {
+        margin: 0 0 0 0;
+        height: 475px;
     }
 }
 
@@ -647,7 +818,7 @@ img {
         margin: 25px auto 20px auto;
     }
 
-    .fa-copyright{
+    .fa-copyright {
         margin: 0 0 0 3px;
     }
 }
