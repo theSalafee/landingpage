@@ -314,9 +314,10 @@ img {
       width: 325px;
       height: auto;
       margin: 80px 0 0 30px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .rowFive .capitolBldImage {
-      margin: 80px 0 0 80px; } }
+      width: 350px;
+      margin: 75px 0 0 80px; } }
   .rowFive .rowFiveheaderRight {
     font-size: 19px;
     font-family: "Montserrat", sans-serif;
@@ -328,6 +329,9 @@ img {
     .rowFive .rowFiveheaderRight {
       font-size: 20px;
       margin: 100px 0 0 15px; } }
+  @media (min-width: 992px) {
+    .rowFive .rowFiveheaderRight {
+      font-size: 24px; } }
   .rowFive .howToText {
     font-family: "Playfair Display", serif;
     font-size: 13px;
@@ -339,6 +343,9 @@ img {
   @media (min-width: 768px) {
     .rowFive .howToText {
       font-size: 11px; } }
+  @media (min-width: 992px) {
+    .rowFive .howToText {
+      font-size: 13px; } }
   .rowFive .mainContent {
     font-size: 14px;
     color: #424d42;
@@ -348,6 +355,9 @@ img {
   @media (min-width: 768px) {
     .rowFive .mainContent {
       font-size: 12px; } }
+  @media (min-width: 992px) {
+    .rowFive .mainContent {
+      font-size: 13px; } }
   .rowFive ul {
     list-style: none; }
   .rowFive ul li {
@@ -375,6 +385,11 @@ img {
     margin: 0 0 0 0;
     height: 475px; } }
 
+@media (min-width: 992px) {
+  .rowFive {
+    margin: 0 0 0 0;
+    height: 500px; } }
+
 .rowSix {
   background-color: #294243;
   color: whitesmoke;
@@ -390,6 +405,9 @@ img {
   @media (min-width: 768px) {
     .rowSix .rowSixHeader {
       font-size: 20px; } }
+  @media (min-width: 992px) {
+    .rowSix .rowSixHeader {
+      font-size: 24px; } }
   .rowSix .findAnswersText {
     font-family: "Playfair Display", serif;
     font-size: 13px;
@@ -399,6 +417,9 @@ img {
   @media (min-width: 768px) {
     .rowSix .findAnswersText {
       font-size: 11px; } }
+  @media (min-width: 992px) {
+    .rowSix .findAnswersText {
+      font-size: 13px; } }
   .rowSix .card {
     background-color: #3f6061;
     border-radius: 0;
@@ -418,6 +439,9 @@ img {
   .rowSix .card-header > h6 {
     font-size: 11px;
     margin: 0 10px 0 0; }
+  @media (min-width: 992px) {
+    .rowSix .card-header > h6 {
+      font-size: 14px; } }
   .rowSix .card-body {
     background-color: #3f6061;
     font-size: 12px; }
@@ -464,6 +488,10 @@ img {
   .rowSix {
     padding: 0 80px 0 80px;
     height: 800px; } }
+
+@media (min-width: 992px) {
+  .rowSix {
+    padding: 0 135px 0 135px; } }
 
 .rowSeven .rowSevenHeader {
   font-size: 19px;

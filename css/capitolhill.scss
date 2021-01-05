@@ -351,7 +351,6 @@ img {
         }
     }
 
-
     .rowFourBtnLabel {
         color: $primary-color;
         font-size: 14px;
@@ -372,7 +371,7 @@ img {
         }
     }
 
-        @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(lg) {
         .rowFourBtnLabel {
             font-size: 12px;
         }
@@ -401,7 +400,7 @@ img {
             }
         }
 
-                @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(lg) {
             li {
                 padding: 0 0 25px 0;
                 font-size: 13px;
@@ -472,12 +471,13 @@ img {
         }
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         .capitolBldImage {
-            margin: 80px 0 0 80px;
+            width: 350px;
+
+            margin: 75px 0 0 80px;
         }
     }
-
 
     .rowFiveheaderRight {
         font-size: 19px;
@@ -492,6 +492,12 @@ img {
         .rowFiveheaderRight {
             font-size: 20px;
             margin: 100px 0 0 15px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .rowFiveheaderRight {
+            font-size: 24px;
         }
     }
 
@@ -511,6 +517,12 @@ img {
         }
     }
 
+    @include media-breakpoint-up(lg) {
+        .howToText {
+            font-size: 13px;
+        }
+    }
+
     .mainContent {
         font-size: 14px;
         color: $green-font-color;
@@ -522,6 +534,12 @@ img {
     @include media-breakpoint-up(md) {
         .mainContent {
             font-size: 12px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .mainContent {
+            font-size: 13px;
         }
     }
 
@@ -573,6 +591,13 @@ img {
     }
 }
 
+@include media-breakpoint-up(lg) {
+    .rowFive {
+        margin: 0 0 0 0;
+        height: 500px;
+    }
+}
+
 // Row Six
 
 .rowSix {
@@ -595,6 +620,12 @@ img {
         }
     }
 
+    @include media-breakpoint-up(lg) {
+        .rowSixHeader {
+            font-size: 24px;
+        }
+    }
+
     .findAnswersText {
         font-family: "Playfair Display", serif;
         font-size: 13px;
@@ -606,6 +637,12 @@ img {
     @include media-breakpoint-up(md) {
         .findAnswersText {
             font-size: 11px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .findAnswersText {
+            font-size: 13px;
         }
     }
 
@@ -634,6 +671,12 @@ img {
     .card-header > h6 {
         font-size: 11px;
         margin: 0 10px 0 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .card-header > h6 {
+            font-size: 14px;
+        }
     }
 
     .card-body {
@@ -703,6 +746,13 @@ img {
     .rowSix {
         padding: 0 80px 0 80px;
         height: 800px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .rowSix {
+        padding: 0 135px 0 135px;
+        // height: 800px;
     }
 }
 
