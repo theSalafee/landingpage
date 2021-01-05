@@ -38,6 +38,9 @@ img {
     line-height: 1.2;
     letter-spacing: 5px;
     margin: 20px 0 0 0; }
+  @media (min-width: 992px) {
+    .jumbotron .display-4 {
+      font-size: 40px; } }
   .jumbotron .lead {
     font-family: "Playfair Display", serif;
     font-size: 18px;
@@ -105,6 +108,9 @@ img {
     .rowOne .rowOneLeft {
       text-align: right;
       font-size: 35px; } }
+  @media (min-width: 992px) {
+    .rowOne .rowOneLeft {
+      font-size: 40px; } }
   .rowOne .oneOoneText {
     font-weight: bolder;
     color: #294243;
@@ -116,6 +122,9 @@ img {
     font-size: 12px;
     color: #424d42;
     line-height: 2; }
+  @media (min-width: 992px) {
+    .rowOne .rowOneParagraph {
+      font-size: 13px; } }
   @media (min-width: 768px) {
     .rowOne {
       padding: 0 15px 0 0; } }
@@ -140,6 +149,10 @@ img {
     .rowTwo .rowTwoOffer {
       font-size: 12px;
       text-align: center; } }
+  @media (min-width: 992px) {
+    .rowTwo .rowTwoHeader {
+      font-size: 28px;
+      text-align: center; } }
   .rowTwo .rowTwoOffer {
     font-family: "Playfair Display", serif;
     font-size: 13px;
@@ -148,9 +161,7 @@ img {
     font-style: italic; }
   @media (min-width: 768px) {
     .rowTwo .rowTwoOffer {
-      text-align: center;
-      font-size: 11px;
-      margin: 0 0 30px 0; } }
+      font-size: 14px; } }
 
 .rowThree div.btn-group {
   margin: 0 auto;
@@ -184,6 +195,12 @@ img {
   padding: 0 0 0 0;
   margin: 0 0 20px 0; }
 
+@media (min-width: 992px) {
+  .rowThree button.btn.btn-secondary.rowThreeBtns {
+    width: 245px;
+    height: 45px;
+    margin: 0 0 20px 0; } }
+
 .rowThree .llcBtn,
 .rowThree .corpBtn,
 .rowThree .nonprofitBtn {
@@ -214,6 +231,9 @@ img {
     line-height: 2;
     padding: 0 0 0 0;
     margin: 0 0 0 0; }
+  @media (min-width: 768px) {
+    .rowFour .mainContent {
+      font-size: 13px; } }
   .rowFour .rowFourBtnLabel {
     color: #294243;
     font-size: 14px;
@@ -230,6 +250,9 @@ img {
   @media (min-width: 768px) {
     .rowFour .rowFourBtnLabel {
       font-size: 8px; } }
+  @media (min-width: 992px) {
+    .rowFour .rowFourBtnLabel {
+      font-size: 12px; } }
   .rowFour .rowFourList ul {
     color: #294243;
     font-family: "Montserrat", sans-serif;
@@ -246,6 +269,10 @@ img {
     .rowFour .rowFourList li {
       padding: 0 0 25px 0;
       font-size: 12px; } }
+  @media (min-width: 992px) {
+    .rowFour .rowFourList li {
+      padding: 0 0 25px 0;
+      font-size: 13px; } }
   @media (min-width: 768px) {
     .rowFour .rowFourList {
       padding: 50px 0 0 0; } }
@@ -268,6 +295,10 @@ img {
   .rowFour {
     margin: 0 20px 170px 30px; } }
 
+@media (min-width: 992px) {
+  .rowFour {
+    margin: 0 20px 120px 80px !important; } }
+
 .rowFive {
   background-color: #eff1f2; }
   .rowFive .capitolBldImage {
@@ -283,6 +314,9 @@ img {
       width: 325px;
       height: auto;
       margin: 80px 0 0 30px; } }
+  @media (min-width: 768px) {
+    .rowFive .capitolBldImage {
+      margin: 80px 0 0 80px; } }
   .rowFive .rowFiveheaderRight {
     font-size: 19px;
     font-family: "Montserrat", sans-serif;
@@ -591,6 +625,9 @@ img {
     line-height: 1.7;
     letter-spacing: 5px;
     margin: 30px 0 15px 0; }
+  @media (min-width: 768px) {
+    .rowEight .rowEightHeader {
+      font-size: 20px; } }
   .rowEight .learnMoreBtn {
     background-color: rgba(255, 255, 255, 0.308);
     border: 1px solid white;
@@ -615,6 +652,13 @@ img {
     height: 40px;
     margin: 0 0 40px 0;
     letter-spacing: 1px; }
+  @media (min-width: 768px) {
+    .rowEight .learnMoreBtn {
+      margin: 0;
+      width: 150px; }
+    .rowEight .getStartedBtn {
+      margin: 0;
+      width: 150px; } }
 
 .footer {
   padding: 10% 5% 5% 5%;
@@ -624,8 +668,15 @@ img {
     width: auto;
     display: block;
     margin: 20px auto 10px auto; }
+  @media (min-width: 768px) {
+    .footer img {
+      margin: 25px 0 0 0; } }
   .footer .socialMediaLinks {
     text-align: center; }
+  @media (min-width: 768px) {
+    .footer .socialMediaLinks {
+      text-align: right;
+      margin: 20px 0 8px 0; } }
   .footer .btn-social-icon {
     background-color: #86bfca;
     border: none; }
@@ -633,5 +684,14 @@ img {
     font-size: 10px;
     text-align: center;
     margin: 25px auto 20px auto; }
+  @media (min-width: 768px) {
+    .footer .copyrightText {
+      text-align: right;
+      margin: 0px auto 10px auto; } }
   .footer .fa-copyright {
     margin: 0 0 0 3px; }
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 0 0 0 0;
+    height: 100px; } }

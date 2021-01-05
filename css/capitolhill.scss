@@ -18,6 +18,11 @@ $secondary-color: #86bfca;
     max-width: 1440px;
 }
 
+// .row{
+// margin-right: 0;
+// margin-left: 0;
+// }
+
 .navbar-toggler {
     border: none;
     background-color: $secondary-color;
@@ -61,6 +66,12 @@ img {
         line-height: 1.2;
         letter-spacing: 5px;
         margin: 20px 0 0 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .display-4 {
+            font-size: 40px;
+        }
     }
 
     .lead {
@@ -159,6 +170,12 @@ img {
         }
     }
 
+    @include media-breakpoint-up(lg) {
+        .rowOneLeft {
+            font-size: 40px;
+        }
+    }
+
     .oneOoneText {
         font-weight: bolder;
         color: $primary-color;
@@ -171,6 +188,12 @@ img {
         font-size: 12px;
         color: $green-font-color;
         line-height: 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .rowOneParagraph {
+            font-size: 13px;
+        }
     }
 
     @include media-breakpoint-up(md) {
@@ -209,6 +232,13 @@ img {
         }
     }
 
+    @include media-breakpoint-up(lg) {
+        .rowTwoHeader {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+
     .rowTwoOffer {
         font-family: $playfairDisplay;
         font-size: 13px;
@@ -219,9 +249,7 @@ img {
 
     @include media-breakpoint-up(md) {
         .rowTwoOffer {
-            text-align: center;
-            font-size: 11px;
-            margin: 0 0 30px 0;
+            font-size: 14px;
         }
     }
 }
@@ -259,17 +287,19 @@ img {
         margin: 0 0 20px 0;
     }
 
-    // @include media-breakpoint-up(md) {
-    //     .rowThreeBtns {
-    //         font-size: 10px;
-    //     }
-    // }
-
     button.btn.btn-secondary.rowThreeBtns {
         width: 200px;
         height: 30px;
         padding: 0 0 0 0;
         margin: 0 0 20px 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        button.btn.btn-secondary.rowThreeBtns {
+            width: 245px;
+            height: 45px;
+            margin: 0 0 20px 0;
+        }
     }
 
     .llcBtn,
@@ -314,6 +344,14 @@ img {
         margin: 0 0 0 0;
     }
 
+    @include media-breakpoint-up(md) {
+        .mainContent {
+            font-size: 13px;
+            // font-weight: 200;
+        }
+    }
+
+
     .rowFourBtnLabel {
         color: $primary-color;
         font-size: 14px;
@@ -331,6 +369,12 @@ img {
     @include media-breakpoint-up(md) {
         .rowFourBtnLabel {
             font-size: 8px;
+        }
+    }
+
+        @include media-breakpoint-up(lg) {
+        .rowFourBtnLabel {
+            font-size: 12px;
         }
     }
 
@@ -354,6 +398,13 @@ img {
             li {
                 padding: 0 0 25px 0;
                 font-size: 12px;
+            }
+        }
+
+                @include media-breakpoint-up(lg) {
+            li {
+                padding: 0 0 25px 0;
+                font-size: 13px;
             }
         }
     }
@@ -391,6 +442,12 @@ img {
     }
 }
 
+@include media-breakpoint-up(lg) {
+    .rowFour {
+        margin: 0 20px 120px 80px !important;
+    }
+}
+
 // Row Five
 
 .rowFive {
@@ -414,6 +471,13 @@ img {
             margin: 80px 0 0 30px;
         }
     }
+
+    @include media-breakpoint-up(md) {
+        .capitolBldImage {
+            margin: 80px 0 0 80px;
+        }
+    }
+
 
     .rowFiveheaderRight {
         font-size: 19px;
@@ -818,8 +882,8 @@ img {
         padding: 0 0 0 0;
     }
 
-    @include media-breakpoint-up(md){
-        .liText{
+    @include media-breakpoint-up(md) {
+        .liText {
             font-size: 12px;
         }
     }
@@ -857,6 +921,12 @@ img {
         margin: 30px 0 15px 0;
     }
 
+    @include media-breakpoint-up(md) {
+        .rowEightHeader {
+            font-size: 20px;
+        }
+    }
+
     .learnMoreBtn {
         background-color: rgba(255, 255, 255, 0.308);
         border: 1px solid white;
@@ -884,6 +954,18 @@ img {
         margin: 0 0 40px 0;
         letter-spacing: 1px;
     }
+
+    @include media-breakpoint-up(md) {
+        .learnMoreBtn {
+            margin: 0;
+            width: 150px;
+        }
+
+        .getStartedBtn {
+            margin: 0;
+            width: 150px;
+        }
+    }
 }
 
 // footer
@@ -899,8 +981,21 @@ img {
         margin: 20px auto 10px auto;
     }
 
+    @include media-breakpoint-up(md) {
+        img {
+            margin: 25px 0 0 0;
+        }
+    }
+
     .socialMediaLinks {
         text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+        .socialMediaLinks {
+            text-align: right;
+            margin: 20px 0 8px 0;
+        }
     }
 
     .btn-social-icon {
@@ -914,7 +1009,21 @@ img {
         margin: 25px auto 20px auto;
     }
 
+    @include media-breakpoint-up(md) {
+        .copyrightText {
+            text-align: right;
+            margin: 0px auto 10px auto;
+        }
+    }
+
     .fa-copyright {
         margin: 0 0 0 3px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .footer {
+        padding: 0 0 0 0;
+        height: 100px;
     }
 }
