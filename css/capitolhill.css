@@ -4,6 +4,10 @@
   padding: 0 0 0 0;
   max-width: 1440px; }
 
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
 .navbar-toggler {
   border: none;
   background-color: #86bfca;
@@ -502,6 +506,10 @@ img {
   margin: 65px 0 0 15px; }
 
 @media (min-width: 768px) {
+  .rowSeven .rowSevenHeader {
+    font-size: 28px; } }
+
+@media (min-width: 768px) {
   .rowSeven .rowSevenTagLine {
     font-size: 20px;
     text-align: center; } }
@@ -517,6 +525,10 @@ img {
 @media (min-width: 768px) {
   .rowSeven .rowSevengenText {
     font-size: 11px; } }
+
+@media (min-width: 992px) {
+  .rowSeven .rowSevengenText {
+    font-size: 14px; } }
 
 .rowSeven .cardLinks {
   display: inline-block;
@@ -656,6 +668,9 @@ img {
   @media (min-width: 768px) {
     .rowEight .rowEightHeader {
       font-size: 20px; } }
+  @media (min-width: 992px) {
+    .rowEight .rowEightHeader {
+      font-size: 28px; } }
   .rowEight .learnMoreBtn {
     background-color: rgba(255, 255, 255, 0.308);
     border: 1px solid white;

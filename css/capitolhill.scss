@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -18,10 +17,10 @@ $secondary-color: #86bfca;
     max-width: 1440px;
 }
 
-// .row{
-// margin-right: 0;
-// margin-left: 0;
-// }
+.row{
+margin-right: 0;
+margin-left: 0;
+}
 
 .navbar-toggler {
     border: none;
@@ -752,7 +751,6 @@ img {
 @include media-breakpoint-up(lg) {
     .rowSix {
         padding: 0 135px 0 135px;
-        // height: 800px;
     }
 }
 
@@ -766,6 +764,12 @@ img {
         letter-spacing: 2px;
         line-height: 1.5;
         margin: 65px 0 0 15px;
+    }
+
+        @include media-breakpoint-up(md) {
+        .rowSevenHeader {
+            font-size: 28px;
+        }
     }
 
     @include media-breakpoint-up(md) {
@@ -787,6 +791,12 @@ img {
     @include media-breakpoint-up(md) {
         .rowSevengenText {
             font-size: 11px;
+        }
+    }
+
+        @include media-breakpoint-up(lg) {
+        .rowSevengenText {
+            font-size: 14px;
         }
     }
 
@@ -974,6 +984,12 @@ img {
     @include media-breakpoint-up(md) {
         .rowEightHeader {
             font-size: 20px;
+        }
+    }
+
+        @include media-breakpoint-up(lg) {
+        .rowEightHeader {
+            font-size: 28px;
         }
     }
 
