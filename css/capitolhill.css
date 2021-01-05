@@ -353,12 +353,18 @@ img {
     letter-spacing: 2px;
     line-height: 1.5;
     margin: 70px 0 15px 0; }
+  @media (min-width: 768px) {
+    .rowSix .rowSixHeader {
+      font-size: 20px; } }
   .rowSix .findAnswersText {
     font-family: "Playfair Display", serif;
     font-size: 13px;
     letter-spacing: 1.3px;
     font-style: italic;
     margin: 0 0 40px 0; }
+  @media (min-width: 768px) {
+    .rowSix .findAnswersText {
+      font-size: 11px; } }
   .rowSix .card {
     background-color: #3f6061;
     border-radius: 0;
@@ -420,6 +426,11 @@ img {
     color: #dadada;
     line-height: 2; }
 
+@media (min-width: 768px) {
+  .rowSix {
+    padding: 0 80px 0 80px;
+    height: 800px; } }
+
 .rowSeven .rowSevenHeader {
   font-size: 19px;
   font-family: "Montserrat", sans-serif;
@@ -428,6 +439,11 @@ img {
   line-height: 1.5;
   margin: 65px 0 0 15px; }
 
+@media (min-width: 768px) {
+  .rowSeven .rowSevenTagLine {
+    font-size: 20px;
+    text-align: center; } }
+
 .rowSeven .rowSevengenText {
   font-family: "Playfair Display", serif;
   font-size: 13px;
@@ -435,6 +451,10 @@ img {
   color: #424d42;
   font-style: italic;
   margin: 15px 0 50px 15px; }
+
+@media (min-width: 768px) {
+  .rowSeven .rowSevengenText {
+    font-size: 11px; } }
 
 .rowSeven .cardLinks {
   display: inline-block;
@@ -468,6 +488,28 @@ img {
   margin: 20px 0 20px 0;
   letter-spacing: 1px; }
 
+@media (min-width: 768px) {
+  .rowSeven .card-group {
+    height: 60%; }
+    .rowSeven .card-group .card {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .rowSeven .card-group .mostPopularCard {
+      margin-bottom: 10%; }
+    .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardOne {
+      margin-right: -19px; }
+    .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardTwo {
+      z-index: 1;
+      transition: all 0.8s ease-in-out; }
+    .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardTwo:hover {
+      transform: scale(1.1); }
+    .rowSeven .card-group .card.mostPopularCard.shadow-sm.cardThree {
+      margin-left: -19px; }
+    .rowSeven .card-group .cardOne,
+    .rowSeven .card-group .cardThree {
+      transform: scale(0.9); } }
+
 .rowSeven .card-title {
   color: #86bfca;
   padding-top: 10px;
@@ -475,16 +517,29 @@ img {
   font-size: 18px;
   font-weight: bolder; }
 
+@media (min-width: 768px) {
+  .rowSeven .card-title {
+    font-size: 16px;
+    margin-bottom: 10px; } }
+
 .rowSeven .cardPrice {
   font-family: "Playfair Display", serif;
   font-size: 90px;
   color: #294243; }
+
+@media (min-width: 768px) {
+  .rowSeven .cardPrice {
+    font-size: 60px; } }
 
 .rowSeven .cardPrice:before {
   content: "$";
   font-size: 40px;
   vertical-align: super;
   margin-top: 20px; }
+
+@media (min-width: 768px) {
+  .rowSeven .cardPrice:before {
+    font-size: 30px; } }
 
 .rowSeven .mostPopularCard .card-header {
   background-color: #86bfca;
@@ -508,6 +563,10 @@ img {
   line-height: 1.5px;
   margin: 0 0 35px 0;
   padding: 0 0 0 0; }
+
+@media (min-width: 768px) {
+  .rowSeven .liText {
+    font-size: 12px; } }
 
 .rowSeven ul.card-text.text-left {
   padding-left: 15px; }

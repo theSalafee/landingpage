@@ -525,12 +525,24 @@ img {
         margin: 70px 0 15px 0;
     }
 
+    @include media-breakpoint-up(md) {
+        .rowSixHeader {
+            font-size: 20px;
+        }
+    }
+
     .findAnswersText {
         font-family: "Playfair Display", serif;
         font-size: 13px;
         letter-spacing: 1.3px;
         font-style: italic;
         margin: 0 0 40px 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        .findAnswersText {
+            font-size: 11px;
+        }
     }
 
     .card {
@@ -623,6 +635,15 @@ img {
     }
 }
 
+@include media-breakpoint-up(md) {
+    .rowSix {
+        padding: 0 80px 0 80px;
+        height: 800px;
+    }
+}
+
+// Row Seven
+
 .rowSeven {
     .rowSevenHeader {
         font-size: 19px;
@@ -633,6 +654,13 @@ img {
         margin: 65px 0 0 15px;
     }
 
+    @include media-breakpoint-up(md) {
+        .rowSevenTagLine {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
     .rowSevengenText {
         font-family: "Playfair Display", serif;
         font-size: 13px;
@@ -640,6 +668,12 @@ img {
         color: #424d42;
         font-style: italic;
         margin: 15px 0 50px 15px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .rowSevengenText {
+            font-size: 11px;
+        }
     }
 
     .cardLinks {
@@ -679,6 +713,43 @@ img {
         }
     }
 
+    @include media-breakpoint-up(md) {
+        .card-group {
+            height: 60%;
+            .card {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .mostPopularCard {
+                margin-bottom: 10%;
+            }
+
+            .card.mostPopularCard.shadow-sm.cardOne {
+                margin-right: -19px;
+            }
+
+            .card.mostPopularCard.shadow-sm.cardTwo {
+                z-index: 1;
+                transition: all 0.8s ease-in-out;
+            }
+
+            .card.mostPopularCard.shadow-sm.cardTwo:hover {
+                transform: scale(1.1);
+            }
+
+            .card.mostPopularCard.shadow-sm.cardThree {
+                margin-left: -19px;
+            }
+
+            .cardOne,
+            .cardThree {
+                transform: scale(0.9);
+            }
+        }
+    }
+
     .card-title {
         color: $secondary-color;
         padding-top: 10px;
@@ -687,10 +758,23 @@ img {
         font-weight: bolder;
     }
 
+    @include media-breakpoint-up(md) {
+        .card-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
     .cardPrice {
         font-family: $playfairDisplay;
         font-size: 90px;
         color: $primary-color;
+    }
+
+    @include media-breakpoint-up(md) {
+        .cardPrice {
+            font-size: 60px;
+        }
     }
 
     .cardPrice:before {
@@ -698,6 +782,12 @@ img {
         font-size: 40px;
         vertical-align: super;
         margin-top: 20px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .cardPrice:before {
+            font-size: 30px;
+        }
     }
 
     .mostPopularCard {
@@ -726,6 +816,12 @@ img {
         line-height: 1.5px;
         margin: 0 0 35px 0;
         padding: 0 0 0 0;
+    }
+
+    @include media-breakpoint-up(md){
+        .liText{
+            font-size: 12px;
+        }
     }
 
     ul.card-text.text-left {
