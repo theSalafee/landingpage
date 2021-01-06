@@ -7,9 +7,6 @@
   <a href="n/a" target="_blank">
     <img alt="License: n/a" src="https://img.shields.io/badge/License-n/a-yellow.svg" />
   </a>
-  <a href="https://twitter.com/n\/a" target="_blank">
-    <img alt="Twitter: n\/a" src="https://img.shields.io/twitter/follow/n\/a.svg?style=social" />
-  </a>
 </p>
 
 > 2B Front-End-Test
