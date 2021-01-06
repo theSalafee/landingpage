@@ -25,6 +25,7 @@
     "bootstrap-social": "^5.1.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "readme-md-generator": "^1.0.0",
     "typeface-montserrat": "^1.1.13",
     "typeface-playfair-display": "^1.1.13"
   }
