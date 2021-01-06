@@ -38,7 +38,7 @@
   .mobileBtn {
     margin: 30px 30px 70px 30px;
     background-color: #294243; }
-  img {
+  nav img {
     padding: 0 0 0 20px; } }
 
 .bg-light {
@@ -202,12 +202,12 @@ img {
 .rowTwo {
   font-family: "Montserrat", sans-serif; }
   .rowTwo .rowTwoHeader {
-    font-size: 19px;
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     color: #294243;
     letter-spacing: 2px;
     line-height: 1.5;
-    margin: 0 0 15px 15px; }
+    margin: 0 0 15px 0; }
   @media (min-width: 768px) {
     .rowTwo .rowTwoHeader {
       font-size: 20px;
@@ -226,6 +226,7 @@ img {
   .rowTwo .rowTwoOffer {
     font-family: "Playfair Display", serif;
     font-size: 13px;
+    padding-left: 0;
     letter-spacing: 1.3px;
     color: #424d42;
     font-style: italic; }
@@ -390,7 +391,7 @@ img {
 
 @media (min-width: 768px) {
   .rowFour {
-    margin: 0 20px 170px 30px; } }
+    margin: 0 20px 120px 30px; } }
 
 @media (min-width: 992px) {
   .rowFour {

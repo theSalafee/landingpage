@@ -43,37 +43,32 @@ $secondary-color: #86bfca;
 
 // Mobile nav styling
 @include media-breakpoint-down(sm) {
-nav.navbar.navbar-expand-md.navbar-light.bg-light {
-    padding: 0 0 0 0;
+    nav.navbar.navbar-expand-md.navbar-light.bg-light {
+        padding: 0 0 0 0;
+    }
+
+    div#navbarTogglerDemo02 {
+        padding: 20px 0 0 0;
+        background: $secondary-color;
+    }
+
+    a.nav-link {
+        text-align: center;
+        color: white !important;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .mobileBtn {
+        margin: 30px 30px 70px 30px;
+        background-color: $primary-color;
+    }
+
+    nav img {
+        padding: 0 0 0 20px;
+    }
 }
-
-div#navbarTogglerDemo02 {
-    padding: 20px 0 0 0;
-    background: $secondary-color;
-}
-
-a.nav-link {
-    text-align: center;
-    color: white !important;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.mobileBtn{
-    margin: 30px 30px 70px 30px;
-    background-color: $primary-color;
-    // border: 1px solid red;
-
-}
-
-img {
-    padding: 0 0 0 20px;
-    // width: 105%;
-}
-}
-
-
 
 .bg-light {
     background-color: white !important;
@@ -318,12 +313,12 @@ img {
     font-family: $montserra;
 
     .rowTwoHeader {
-        font-size: 19px;
+        font-size: 18px;
         font-family: $montserra;
         color: $primary-color;
         letter-spacing: 2px;
         line-height: 1.5;
-        margin: 0 0 15px 15px;
+        margin: 0 0 15px 0;
     }
 
     @include media-breakpoint-up(md) {
@@ -354,6 +349,7 @@ img {
     .rowTwoOffer {
         font-family: $playfairDisplay;
         font-size: 13px;
+        padding-left: 0;
         letter-spacing: 1.3px;
         color: $green-font-color;
         font-style: italic;
@@ -594,7 +590,7 @@ img {
 
 @include media-breakpoint-up(md) {
     .rowFour {
-        margin: 0 20px 170px 30px;
+        margin: 0 20px 120px 30px;
     }
 }
 
@@ -1354,11 +1350,10 @@ img {
         img {
             margin: 25px 0 0 0;
             width: 225px;
-
         }
     }
 
-        @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(lg) {
         img {
             margin: 30px 0 0 0;
             width: 250px;
