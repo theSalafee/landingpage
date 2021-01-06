@@ -919,3 +919,6 @@ img {
   .footer {
     padding: 0 0 0 0;
     height: 100px; } }
+
+body {
+  overflow-x: hidden; }
