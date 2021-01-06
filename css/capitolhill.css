@@ -628,7 +628,7 @@ img {
   color: #294243;
   letter-spacing: 2px;
   line-height: 1.5;
-  margin: 65px 0 0 15px; }
+  margin: 65px 0 0 5px; }
 
 @media (min-width: 768px) {
   .rowSeven .rowSevenHeader {
@@ -649,7 +649,7 @@ img {
   letter-spacing: 1.3px;
   color: #424d42;
   font-style: italic;
-  margin: 15px 0 50px 15px; }
+  margin: 15px 0 50px 5px; }
 
 @media (min-width: 768px) {
   .rowSeven .rowSevengenText {
@@ -675,7 +675,7 @@ img {
   color: #86bfca;
   text-decoration: underline;
   font-size: 13px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 0;
   cursor: pointer; }
 
 .rowSeven .card-group .card {
