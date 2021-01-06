@@ -924,22 +924,22 @@ img {
         line-height: 2;
     }
 
-    @include media-breakpoint-up(md){
-    .accordionText {
-        font-size: 13px;
-    }
-    }
-
-       @include media-breakpoint-up(lg){
-            .accordionText {
-        font-size: 14px;
-    }
+    @include media-breakpoint-up(md) {
+        .accordionText {
+            font-size: 13px;
+        }
     }
 
-       @include media-breakpoint-up(xl){
-            .accordionText {
-        font-size: 15px;
+    @include media-breakpoint-up(lg) {
+        .accordionText {
+            font-size: 14px;
+        }
     }
+
+    @include media-breakpoint-up(xl) {
+        .accordionText {
+            font-size: 15px;
+        }
     }
 }
 
@@ -965,7 +965,7 @@ img {
 
 @include media-breakpoint-up(xl) {
     .rowSix {
-    padding: 0 170px 0 170px;
+        padding: 0 170px 0 170px;
     }
 }
 
@@ -984,6 +984,12 @@ img {
     @include media-breakpoint-up(md) {
         .rowSevenHeader {
             font-size: 28px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .rowSevenHeader {
+            font-size: 30px;
         }
     }
 
@@ -1011,7 +1017,13 @@ img {
 
     @include media-breakpoint-up(lg) {
         .rowSevengenText {
-            font-size: 14px;
+            font-size: 12px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .rowSevengenText {
+            font-size: 13px;
         }
     }
 
@@ -1186,6 +1198,12 @@ img {
         }
     }
 
+    @include media-breakpoint-up(xl) {
+        .liText {
+            font-size: 14px;
+        }
+    }
+
     ul.card-text.text-left {
         padding-left: 15px;
     }
@@ -1231,6 +1249,12 @@ img {
         }
     }
 
+    @include media-breakpoint-up(xl) {
+        .rowEightHeader {
+            font-size: 32px;
+        }
+    }
+
     .learnMoreBtn {
         background-color: rgba(255, 255, 255, 0.308);
         border: 1px solid white;
@@ -1270,6 +1294,13 @@ img {
             width: 150px;
         }
     }
+
+    @include media-breakpoint-up(xl) {
+        .learnMoreBtn,
+        .getStartedBtn {
+            width: 175px;
+        }
+    }
 }
 
 // footer
@@ -1288,6 +1319,21 @@ img {
     @include media-breakpoint-up(md) {
         img {
             margin: 25px 0 0 0;
+            width: 225px;
+
+        }
+    }
+
+        @include media-breakpoint-up(lg) {
+        img {
+            margin: 30px 0 0 0;
+            width: 250px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        img {
+            margin: 35px 0 0 0;
         }
     }
 
