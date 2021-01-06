@@ -23,6 +23,24 @@
   padding: 0 0 0 20px;
   background-color: white; }
 
+@media (max-width: 767.98px) {
+  nav.navbar.navbar-expand-md.navbar-light.bg-light {
+    padding: 0 0 0 0; }
+  div#navbarTogglerDemo02 {
+    padding: 20px 0 0 0;
+    background: #86bfca; }
+  a.nav-link {
+    text-align: center;
+    color: white !important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .mobileBtn {
+    margin: 30px 30px 70px 30px;
+    background-color: #294243; }
+  img {
+    padding: 0 0 0 20px; } }
+
 .bg-light {
   background-color: white !important; }
 

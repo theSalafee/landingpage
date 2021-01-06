@@ -41,6 +41,40 @@ $secondary-color: #86bfca;
     background-color: white;
 }
 
+// Mobile nav styling
+@include media-breakpoint-down(sm) {
+nav.navbar.navbar-expand-md.navbar-light.bg-light {
+    padding: 0 0 0 0;
+}
+
+div#navbarTogglerDemo02 {
+    padding: 20px 0 0 0;
+    background: $secondary-color;
+}
+
+a.nav-link {
+    text-align: center;
+    color: white !important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.mobileBtn{
+    margin: 30px 30px 70px 30px;
+    background-color: $primary-color;
+    // border: 1px solid red;
+
+}
+
+img {
+    padding: 0 0 0 20px;
+    // width: 105%;
+}
+}
+
+
+
 .bg-light {
     background-color: white !important;
 }
